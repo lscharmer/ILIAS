@@ -45,6 +45,8 @@ class ilMembershipGUI
      */
     protected $access;
     
+    protected $participants;
+    
     
     /**
      * Constructor
@@ -278,7 +280,7 @@ class ilMembershipGUI
                     !$rbacsystem->checkAccess(
                         'internal_mail',
                         $mail->getMailObjectReferenceId()
-                )) {
+                    )) {
                     $ilErr->raiseError($this->lng->txt("msg_no_perm_read"), $ilErr->MESSAGE);
                 }
                 
@@ -1078,7 +1080,8 @@ class ilMembershipGUI
             }
             
             $tree = $DIC->repositoryTree();
-            $children = (array) $tree->getSubTree($tree->getNodeData($this->getParentObject()->getRefId()), false, 'sess');
+            $children = (array) $tree->getSubTree($tree->getNodeData($this->getParentObject()->getRefId()), false,
+                ['sess']);
             if (count($children)) {
                 $tabs->addSubTabTarget(
                     'events',
