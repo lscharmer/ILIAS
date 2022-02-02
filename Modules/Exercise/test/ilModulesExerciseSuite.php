@@ -18,6 +18,15 @@ class ilModulesExerciseSuite extends TestSuite
         require_once("./Modules/Exercise/test/PeerReview/ExcPeerReviewTest.php");
         $suite->addTestSuite("ExcPeerReviewTest");
 
+        require_once("./Modules/Exercise/test/Certificate/ilCertificateSettingsExerciseRepositoryTest.php");
+        $suite->addTestSuite(ilCertificateSettingsExerciseRepositoryTest::class);
+
+        require_once("./Modules/Exercise/test/Certificate/ilExercisePlaceholderDescriptionTest.php");
+        $suite->addTestSuite(ilExercisePlaceholderDescriptionTest::class);
+
+        require_once("./Modules/Exercise/test/Certificate/ilExercisePlaceHolderValuesTest.php");
+        $suite->addTestSuite(ilExercisePlaceHolderValuesTest::class);
+
         return $suite;
     }
 }

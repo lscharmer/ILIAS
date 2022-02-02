@@ -1,12 +1,32 @@
 <?php declare(strict_types=1);
-/* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
+
+/******************************************************************************
+ *
+ * This file is part of ILIAS, a powerful learning management system.
+ *
+ * ILIAS is licensed with the GPL-3.0, you should have received a copy
+ * of said license along with the source code.
+ *
+ * If this is not the case or you just want to try ILIAS, you'll find
+ * us at:
+ *      https://www.ilias.de
+ *      https://github.com/ILIAS-eLearning
+ *
+ *****************************************************************************/
+
+use PHPUnit\Framework\TestCase;
+
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
-class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
+class ilScormPlaceholderDescriptionTest extends TestCase
 {
     public function testPlaceholderGetHtmlDescription() : void
     {
+        $objectMock = $this->getMockBuilder(ilObject::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+
         $languageMock = $this->getMockBuilder(ilLanguage::class)
             ->disableOriginalConstructor()
             ->onlyMethods(['txt', 'loadLanguageModule'])
@@ -16,6 +36,25 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
+        $templateMock->method('get')
+            ->willReturn('');
+
+        $collectionInstance = $this->getMockBuilder(ilLPCollectionOfSCOs::class)
+            ->disableOriginalConstructor()
+            ->onlyMethods(['getPossibleItems'])
+            ->getMock();
+
+        $learningProgressMock = $this->getMockBuilder(ilObjectLP::class)
+            ->disableOriginalConstructor()
+            ->onlyMethods(['getCollectionInstance'])
+            ->getMock();
+
+        $collectionInstance->method('getPossibleItems')
+            ->willReturn(array(0 => array('title' => 'Some SCORM Title')));
+
+        $learningProgressMock->method('getCollectionInstance')
+            ->willReturn($collectionInstance);
+
         $userDefinePlaceholderMock = $this->getMockBuilder(ilUserDefinedFieldsPlaceholderDescription::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -26,10 +65,13 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
         $userDefinePlaceholderMock->method('getPlaceholderDescriptions')
             ->willReturn(array());
 
-        $templateMock->method('get')
-            ->willReturn('');
-
-        $placeholderDescriptionObject = new ilExercisePlaceholderDescription(null, $languageMock, $userDefinePlaceholderMock);
+        $placeholderDescriptionObject = new ilScormPlaceholderDescription(
+            $objectMock,
+            null,
+            $languageMock,
+            $learningProgressMock,
+            $userDefinePlaceholderMock
+        );
 
         $html = $placeholderDescriptionObject->createPlaceholderHtmlDescription($templateMock);
 
@@ -38,6 +80,11 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
 
     public function testPlaceholderDescriptions() : void
     {
+        $objectMock = $this->getMockBuilder(ilObject::class)
+            ->disableOriginalConstructor()
+            ->onlyMethods([])
+            ->getMock();
+
         $languageMock = $this->getMockBuilder(ilLanguage::class)
             ->disableOriginalConstructor()
             ->onlyMethods(['txt', 'loadLanguageModule'])
@@ -47,6 +94,11 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
             ->method('txt')
             ->willReturn('Something translated');
 
+        $learningProgressMock = $this->getMockBuilder(ilObjectLP::class)
+            ->disableOriginalConstructor()
+            ->onlyMethods(['getCollectionInstance'])
+            ->getMock();
+
         $userDefinePlaceholderMock = $this->getMockBuilder(ilUserDefinedFieldsPlaceholderDescription::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -57,7 +109,13 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
         $userDefinePlaceholderMock->method('getPlaceholderDescriptions')
             ->willReturn(array());
 
-        $placeholderDescriptionObject = new ilExercisePlaceholderDescription(null, $languageMock, $userDefinePlaceholderMock);
+        $placeholderDescriptionObject = new ilScormPlaceholderDescription(
+            $objectMock,
+            null,
+            $languageMock,
+            $learningProgressMock,
+            $userDefinePlaceholderMock
+        );
 
         $placeHolders = $placeholderDescriptionObject->getPlaceholderDescriptions();
 
@@ -79,9 +137,9 @@ class ilExercisePlaceholderDescriptionTest extends ilCertificateBaseTestCase
                 'USER_MATRICULATION' => 'Something translated',
                 'DATE' => 'Something translated',
                 'DATETIME' => 'Something translated',
-                'RESULT_PASSED' => 'Something translated',
-                'RESULT_MARK' => 'Something translated',
-                'EXERCISE_TITLE' => 'Something translated',
+                'SCORM_TITLE' => 'Something translated',
+                'SCORM_POINTS' => 'Something translated',
+                'SCORM_POINTS_MAX' => 'Something translated',
                 'DATE_COMPLETED' => 'Something translated',
                 'DATETIME_COMPLETED' => 'Something translated'
             ),

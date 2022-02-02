@@ -34,6 +34,15 @@ class ilModulesCourseSuite extends TestSuite
         include_once './Modules/Course/test/ilCourseMailTemplateTutorContextTest.php';
         $suite->addTestSuite("ilCourseMailTemplateTutorContextTest");
 
+        include_once './Modules/Course/test/Certificate/ilCertificateCourseLearningProgressEvaluationTest.php';
+        $suite->addTestSuite(ilCertificateCourseLearningProgressEvaluationTest::class);
+        include_once './Modules/Course/test/Certificate/ilCertificateSettingsCourseFormRepositoryTest.php';
+        $suite->addTestSuite(ilCertificateSettingsCourseFormRepositoryTest::class);
+        include_once './Modules/Course/test/Certificate/ilCoursePlaceholderDescriptionTest.php';
+        $suite->addTestSuite(ilCoursePlaceholderDescriptionTest::class);
+        include_once './Modules/Course/test/Certificate/ilCoursePlaceholderValuesTest.php';
+        $suite->addTestSuite(ilCoursePlaceholderValuesTest::class);
+        
         return $suite;
     }
 }

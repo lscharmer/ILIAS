@@ -1,18 +1,33 @@
 <?php declare(strict_types=1);
-/* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
+
+/******************************************************************************
+ *
+ * This file is part of ILIAS, a powerful learning management system.
+ *
+ * ILIAS is licensed with the GPL-3.0, you should have received a copy
+ * of said license along with the source code.
+ *
+ * If this is not the case or you just want to try ILIAS, you'll find
+ * us at:
+ *      https://www.ilias.de
+ *      https://github.com/ILIAS-eLearning
+ *
+ *****************************************************************************/
+
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
-class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestCase
+class ilCertificateSettingsTestFormRepositoryTest extends TestCase
 {
     public function testCreate() : void
     {
-        $formMock = $this->getMockBuilder(ilPropertyFormGUI::class)
+        $object = $this->getMockBuilder(ilObjTest::class)
             ->disableOriginalConstructor()
             ->getMock();
 
-        $object = $this->getMockBuilder(ilObject::class)
+        $formMock = $this->getMockBuilder(ilPropertyFormGUI::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -45,10 +60,11 @@ class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestC
             ->method('createForm')
             ->willReturn($formMock);
 
-        $repository = new ilCertificateSettingsExerciseRepository(
-            $object,
+        $repository = new ilCertificateSettingsTestFormRepository(
+            100,
             '/some/where/',
             false,
+            $object,
             $language,
             $controller,
             $access,
@@ -71,7 +87,7 @@ class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestC
      */
     public function testSave() : void
     {
-        $object = $this->getMockBuilder(ilObject::class)
+        $object = $this->getMockBuilder(ilObjTest::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -103,10 +119,11 @@ class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestC
             ->disableOriginalConstructor()
             ->getMock();
 
-        $repository = new ilCertificateSettingsExerciseRepository(
-            $object,
+        $repository = new ilCertificateSettingsTestFormRepository(
+            100,
             '/some/where/',
             false,
+            $object,
             $language,
             $controller,
             $access,
@@ -120,7 +137,7 @@ class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestC
 
     public function testFormFieldData() : void
     {
-        $object = $this->getMockBuilder(ilObject::class)
+        $object = $this->getMockBuilder(ilObjTest::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -157,10 +174,11 @@ class ilCertificateSettingsExerciseRepositoryTest extends ilCertificateBaseTestC
             ->method('fetchFormFieldData')
             ->willReturn(array('something' => 'value'));
 
-        $repository = new ilCertificateSettingsExerciseRepository(
-            $object,
+        $repository = new ilCertificateSettingsTestFormRepository(
+            100,
             '/some/where/',
             false,
+            $object,
             $language,
             $controller,
             $access,
