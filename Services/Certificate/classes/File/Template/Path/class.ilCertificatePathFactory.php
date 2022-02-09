@@ -1,6 +1,9 @@
 <?php declare(strict_types=1);
 /* Copyright (c) 1998-2019 ILIAS open source, Extended GPL, see docs/LICENSE */
 
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\PathEvent;
+
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
@@ -8,38 +11,8 @@ class ilCertificatePathFactory
 {
     public function create(ilObject $object) : string
     {
-        $type = $object->getType();
+        $result = (new Dispatch(require 'mymy.php'))->event(new PathEvent($object->getType(), $object));
 
-        switch ($type) {
-            case 'tst':
-                $certificatePath = ilCertificatePathConstants::TEST_PATH . $object->getId() . '/';
-                break;
-            case 'crs':
-                $certificatePath = ilCertificatePathConstants::COURSE_PATH . $object->getId() . '/';
-                break;
-            case 'sahs':
-                $certificatePath = ilCertificatePathConstants::SCORM_PATH . $object->getId() . '/';
-                break;
-            case 'exc':
-                $certificatePath = ilCertificatePathConstants::EXERCISE_PATH . $object->getId() . '/';
-                break;
-            case 'lti':
-                $certificatePath = ilCertificatePathConstants::LTICON_PATH . $object->getId() . '/';
-                break;
-            case 'cmix':
-                $certificatePath = ilCertificatePathConstants::CMIX_PATH . $object->getId() . '/';
-                break;
-            case 'prg':
-                $certificatePath = ilCertificatePathConstants::STUDY_PROGRAMME_PATH . $object->getId() . '/';
-                break;
-            default:
-                throw new ilException(sprintf(
-                    'The type "%s" is currently not supported for certificates',
-                    $type
-                ));
-                break;
-        }
-
-        return $certificatePath;
+        return $result->value();
     }
 }

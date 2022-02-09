@@ -3,6 +3,8 @@
 /* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
 
 use ILIAS\Filesystem\Exception\IOException;
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\Event;
 
 /**
  * Class ilCertificateAppEventListener
@@ -184,11 +186,9 @@ class ilCertificateAppEventListener implements ilAppEventListener
                 );
             }
 
-            if ($type === 'crs') {
-                $this->logger->info(
-                    'Skipping handling for course, because courses cannot be certificate trigger ' .
-                    '(with globally disabled learning progress) for other certificate enabled objects'
-                );
+            $skip = (new Dispatch(require 'mymy.php'))->event(new Event($type, 'skipLPUpdate'));
+
+            if ($skip->isOk() && $skip->value()) {
                 return;
             }
 

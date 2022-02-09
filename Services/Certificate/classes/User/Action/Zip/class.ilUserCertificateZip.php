@@ -1,6 +1,10 @@
 <?php declare(strict_types=1);
 /* Copyright (c) 1998-2019 ILIAS open source, Extended GPL, see docs/LICENSE */
 
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\Event;
+use ILIAS\Data\Result\Ok;
+
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
@@ -27,18 +31,13 @@ class ilUserCertificateZip
         // the adapters
         $iliasType = ilObject::_lookupType($this->objectId);
 
-        $typeInFileName = 'not_defined';
-        if ('crs' === $iliasType) {
-            $typeInFileName = 'course';
-        } elseif ('tst' === $iliasType) {
-            $typeInFileName = 'test';
-        } elseif ('exc' === $iliasType) {
-            $typeInFileName = 'exc';
-        } elseif ('sahs' === $iliasType) {
-            $typeInFileName = 'scorm';
-        }
+        $notDefined = static function () : Ok {
+            return new Ok('not_defined');
+        };
 
-        $this->typeInFileName = $typeInFileName;
+        $result = (new Dispatch(require 'mymy.php'))->event(new Event($iliasType, 'typeInFileName'));
+
+        $this->typeInFileName = $result->except($notDefined)->value();
     }
 
     public function createArchiveDirectory() : string

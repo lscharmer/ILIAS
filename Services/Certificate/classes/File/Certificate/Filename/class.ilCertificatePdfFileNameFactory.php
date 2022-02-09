@@ -1,6 +1,10 @@
 <?php declare(strict_types=1);
 /* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
 
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\FetchCertificateEvent;
+use ILIAS\Data\Result\Ok;
+
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
@@ -24,10 +28,11 @@ class ilCertificatePdfFileNameFactory
     private function fetchCertificateGenerator(string $objectType) : ilCertificateFilename
     {
         $generator = new ilCertificatePdfFilename($this->lng);
-        if ('sahs' === $objectType) {
-            $generator = new ilCertificateScormPdfFilename($generator, $this->lng, new ilSetting('scorm'));
-        }
+        $result = (new Dispatch(require 'mymy.php'))->event(new FetchCertificateEvent($objectType, $generator));
+        $result = $result->except(static function () use ($generator) : Ok {
+            return new Ok($generator);
+        });
 
-        return $generator;
+        return $result->value();
     }
 }

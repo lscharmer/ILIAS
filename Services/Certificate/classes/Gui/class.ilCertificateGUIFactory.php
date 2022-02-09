@@ -3,6 +3,10 @@
 /* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
 
 use ILIAS\DI\Container;
+use ILIAS\Certificate\Event\GUIEvent;
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Data\Result;
+use ILIAS\Data\Result\Error;
 
 /**
  * @author  Niels Theen <ntheen@databay.de>
@@ -30,7 +34,6 @@ class ilCertificateGUIFactory
         global $DIC;
 
         $type = $object->getType();
-        $objectId = $object->getId();
 
         $logger = $DIC->logger()->cert();
 
@@ -40,138 +43,26 @@ class ilCertificateGUIFactory
 
         $certificatePath = $pathFactory->create($object);
 
-        switch ($type) {
-            case 'tst':
-                $placeholderDescriptionObject = new ilTestPlaceholderDescription();
-                $placeholderValuesObject = new ilTestPlaceholderValues();
+        $event = new GUIEvent($type, $object, $certificatePath, $deleteAction);
 
-                $formFactory = new ilCertificateSettingsTestFormRepository(
-                    $objectId,
-                    $certificatePath,
-                    false,
-                    $object,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
+        $result = $DIC->certificate()->event($event);
+        $result = (new Dispatch(require 'mymy.php'))->event($event);
 
-                $deleteAction = new ilCertificateTestTemplateDeleteAction(
-                    $deleteAction,
-                    new ilCertificateObjectHelper()
-                );
+        return $result->then($this->isCertificateGUI())->value();
+    }
 
-                break;
-            case 'crs':
-                $hasAdditionalElements = true;
+    private function isCertificateGUI() : callable
+    {
+        return static function ($value) : Result {
+            if ($value instanceof ilCertificateGUI) {
+                return new Error(sprintf(
+                    'Invalid return value given: expected %s, got %s.',
+                    \ilCertificateGUI::class,
+                    \get_class($value)
+                ));
+            }
 
-                $placeholderDescriptionObject = new ilCoursePlaceholderDescription($objectId);
-                $placeholderValuesObject = new ilCoursePlaceholderValues();
-
-                $formFactory = new ilCertificateSettingsCourseFormRepository(
-                    $object,
-                    $certificatePath,
-                    false,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-
-                break;
-            case 'exc':
-                $placeholderDescriptionObject = new ilExercisePlaceholderDescription();
-                $placeholderValuesObject = new ilExercisePlaceholderValues();
-
-                $formFactory = new ilCertificateSettingsExerciseRepository(
-                    $object,
-                    $certificatePath,
-                    false,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-
-                break;
-            case 'sahs':
-                $placeholderDescriptionObject = new ilScormPlaceholderDescription($object);
-                $placeholderValuesObject = new ilScormPlaceholderValues();
-
-                $formFactory = new ilCertificateSettingsScormFormRepository(
-                    $object,
-                    $certificatePath,
-                    true,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-                break;
-            case 'lti':
-                $placeholderDescriptionObject = new ilLTIConsumerPlaceholderDescription();
-                $placeholderValuesObject = new ilLTIConsumerPlaceholderValues();
-
-                $formFactory = new ilCertificateSettingsLTIConsumerFormRepository(
-                    $object,
-                    $certificatePath,
-                    true,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-                break;
-            case 'cmix':
-                $placeholderDescriptionObject = new ilCmiXapiPlaceholderDescription();
-                $placeholderValuesObject = new ilCmiXapiPlaceholderValues();
-
-                $formFactory = new ilCertificateSettingsCmiXapiFormRepository(
-                    $object,
-                    $certificatePath,
-                    true,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-                break;
-            case 'prg':
-                $placeholderDescriptionObject =
-                    new ilStudyProgrammePlaceholderDescription();
-                $placeholderValuesObject =
-                    new ilStudyProgrammePlaceholderValues();
-                $formFactory = new ilCertificateSettingsStudyProgrammeFormRepository(
-                    $object,
-                    $certificatePath,
-                    true,
-                    $DIC->language(),
-                    $DIC->ctrl(),
-                    $DIC->access(),
-                    $DIC->toolbar(),
-                    $placeholderDescriptionObject
-                );
-                break;
-            default:
-                throw new ilException(sprintf('The type "%s" is currently not defined for certificates', $type));
-                break;
-        }
-
-        $gui = new ilCertificateGUI(
-            $placeholderDescriptionObject,
-            $placeholderValuesObject,
-            $objectId,
-            $certificatePath,
-            $formFactory,
-            $deleteAction
-        );
-
-        return $gui;
+            return $result;
+        };
     }
 }

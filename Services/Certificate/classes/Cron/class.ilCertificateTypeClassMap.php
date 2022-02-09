@@ -1,24 +1,16 @@
 <?php declare(strict_types=1);
 /* Copyright (c) 1998-2018 ILIAS open source, Extended GPL, see docs/LICENSE */
 
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\Event;
+use ILIAS\Data\Result\Error;
+use ILIAS\Data\Result;
+
 /**
  * @author  Niels Theen <ntheen@databay.de>
  */
 class ilCertificateTypeClassMap
 {
-    /**
-     * @var array<string, array{placeholder: string}>
-     */
-    private array $typeClassMap = [
-        'crs' => ['placeholder' => ilCoursePlaceholderValues::class],
-        'tst' => ['placeholder' => ilTestPlaceholderValues::class],
-        'exc' => ['placeholder' => ilExercisePlaceholderValues::class],
-        'cmix' => ['placeholder' => ilCmiXapiPlaceholderValues::class],
-        'lti' => ['placeholder' => ilLTIConsumerPlaceholderValues::class],
-        'sahs' => ['placeholder' => ilScormPlaceholderValues::class],
-        'prg' => ['placeholder' => ilStudyProgrammePlaceholderValues::class]
-    ];
-
     /**
      * @param string $type
      * @return string
@@ -26,15 +18,20 @@ class ilCertificateTypeClassMap
      */
     public function getPlaceHolderClassNameByType(string $type) : string
     {
-        if (false === $this->typeExistsInMap($type)) {
-            throw new ilException('The given type ' . $type . 'is not mapped as a class on the class map');
-        }
+        $changeErrorMessage = static function () use ($type) : Error {
+            return new Error(new ilException('The given type ' . $type . 'is not mapped as a class on the class map');
+        };
 
-        return $this->typeClassMap[$type]['placeholder'];
+        return $this->get($type)->except($changeErrorMessage)->value();
     }
 
     public function typeExistsInMap(string $type) : bool
     {
-        return array_key_exists($type, $this->typeClassMap);
+        return $this->get($type)->isOk();
+    }
+
+    private function get(string $type) : Result
+    {
+        return (new Dispatch(require 'mymy.php'))->event(new Event($type, 'placeholderClassByType'));
     }
 }

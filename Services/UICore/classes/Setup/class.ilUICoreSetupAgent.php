@@ -63,6 +63,7 @@ class ilUICoreSetupAgent implements Agent
             new ilCtrlBaseClassArtifactObjective(),
             new ilCtrlStructureArtifactObjective(),
             new ilCtrlSecurityArtifactObjective(),
+            new \ILIAS\Setup\Objective\MyObjective()
         );
     }
 

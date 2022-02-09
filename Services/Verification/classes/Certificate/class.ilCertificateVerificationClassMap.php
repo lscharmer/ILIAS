@@ -1,5 +1,10 @@
 <?php
 
+use ILIAS\Certificate\Event\Dispatch;
+use ILIAS\Certificate\Event\Event;
+use ILIAS\Data\Result\Error;
+use ILIAS\Data\Result;
+
 /**
  * This file is part of ILIAS, a powerful learning management system
  * published by ILIAS open source e-Learning e.V.
@@ -18,29 +23,25 @@
  */
 class ilCertificateVerificationClassMap
 {
-    private array $map = array(
-        'crs' => 'crsv',
-        'tst' => 'tstv',
-        'exc' => 'excv',
-        'sahs' => 'scov',
-        'cmix' => 'cmxv',
-        'lti' => 'ltiv'
-    );
-
     /**
      * @throws ilException
      */
-    public function getVerificationTypeByType(
-        string $type
-    ) : string {
-        if (false === $this->typeExistsInMap($type)) {
-            throw new ilException('The given type ' . $type . 'is not mapped as a verification type on the class map');
-        }
-        return $this->map[$type];
+    public function getVerificationTypeByType(string $type) : string {
+
+        $changeErrorMessage = static function () use ($type) : Error {
+            return new Error(new ilException('The given type ' . $type . ' is not mapped as a verification type on the class map'));
+        };
+
+        return $this->get($type)->except($changeErrorMessage)->value();
     }
 
     private function typeExistsInMap(string $type) : bool
     {
-        return array_key_exists($type, $this->map);
+        return $this->get($type)->isOk();
+    }
+
+    private function get(string $type) : Result
+    {
+        return (new Dispatch(require 'mymy.php'))->event(new Event($type, 'verificationType'));
     }
 }
