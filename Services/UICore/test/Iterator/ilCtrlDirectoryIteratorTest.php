@@ -11,7 +11,7 @@ class ilCtrlDirectoryIteratorTest extends TestCase
 {
     public function testDirectoryIteratorWithValidDirectory() : void
     {
-        $gui_dir  = realpath(__DIR__ . '/../Data/GUI');
+        $gui_dir = realpath(__DIR__ . '/../Data/GUI');
         $iterator = new ilCtrlDirectoryIterator($gui_dir);
 
         $expected_iterator_values = [
@@ -21,7 +21,7 @@ class ilCtrlDirectoryIteratorTest extends TestCase
             $gui_dir . '/class.ilCtrlCommandClass2TestGUI.php',
         ];
 
-        $expected_iterator_keys   = [
+        $expected_iterator_keys = [
             'ilCtrlBaseClass1TestGUI',
             'ilCtrlBaseClass2TestGUI',
             'ilCtrlCommandClass1TestGUI',
@@ -49,7 +49,7 @@ class ilCtrlDirectoryIteratorTest extends TestCase
     public function testDirectoryIteratorWithEmptyDirectory() : void
     {
         $empty_dir = __DIR__ . '/../Data/EmptyDirectory';
-        $iterator  = new ilCtrlDirectoryIterator($empty_dir);
+        $iterator = new ilCtrlDirectoryIterator($empty_dir);
 
         $this->assertFalse($iterator->valid());
         $this->assertNull($iterator->current());
