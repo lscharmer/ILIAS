@@ -216,6 +216,7 @@ class ilObjDashboardSettingsGUI extends ilObjectGUI
         $side_panel = $this->side_panel_settings;
         
         if (!$ilAccess->checkAccess('write', '', $this->object->getRefId())) {
+            ilUtil::sendFailure($this->lng->txt('no_permission'), true);
             $ilCtrl->redirect($this, "editSettings");
         }
 
@@ -404,6 +405,11 @@ class ilObjDashboardSettingsGUI extends ilObjectGUI
         $request = $this->request;
         $lng = $this->lng;
         $ctrl = $this->ctrl;
+
+        if (!$this->access->checkAccess('write', '', $this->object->getRefId())) {
+            ilUtil::sendFailure($lng->txt('no_permission'), true);
+            $ctrl->redirect($this, $redirect_cmd);
+        }
 
         $form = $this->getViewSettingsForm($view);
         $form = $form->withRequest($request);
