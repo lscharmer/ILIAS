@@ -231,6 +231,8 @@ class ilObjChatroomGUI extends ilChatroomObjectGUI
                 }
                 break;
         }
+        ilPreviewGUI::initPreview();
+        $this->addHeaderAction();
     }
 
     /**
