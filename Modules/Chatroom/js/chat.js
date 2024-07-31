@@ -196,173 +196,173 @@
     $.error(`Method ${method} does not exist on jQuery.ilChatList`);
   };
 
-  $.fn.ilChatUserList = function (method) {
-    function getUserRow(user) {
-      let tpl = $('#ilChatUserRowTemplate').html();
-      tpl = tpl.replace(/\[\[USERNAME\]\]/g, user.label);
+  // $.fn.ilChatUserList = function (method) {
+  //   function getUserRow(user) {
+  //     let tpl = $('#ilChatUserRowTemplate').html();
+  //     tpl = tpl.replace(/\[\[USERNAME\]\]/g, user.label);
 
-      tpl = $(tpl.replace(/\[\[INDEX\]\]/g, `${user.type}_${user.id}`));
-      tpl.find('.media-object').attr('src', user.image.src);
+  //     tpl = $(tpl.replace(/\[\[INDEX\]\]/g, `${user.type}_${user.id}`));
+  //     tpl.find('.media-object').attr('src', user.image.src);
 
-      return $(tpl)
-        .addClass(`${user.type}_${user.id}`)
-        .addClass('online_user');
-    }
+  //     return $(tpl)
+  //       .addClass(`${user.type}_${user.id}`)
+  //       .addClass('online_user');
+  //   }
 
-    function getUserActionRow(label, callback) {
-      let tpl = $('#ilChatUserRowAction').html();
+  //   function getUserActionRow(label, callback) {
+  //     let tpl = $('#ilChatUserRowAction').html();
 
-      tpl = $(tpl.replace(/\[\[LABEL\]\]/g, label));
+  //     tpl = $(tpl.replace(/\[\[LABEL\]\]/g, label));
 
-      if ($.isFunction(callback)) {
-        tpl.find('a').on('click', function (e) {
-          e.stopPropagation();
-          e.preventDefault();
-          callback.call($(this).closest('.dropdown-menu').data('ilChat').context);
-        });
-      }
+  //     if ($.isFunction(callback)) {
+  //       tpl.find('a').on('click', function (e) {
+  //         e.stopPropagation();
+  //         e.preventDefault();
+  //         callback.call($(this).closest('.dropdown-menu').data('ilChat').context);
+  //       });
+  //     }
 
-      return tpl;
-    }
+  //     return tpl;
+  //   }
 
-    const methods = {
-      init(menuitems) {
-        $(this).data('ilChatUserList', {
-          _index: {},
-          _menuitems: menuitems,
-        });
-      },
-      add(options) {
-        if ($(this).data('ilChatUserList')._index[`id_${options.id}`]) {
-          if (options.label != undefined) {
-            $(this).data('ilChatUserList')._index[`id_${options.id}`].find('.media-heading').html(options.label);
-          }
-          return $(this);
-        }
+  //   const methods = {
+  //     init(menuitems) {
+  //       $(this).data('ilChatUserList', {
+  //         _index: {},
+  //         _menuitems: menuitems,
+  //       });
+  //     },
+  //     add(options) {
+  //       if ($(this).data('ilChatUserList')._index[`id_${options.id}`]) {
+  //         if (options.label != undefined) {
+  //           $(this).data('ilChatUserList')._index[`id_${options.id}`].find('.media-heading').html(options.label);
+  //         }
+  //         return $(this);
+  //       }
 
-        const line = $(getUserRow(options));
+  //       const line = $(getUserRow(options));
+  //       console.log('oOoOo');
+  //       if (typeof options.hide !== 'undefined' && options.hide == true) {
+  //         line.addClass('hidden_entry');
+  //       }
 
-        if (typeof options.hide !== 'undefined' && options.hide == true) {
-          line.addClass('hidden_entry');
-        }
+  //       line.data('ilChatUserList', options);
 
-        line.data('ilChatUserList', options);
+  //       const $this = $(this);
 
-        const $this = $(this);
+  //       $this.data('ilChatUserList')._index[`id_${options.id}`] = line;
 
-        $this.data('ilChatUserList')._index[`id_${options.id}`] = line;
+  //       if (il.Chatroom.getUserInfo().id == options.id) {
+  //         line.addClass('self');
+  //       }
 
-        if (il.Chatroom.getUserInfo().id == options.id) {
-          line.addClass('self');
-        }
+  //       const menu = line.find('.dropdown-menu');
 
-        const menu = line.find('.dropdown-menu');
+  //       menu.find('li').remove();
+  //       $.each($this.data('ilChatUserList')._menuitems, function (i) {
+  //         if (this.permission == undefined) {
+  //           menu.append(function (row) {
+  //             if (i === 0) {
+  //               row.find('.arrow-down').removeClass('ilNoDisplay');
+  //             }
+  //             return row;
+  //           }(getUserActionRow(this.label, this.callback)));
+  //         } else if (
+  //           (il.Chatroom.getUserInfo().moderator && inArray(this.permission, 'moderator') >= 0)
+  //       					|| (il.Chatroom.getUserInfo().id == data.owner && inArray(this.permission, 'owner') >= 0)
+  //         ) {
+  //           menu.append(function (row) {
+  //             if (i === 0) {
+  //               row.find('.arrow-down').removeClass('ilNoDisplay');
+  //             }
+  //             return row;
+  //           }(getUserActionRow(this.label, this.callback)));
+  //         }
+  //       });
+  //       menu.data('ilChat', {
+  //         context: line.data('ilChatUserList'),
+  //       });
 
-        menu.find('li').remove();
-        $.each($this.data('ilChatUserList')._menuitems, function (i) {
-          if (this.permission == undefined) {
-            menu.append(function (row) {
-              if (i === 0) {
-                row.find('.arrow-down').removeClass('ilNoDisplay');
-              }
-              return row;
-            }(getUserActionRow(this.label, this.callback)));
-          } else if (
-            (il.Chatroom.getUserInfo().moderator && inArray(this.permission, 'moderator') >= 0)
-						|| (il.Chatroom.getUserInfo().id == data.owner && inArray(this.permission, 'owner') >= 0)
-          ) {
-            menu.append(function (row) {
-              if (i === 0) {
-                row.find('.arrow-down').removeClass('ilNoDisplay');
-              }
-              return row;
-            }(getUserActionRow(this.label, this.callback)));
-          }
-        });
-        menu.data('ilChat', {
-          context: line.data('ilChatUserList'),
-        });
+  //       $(this).append(line);
 
-        $(this).append(line);
+  //       if (line.hasClass('hidden_entry')) {
+  //         line.hide();
+  //       }
 
-        if (line.hasClass('hidden_entry')) {
-          line.hide();
-        }
+  //       if ($('.online_user:visible').length == 0) {
+  //         $('.no_users').show();
+  //       } else {
+  //         $('.no_users').hide();
+  //       }
 
-        if ($('.online_user:visible').length == 0) {
-          $('.no_users').show();
-        } else {
-          $('.no_users').hide();
-        }
+  //       return $(this).ilChatUserList('sort');
+  //     },
+  //     sort() {
+  //       const tmp = [];
 
-        return $(this).ilChatUserList('sort');
-      },
-      sort() {
-        const tmp = [];
+  //       $.each($(this).data('ilChatUserList')._index, function (i) {
+  //         tmp.push({ id: i, data: this });
+  //       });
 
-        $.each($(this).data('ilChatUserList')._index, function (i) {
-          tmp.push({ id: i, data: this });
-        });
+  //       tmp.sort((a, b) => ((a.data.data('ilChatUserList').label < b.data.data('ilChatUserList').label) ? -1 : 1));
 
-        tmp.sort((a, b) => ((a.data.data('ilChatUserList').label < b.data.data('ilChatUserList').label) ? -1 : 1));
+  //       for (let i = 0; i < tmp.length; ++i) {
+  //         $(this).append(tmp[i].data);
+  //       }
 
-        for (let i = 0; i < tmp.length; ++i) {
-          $(this).append(tmp[i].data);
-        }
+  //       return $(this);
+  //     },
+  //     removeById(id) {
+  //       const line = $(this).data('ilChatUserList')._index[`id_${id}`];
+  //       if (line) {
+  //         const data = line.data('ilChatUserList');
+  //         $(`.${data.type}_${id}`).remove();
+  //         if ($('.online_user:visible').length == 0) {
+  //           $('.no_users').show();
+  //         } else {
+  //           $('.no_users').hide();
+  //         }
+  //         delete $(this).data('ilChatUserList')._index[`id_${id}`];
+  //       }
+  //       return $(this);
+  //     },
+  //     getDataById(id) {
+  //       return $(this).data('ilChatUserList')._index[`id_${id}`] ? $(this).data('ilChatUserList')._index[`id_${id}`].data('ilChatUserList') : undefined;
+  //     },
+  //     setNewEvents(newEvents) {
+  //       const data = $(this).data('ilChatUserList')._index.id_0.data('ilChatUserList');
+  //       if (data) {
+  //         data.new_events = newEvents;
+  //       }
+  //     },
+  //     getAll() {
+  //       const result = [];
 
-        return $(this);
-      },
-      removeById(id) {
-        const line = $(this).data('ilChatUserList')._index[`id_${id}`];
-        if (line) {
-          const data = line.data('ilChatUserList');
-          $(`.${data.type}_${id}`).remove();
-          if ($('.online_user:visible').length == 0) {
-            $('.no_users').show();
-          } else {
-            $('.no_users').hide();
-          }
-          delete $(this).data('ilChatUserList')._index[`id_${id}`];
-        }
-        return $(this);
-      },
-      getDataById(id) {
-        return $(this).data('ilChatUserList')._index[`id_${id}`] ? $(this).data('ilChatUserList')._index[`id_${id}`].data('ilChatUserList') : undefined;
-      },
-      setNewEvents(newEvents) {
-        const data = $(this).data('ilChatUserList')._index.id_0.data('ilChatUserList');
-        if (data) {
-          data.new_events = newEvents;
-        }
-      },
-      getAll() {
-        const result = [];
+  //       $.each($(this).data('ilChatUserList')._index, function () {
+  //         result.push(this.data('ilChatUserList'));
+  //       });
 
-        $.each($(this).data('ilChatUserList')._index, function () {
-          result.push(this.data('ilChatUserList'));
-        });
+  //       result.sort((a, b) => ((a.label < b.label) ? -1 : 1));
 
-        result.sort((a, b) => ((a.label < b.label) ? -1 : 1));
+  //       return result;
+  //     },
+  //     clear() {
+  //       $('#chat_users').find('div').remove();
 
-        return result;
-      },
-      clear() {
-        $('#chat_users').find('div').remove();
+  //       $(this).data('ilChatUserList', {
+  //         _index: {},
+  //         _menuitems: $(this).data('ilChatUserList')._menuitems,
+  //       });
+  //     },
+  //   };
 
-        $(this).data('ilChatUserList', {
-          _index: {},
-          _menuitems: $(this).data('ilChatUserList')._menuitems,
-        });
-      },
-    };
-
-    if (methods[method]) {
-      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-    } if (typeof method === 'object' || !method) {
-      return methods.init.apply(this, arguments);
-    }
-    $.error(`Method ${method} does not exist on jQuery.ilChatUserList`);
-  };
+  //   if (methods[method]) {
+  //     return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+  //   } if (typeof method === 'object' || !method) {
+  //     return methods.init.apply(this, arguments);
+  //   }
+  //   $.error(`Method ${method} does not exist on jQuery.ilChatUserList`);
+  // };
 
   $.fn.ilChatList = function (method) {
     function getMenuLine(label, callback) {

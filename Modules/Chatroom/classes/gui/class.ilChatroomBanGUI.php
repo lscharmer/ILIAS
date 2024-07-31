@@ -137,6 +137,6 @@ class ilChatroomBanGUI extends ilChatroomGUIHandler
             $room->disconnectUser($userToBan);
         }
 
-        $this->sendResponse($response);
+        $this->sendResponse($response, true);
     }
 }

@@ -1,20 +1,122 @@
-.chat.messageLine.dateline {
-	background-color: #ECF0F9;
+#chat_users .il-avatar > img {
+    /* width: 41px; */
+    /* height: 41px; */
 }
 
-.chat.messageLine {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	white-space: pre-line;
+#chat_function_list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-.chat.messageLine.noPreLine {
-	white-space: inherit;
+#chat_function_list > * {
+    margin: 0;
+    margin-bottom: 5px;
 }
 
-.chat.messageLine.private {
-    background-color: #FAD8CF;
+.messageContainer .separator {
+    text-align: center;
+    background-color: #f9f9f9;
 }
+
+.hide-system-messages .messageContainer .separator.system-message {
+    display: none;
+}
+
+.messageContainer .separator p {
+    font-size: 0.75rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.messageContainer img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.messageContainer .message-body {
+    display: flex;
+    align-items: center;
+}
+
+.messageContainer .message-body > p {
+    margin: 0 5px;
+}
+
+.messageContainer .message-body > .time-info {
+    color: white;
+    transition: color 0.5s;
+    font-size: smaller;
+}
+
+.messageContainer .message-body > .time-info:hover {
+    color: black;
+}
+
+.messageContainer .messageLine,
+.messageContainer .messageLine .message-header {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.messageContainer .messageLine {
+    flex-direction: column;
+}
+
+.messageContainer .messageLine.myself .message-header,
+.messageContainer .messageLine.myself .message-body {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.messageContainer .messageLine .user {
+    margin: 0 5px;
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.messageContainer .separator:not(:first-child) {
+    margin-top: 10px;
+}
+
+#send-message-group .send-message-form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+#send-message-group .send-message-form textarea {
+    resize: none;
+    border: 1px solid;
+    background: white;
+    height: 25px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+#chat-shadow {
+    height: 0;
+    width: 0;
+}
+
+/* .chat.messageLine.dateline { */
+/* 	background-color: #ECF0F9; */
+/* } */
+
+/* .chat.messageLine { */
+/* 	margin-top: 5px; */
+/* 	margin-bottom: 5px; */
+/* 	white-space: pre-line; */
+/* } */
+
+/* .chat.messageLine.noPreLine { */
+/* 	white-space: inherit; */
+/* } */
+
+/* .chat.messageLine.private { */
+/*     background-color: #FAD8CF; */
+/* } */
 
 .chat.username {
 	/*font-weight: bold;
@@ -187,4 +289,8 @@ h2.current_room_title {
 
 #chat_users button .label {
 	vertical-align: middle !important;
+}
+
+#chat_users .il-item-title {
+	display: inline-block;
 }

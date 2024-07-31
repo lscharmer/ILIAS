@@ -333,7 +333,7 @@ class ilChatroom
         $users = [];
 
         while ($row = $DIC->database()->fetchAssoc($rset)) {
-            $users[] = $only_data ? json_decode($row['userdata'], false, 512, JSON_THROW_ON_ERROR) : $row;
+            $users[] = $only_data ? json_decode($row['userdata'], true, 512, JSON_THROW_ON_ERROR) : $row;
         }
 
         return $users;
@@ -777,6 +777,17 @@ class ilChatroom
         // by sql. So we fetch twice as much as we need and hope that there
         // are not more than $number private messages.
         $DIC->database()->setLimit($number);
+        // echo(
+        //     'SELECT *
+		// 	FROM ' . self::$historyTable . '
+		// 	WHERE room_id = ' . $DIC->database()->quote($this->roomId, ilDBConstants::T_INTEGER) . '
+		// 	AND (
+		// 		(' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"type":"message"%') . ' AND NOT ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"public":0%') . ')
+		//   		OR ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"target":{%"id":"' . $chatuser->getUserId() . '"%') . '
+		// 		OR ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"from":{"id":' . $chatuser->getUserId() . '%') . '
+		// 	)
+		// 	ORDER BY timestamp DESC'
+        // );exit;
         $rset = $DIC->database()->query(
             'SELECT *
 			FROM ' . self::$historyTable . '

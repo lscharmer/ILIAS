@@ -149,6 +149,7 @@ class QuestionTable extends ilAssQuestionList implements Table\DataRetrieval
             'ttype' => $f->text($this->lng->txt('question_type'))->withIsOptional(true, true),
             'points' => $f->number($this->lng->txt('points'))->withIsOptional(true, true),
             'author' => $f->text($this->lng->txt('author'))->withIsOptional(true, true),
+            'aaa' => $f->path('huhu')->withIsOptional(true, true),
             'lifecycle' => $f->text($this->lng->txt('qst_lifecycle'))->withIsOptional(true, true),
             'taxonomies' => $f->text($this->lng->txt('qpl_settings_subtab_taxonomies'))->withIsOptional(true, true),
             'feedback' => $f->boolean($this->lng->txt('feedback'), $icon_yes, $icon_no)->withIsOptional(true, true),
@@ -201,6 +202,7 @@ class QuestionTable extends ilAssQuestionList implements Table\DataRetrieval
             }
 
             $record['taxonomies'] = implode('', $taxonomies);
+            $record['aaa'] = 'Soso';
 
             yield $row_builder->buildDataRow($row_id, $record)
                 ->withDisabledAction('move', $no_write_access)

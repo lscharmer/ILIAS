@@ -56,7 +56,7 @@ class ilChatroomInviteUsersToPrivateRoomGUI extends ilChatroomGUIHandler
         $room->sendInvitationNotification($this->gui, $chat_user, $invited_id);
 
         if ('asynch' === $this->getRequestValue('cmdMode', $this->refinery->kindlyTo()->string())) {
-            $this->sendResponse($response);
+            $this->sendResponse($response, true);
         }
         $this->ilCtrl->redirect($this->gui, 'view');
     }

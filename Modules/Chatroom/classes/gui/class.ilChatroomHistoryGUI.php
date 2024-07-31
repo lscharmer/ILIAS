@@ -114,7 +114,7 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
             $durationForm->setValuesByPost();
         }
 
-        $this->showMessages($messages, $durationForm, $export, $from, $to);
+        $this->showMessages($messages, $durationForm, $export, $from, $to, $room);
     }
 
     private function showMessages(
@@ -122,7 +122,8 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
         ilPropertyFormGUI $durationForm,
         bool $export = false,
         ?ilDateTime $from = null,
-        ?ilDateTime $to = null
+        ?ilDateTime $to = null,
+        $room = null
     ): void {
         $this->redirectIfNoPermission('read');
 
@@ -146,8 +147,9 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
         $num_messages_shown = 0;
         $prev_date_time_presentation = null;
         $prev_date_time = null;
-        foreach ($messages as $message) {
-            switch ($message['message']->type) {
+        if ($export) {
+            foreach ($messages as $message) {
+                switch ($message['message']->type) {
                 case 'message':
                     $message_date = new ilDate($message['timestamp'], IL_CAL_UNIX);
                     $message_date_time = new ilDateTime($message['timestamp'], IL_CAL_UNIX);
@@ -173,6 +175,7 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
 
                     ++$num_messages_shown;
                     break;
+                }
             }
         }
 
@@ -206,6 +209,7 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
         }
 
         if ($export) {
+            echo($roomTpl->get());exit;
             ilUtil::deliverData(
                 $roomTpl->get(),
                 ilFileUtils::getASCIIFilename($scope . '.html'),
@@ -215,6 +219,12 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
 
         $roomTpl->setVariable('PERIOD_FORM', $durationForm->getHTML());
 
+        if ($room && $messages !== []) {
+            $this->mainTpl->addJavaScript('./src/UI/templates/js/Chatroom/dist/Chatroom.min.js');
+            $roomTpl->setVariable('CHAT', (new ilChatroomViewGUI($this->gui))->readOnlyChatWindow($room, array_column($messages, 'message'))->get());
+        } else {
+            $roomTpl->setVariable('CHAT', '');
+        }
         $this->mainTpl->setVariable('ADM_CONTENT', $roomTpl->get());
     }
 

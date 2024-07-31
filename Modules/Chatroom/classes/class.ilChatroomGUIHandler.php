@@ -168,12 +168,12 @@ abstract class ilChatroomGUIHandler
      * Sends a json encoded response and exits the php process
      * @param mixed $response
      */
-    public function sendResponse($response, bool $isJson = false): void
+    public function sendResponse($response, bool $is_encoded = false): void
     {
         $this->http->saveResponse(
             $this->http->response()
                 ->withHeader(ResponseHeader::CONTENT_TYPE, 'application/json')
-                ->withBody(Streams::ofString($isJson ? $response : json_encode($response, JSON_THROW_ON_ERROR)))
+                ->withBody(Streams::ofString($is_encoded ? $response : json_encode($response, JSON_THROW_ON_ERROR)))
         );
         $this->http->sendResponse();
         $this->http->close();

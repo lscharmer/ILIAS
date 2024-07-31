@@ -71,9 +71,9 @@
 }
 
 #chat_users {
-	overflow: auto;
+	overflow: visible;
 	height: 100%;
-	min-height: 300px;
+        background-color: white;
 }
 
 #private_rooms {
@@ -86,6 +86,11 @@ td.chatroom {
 	height: auto;
 }
 
+#chat_users .dropdown-menu {
+    left: unset;
+    right: 0;
+}
+
 .ilChatroomUser {
 	border-bottom: 1px solid #e9e9e9;
 
@@ -96,6 +101,10 @@ td.chatroom {
 	.media-body {
 		padding-top: 8px;
 	}
+
+        .media-object {
+            border-radius: 50%;
+        }
 
 	.media-body h4, .media-body p {
 		color: $il-text-light-color;
@@ -118,6 +127,14 @@ td.chatroom {
 		padding: 10px 0;
 		font-size: $il-font-size-small;
 	}
+
+        .ilChatroomDropdown {
+            position: relative;
+
+            .dropdown-menu {
+                position: absolute;
+            }
+        }
 
 	.dropdown-menu a {
 		color: $il-text-color;
@@ -152,6 +169,7 @@ td.chatroom {
 	}
 
 	.media {
+		overflow: visible;
 		padding: 0;
 	}
 
