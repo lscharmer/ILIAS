@@ -83,4 +83,21 @@ class UpdateSteps implements ilDatabaseUpdateSteps
             ['chtr']
         );
     }
+
+    public function step_5(): void
+    {
+        $replace = [
+            '&lt;' => '<',
+            '&gt;' => '>',
+            '&amp;' => '&',
+            '&quot;' => '"',
+        ];
+
+        $s = 'json_value(message, "$.content")';
+        foreach ($replace as $from => $to) {
+            $s = sprintf('replace(%s, %s, %s)', $s, $this->db->quote($from, ilDBConstants::T_TEXT), $this->db->quote($to, ilDBConstants::T_TEXT));
+        }
+
+        $this->db->manipulate('update chatroom_history set message = json_set(message, "$.content", ' . $s . ') where json_value(message, "$.type") = "message"');
+    }
 }

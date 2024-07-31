@@ -788,16 +788,18 @@ class ilChatroom
 		// 	)
 		// 	ORDER BY timestamp DESC'
         // );exit;
-        $rset = $DIC->database()->query(
+        $rset = $DIC->database()->queryF(
             'SELECT *
 			FROM ' . self::$historyTable . '
-			WHERE room_id = ' . $DIC->database()->quote($this->roomId, ilDBConstants::T_INTEGER) . '
+			WHERE room_id = %s
 			AND (
-				(' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"type":"message"%') . ' AND NOT ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"public":0%') . ')
-		  		OR ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"target":{%"id":"' . $chatuser->getUserId() . '"%') . '
-				OR ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%"from":{"id":' . $chatuser->getUserId() . '%') . '
+				(json_value(message, "$.type") = "message" AND NOT json_value(message, "$.target.public") = 0)
+		  		OR json_value(message, "$.target.id") = %s
+				OR json_value(message, "$.from.id") = %s
 			)
-			ORDER BY timestamp DESC'
+			ORDER BY timestamp DESC',
+            [ilDBConstants::T_INTEGER, ilDBConstants::T_INTEGER, ilDBConstants::T_INTEGER],
+            [$this->roomId, $chatuser->getUserId(), $chatuser->getUserId()]
         );
 
         $result_count = 0;
@@ -820,7 +822,7 @@ class ilChatroom
                 'SELECT *
                  FROM ' . self::$historyTable . '
                  WHERE room_id = %s
-                 AND ' . $DIC->database()->like('message', ilDBConstants::T_TEXT, '%%"type":"notice"%%') . '
+                 AND json_value(message, "$.type") = "notice"
                  AND timestamp <= %s AND timestamp >= %s
                  ORDER BY timestamp DESC',
                 [ilDBConstants::T_INTEGER, ilDBConstants::T_INTEGER, ilDBConstants::T_INTEGER],

@@ -186,8 +186,7 @@ function actualMessage(message)
 {
   const messageSpan = createDiv([], 'p');
   // const messageSpan = createDiv(['chat', 'content', 'message'], 'span');
-  // messageSpan.textContent = message.content;
-  messageSpan.innerHTML = message.content;
+  messageSpan.textContent = message.content;
   il.ExtLink.autolink(messageSpan);
 
   return messageSpan;
