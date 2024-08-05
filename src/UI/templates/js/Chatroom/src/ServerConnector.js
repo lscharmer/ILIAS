@@ -33,7 +33,7 @@ export default class ServerConnector {
 
     this.#socket.on('message', this.#onMessage.bind(this));
     this.#socket.on('connect', () => {
-      this.#socket.emit('login', this.#user.login, this.#user.id);
+      this.#socket.emit('login', this.#user.login, this.#user.id, this.#user.profile_picture_visible);
     });
     this.#socket.on('user_invited', this.#onUserInvited.bind(this));
     this.#socket.on('private_room_entered', this.#onPrivateRoomEntered.bind(this));
@@ -143,11 +143,12 @@ export default class ServerConnector {
   };
 
   #onConnected (messageObject) {
+    console.log('connected', messageObject.users);
     Object.values(messageObject.users).forEach(function (v) {
       let data = {
         id: v.id,
-        label: v.login,
-        type: 'user',
+        username: v.login,
+        profile_picture_visible: v.profile_picture_visible,
       };
 
         this.#userList.add(data);
@@ -267,9 +268,8 @@ export default class ServerConnector {
     this.#userList.setAll(Object.fromEntries(Object.values(users).map(otherUser => {
       const chatUser = {
         id: otherUser.id,
-        label: otherUser.username,
-        type: 'user',
-        hide: otherUser.id == this.#user.id,
+        username: otherUser.username,
+        profile_picture_visible: otherUser.profile_picture_visible,
       };
 
       return [chatUser.id, chatUser];

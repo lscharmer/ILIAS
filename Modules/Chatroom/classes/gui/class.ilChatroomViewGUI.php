@@ -41,12 +41,14 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
         $chat_user = new ilChatroomUser($this->ilUser, $room);
         $failure = true;
         $username = '';
+        $custom_username = false;
 
         if ($this->hasRequestValue('custom_username_radio')) {
             if (
                 $this->hasRequestValue('custom_username_text') &&
                 $this->getRequestValue('custom_username_radio', $this->refinery->kindlyTo()->string()) === 'custom_username'
             ) {
+                $custom_username = true;
                 $username = $this->getRequestValue('custom_username_text', $this->refinery->kindlyTo()->string());
                 $failure = false;
             } elseif (
@@ -65,6 +67,7 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
         if (!$failure && trim($username) !== '') {
             if (!$room->isSubscribed($chat_user->getUserId())) {
                 $chat_user->setUsername($chat_user->buildUniqueUsername($username));
+                $chat_user->setProfilePictureVisible(!$custom_username);
             }
 
             $this->showRoom($room, $chat_user);
@@ -150,6 +153,7 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
                 'id' => $chat_user->getUserId(),
                 'login' => $chat_user->getUsername(),
                 'broadcast_typing' => $chat_user->enabledBroadcastTyping(),
+                'profile_picture_visible' => $chat_user->isProfilePictureVisible(),
             ],
             $messages
         ), $this->panel($this->ilLng->txt('write_message'), $this->sendMessageForm()), $this->panel($this->ilLng->txt('messages'), $this->legacy('<div id="chat_messages"></div>')));
@@ -160,7 +164,7 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
         $this->mainTpl->setRightContent($this->userList() . $this->chatFunctions($show_auto_messages, $is_moderator));
     }
 
-    public function readOnlyChatWindow($room, array $messages): ilTemplate
+    public function readOnlyChatWindow(ilChatroom $room, array $messages): ilTemplate
     {
         $build = $this->buildChat($room, $this->gui->getConnector()->getSettings());
 
@@ -193,7 +197,7 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
         $txt = $this->ilLng->txt(...);
         $js_escape = json_encode(...);
         $format = fn($format, ...$args) => sprintf($format, ...array_map($js_escape, $args));
-        $register = fn($name, $x) => $x->withOnLoadCode(fn($id) => $format(
+        $register = fn($name, $c) => $c->withOnLoadCode(fn($id) => $format(
             'il.Chatroom.bus.send(%s, document.getElementById(%s));',
             $name,
             $id
@@ -391,63 +395,38 @@ class ilChatroomViewGUI extends ilChatroomGUIHandler
 
         $response = [];
 
-        $usr_ids = null;
-        if ($this->hasRequestValue('usr_ids')) {
-            $usr_ids = $this->getRequestValue('usr_ids', $this->refinery->kindlyTo()->string());
-        }
-        if (null === $usr_ids || '' === $usr_ids) {
-            $this->sendResponse($response);
-        }
-
-        $this->ilLng->loadLanguageModule('user');
+        $request = json_decode($DIC->http()->request()->getBody()->getContents(), true);
 
         ilWACSignedPath::setTokenMaxLifetimeInSeconds(30);
 
-        $user_ids = array_filter(array_map('intval', array_map('trim', explode(',', (string) $usr_ids))));
+        $profiles = $DIC->refinery()->kindlyTo()->listOf($DIC->refinery()->byTrying([
+            $DIC->refinery()->kindlyTo()->recordOf([
+                'id' => $DIC->refinery()->kindlyTo()->int(),
+                'username' => $DIC->refinery()->kindlyTo()->string(),
+                'profile_picture_visible' => $DIC->refinery()->kindlyTo()->bool(),
+            ]),
+            $DIC->refinery()->kindlyTo()->recordOf([
+                'id' => $DIC->refinery()->kindlyTo()->int(),
+                'username' => $DIC->refinery()->kindlyTo()->string(),
+            ]),
+        ]))->transform($request['profiles'] ?? []);
 
-        $room = ilChatroom::byObjectId($this->gui->getObject()->getId());
-        $chatRoomUserDetails = ilChatroomUser::getUserInformation($user_ids, $room->getRoomId());
-        $chatRoomUserDetailsByUsrId = array_combine(
-            array_map(
-                static function (stdClass $userData): int {
-                    return (int) $userData->id;
-                },
-                $chatRoomUserDetails
-            ),
-            $chatRoomUserDetails
-        );
+        $user_ids = array_column($profiles, 'id');
 
         $public_data = ilUserUtil::getNamePresentation($user_ids, true, false, '', false, true, false, true);
-        $public_names = ilUserUtil::getNamePresentation($user_ids, false, false, '', false, true, false, false);
 
-        foreach ($user_ids as $usr_id) {
-            if (!array_key_exists($usr_id, $chatRoomUserDetailsByUsrId)) {
-                continue;
-            }
-
-            if ($room->getSetting('allow_custom_usernames')) {
+        foreach ($profiles as $profile) {
+            if ($profile['profile_picture_visible'] ?? false) {
+                $public_image = $public_data[$profile['id']]['img'] ?? '';
+            } else {
                 /** @var ilUserAvatar $avatar */
                 $avatar = $DIC["user.avatar.factory"]->avatar('xsmall');
                 $avatar->setUsrId(ANONYMOUS_USER_ID);
-                $avatar->setName(ilStr::subStr($chatRoomUserDetailsByUsrId[$usr_id]->login, 0, 2));
-
-                $public_name = $chatRoomUserDetailsByUsrId[$usr_id]->login;
+                $avatar->setName(ilStr::subStr($profile['username'], 0, 2));
                 $public_image = $avatar->getUrl();
-            } else {
-                $public_image = $public_data[$usr_id]['img'] ?? '';
-                $public_name = '';
-                if (isset($public_names[$usr_id])) {
-                    $public_name = $public_names[$usr_id];
-                    if (isset($public_data[$usr_id]['login']) && 'unknown' === $public_name) {
-                        $public_name = $public_data[$usr_id]['login'];
-                    }
-                }
             }
 
-            $response[$usr_id] = [
-                'public_name' => $public_name,
-                'profile_image' => $public_image,
-            ];
+            $response[json_encode($profile)] = $public_image;
         }
 
         $this->sendResponse($response);

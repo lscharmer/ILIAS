@@ -220,6 +220,7 @@ class ilChatroomHistoryGUI extends ilChatroomGUIHandler
         $roomTpl->setVariable('PERIOD_FORM', $durationForm->getHTML());
 
         if ($room && $messages !== []) {
+            $this->mainTpl->addJavaScript('Modules/Chatroom/chat/node_modules/socket.io-client/dist/socket.io.js');
             $this->mainTpl->addJavaScript('./src/UI/templates/js/Chatroom/dist/Chatroom.min.js');
             $roomTpl->setVariable('CHAT', (new ilChatroomViewGUI($this->gui))->readOnlyChatWindow($room, array_column($messages, 'message'))->get());
         } else {

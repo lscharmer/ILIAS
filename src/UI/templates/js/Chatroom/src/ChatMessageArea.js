@@ -52,7 +52,7 @@ export default class ChatMessageArea {
           line.classList.add('myself');
         }
 
-        if (this.#lastUser && this.#lastUser.id === message.from.id) {
+        if (this.#lastUser && this.#lastUser.id === message.from.id && this.#lastUser.username === message.from.username) {
           this.#lastUser.node.appendChild(m);
           setUser(this.#lastUser);
         } else {
@@ -61,7 +61,7 @@ export default class ChatMessageArea {
           line.appendChild(m);
           // line.appendChild(body);
           this.#pane.appendChild(line);
-          setUser({id: message.from.id, node: line});
+          setUser({...message.from, node: line});
         }
       },
       connected: fallback,
@@ -168,12 +168,12 @@ function messageHeader(message, profileImageLoader, formatTime)
   const dateFlag = createDiv(['user'], 'span');
   const userFlag = createDiv(['user'], 'span');
   const img = createDiv([], 'img');
-  const user = profileImageLoader.imageOfUser(message.from.id).then(Reflect.set.bind(null, img, 'src'));
   const header = createDiv(['message-header']); // oa
 
   dateFlag.textContent = formatTime(message.timestamp);
   userFlag.textContent = message.from.username;
   img.src = profileImageLoader.defaultImage();
+  profileImageLoader.imageOfUser(message.from).then(Reflect.set.bind(null, img, 'src'));
 
   header.appendChild(img);
   header.appendChild(userFlag);

@@ -4,6 +4,7 @@
 export default class ChatUsers {
   #anchor;
   #template;
+  #isSelf;
   #profileImageLoader;
   #emptyMessage;
   #users;
@@ -15,9 +16,10 @@ export default class ChatUsers {
    * @param {string} template
    * @param {ProfileImageLoader} profileImageLoader
    */
-  constructor (anchor, template, profileImageLoader, userActions) {
+  constructor (anchor, template, isSelf, profileImageLoader, userActions) {
     this.#anchor = anchor;
     this.#template = template;
+    this.#isSelf = isSelf;
     this.#profileImageLoader = profileImageLoader;
     this.#emptyMessage = anchor && anchor.querySelector('.no_users');
     this.#users = {};
@@ -36,7 +38,7 @@ export default class ChatUsers {
     }
 
     const node = this.#buildUserEntry(user);
-    if (!user.hide) {
+    if (!this.#isSelf(user.id)) {
       this.#visibleUsers.push(String(user.id));
     }
     this.#anchor.appendChild(node);
@@ -108,14 +110,14 @@ export default class ChatUsers {
     const node = new DOMParser().parseFromString(this.#template, 'text/html').body.firstChild;
     const username = node.querySelector('[data-placeholder=USERNAME]');
     const img = node.querySelector('img');
-    username.parentNode.replaceChild(document.createTextNode(user.label), username);
+    username.parentNode.replaceChild(document.createTextNode(user.username), username);
 
     img.setAttribute('src', this.#profileImageLoader.defaultImage());
-    this.#profileImageLoader.imageOfUser(user.id).then(img.setAttribute.bind(img, 'src'));
+    this.#profileImageLoader.imageOfUser(user).then(img.setAttribute.bind(img, 'src'));
 
     // node.classList.add(`${user.type}_${user.id}`);
     // node.classList.add('online_user');
-    if (user.hide) {
+    if (this.#isSelf(user.id)) {
       node.classList.add('ilNoDisplay');
     }
 

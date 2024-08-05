@@ -294,7 +294,8 @@ class ilChatroom
 
         $userdata = [
             'login' => $user->getUsername(),
-            'id' => $user->getUserId()
+            'id' => $user->getUserId(),
+            'profile_picture_visible' => $user->isProfilePictureVisible(),
         ];
 
         $query = 'SELECT user_id FROM ' . self::$userTable . ' WHERE room_id = %s AND user_id = %s';
@@ -793,7 +794,7 @@ class ilChatroom
 			FROM ' . self::$historyTable . '
 			WHERE room_id = %s
 			AND (
-				(json_value(message, "$.type") = "message" AND NOT json_value(message, "$.target.public") = 0)
+				(json_value(message, "$.type") = "message" AND (NOT JSON_CONTAINS_PATH(message, "one", "$.target.public") OR json_value(message, "$.target.public") <> 0))
 		  		OR json_value(message, "$.target.id") = %s
 				OR json_value(message, "$.from.id") = %s
 			)

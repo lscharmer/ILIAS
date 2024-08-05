@@ -28,6 +28,7 @@ const setup = options => {
   const chatUsers = new ChatUsers(
     nodeById('chat_users'),
     (nodeById('ilChatUserRowTemplate') || {}).innerHTML,
+    id => id === options.initial.userinfo.id,
     profileLoader,
     filterAllowedActions(
       ChatUsers.actionList(txt, iliasConnector, confirmModal, userId => startConversation(userList, userId)),
@@ -126,9 +127,8 @@ const clearHistory = (confirmModal, iliasConnector, txt) => confirmModal('clear-
 const popuplateInitialUserList = (userList, initial) => userList.setAll(Object.fromEntries(initial.users.map(user => {
   const tmp = {
     id: user.id,
-    label: user.login,
-    type: 'user',
-    hide: user.id == initial.userinfo.id,
+    username: user.login,
+    profile_picture_visible: user.profile_picture_visible,
   };
   return [tmp.id, tmp];
 })));
