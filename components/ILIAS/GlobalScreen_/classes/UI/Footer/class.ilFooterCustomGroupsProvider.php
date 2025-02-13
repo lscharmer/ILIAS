@@ -82,6 +82,25 @@ final class ilFooterCustomGroupsProvider extends AbstractStaticFooterProvider
     {
         $entries = [];
 
+        $entries[] = $this->item_factory->modal(
+            $this->id_factory->identifier('foo'),
+            'You cannot hide me!',
+            $this->dic->ui()->factory()->modal()->roundtrip(
+                'Huhu',
+                $this->dic->ui()->factory()->legacy('Dummy content')
+            )
+        )->withParent(
+            (new \ilFooterStandardGroupsProvider($this->dic))->getIdentificationFor(ilFooterStandardGroups::LEGAL_INFORMATION)
+        )->withVisibilityCallable(fn() => false)->withAvailableCallable(fn() => false); // <--- These have no effect. The element is still rendered.
+
+        $entries[] = $this->item_factory->link(
+                $this->id_factory->identifier('bar'),
+                'I will always be shown!',
+            )->withAction(new \ILIAS\Data\URI('https://www.ilias.de')
+            )->withParent(
+                (new \ilFooterStandardGroupsProvider($this->dic))->getIdentificationFor(ilFooterStandardGroups::ACCESSIBILITY)
+            )->withVisibilityCallable(fn() => false)->withAvailableCallable(fn() => false); // <--- These have no effect. The element is still rendered.
+
         foreach ($this->entries_repository->all() as $entry) {
             if ($entry->isCore()) {
                 continue;
