@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class ilStudyProgrammeMembersTableGUI extends ilTable2GUI
 {

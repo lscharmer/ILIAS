@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\GlobalScreen\Scope\MetaBar\Factory;
 
-use ILIAS\Data\LanguageTag;
+use ILIAS\Refinery\Data\LanguageTag;
 
 trait LanguageForTargetedResource
 {

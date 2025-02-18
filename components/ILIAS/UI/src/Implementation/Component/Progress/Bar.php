@@ -26,7 +26,7 @@ use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\UI\Implementation\Component\Triggerer;
 use ILIAS\UI\Component\Progress;
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Thibeau Fuhrer <thibeau@sr.solutions>

@@ -24,7 +24,7 @@ use ILIAS\UI\Component as C;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\UI\Implementation\Component\HasContentLanguage;
 use ILIAS\UI\Implementation\Component\HasHelpTopics;
-use ILIAS\Data\LanguageTag;
+use ILIAS\Refinery\Data\LanguageTag;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
 
 /**

@@ -24,8 +24,8 @@ require_once(__DIR__ . "/../../../Base.php");
 use ILIAS\UI\Implementation\Component\Input\Field\FormInput;
 use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Component\Input\InputData;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\Factory as Refinery;
 

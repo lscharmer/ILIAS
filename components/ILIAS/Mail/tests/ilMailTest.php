@@ -23,7 +23,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 use ILIAS\Mail\Autoresponder\AutoresponderService;
 use ILIAS\LegalDocuments\Conductor;
 use ILIAS\Refinery\Transformation;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\Mail\Service\MailSignatureService;
 
 /**

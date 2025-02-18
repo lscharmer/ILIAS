@@ -24,7 +24,7 @@ use ILIAS\UI\Component\Table\Ordering;
 use ilBiblAdminFieldGUI;
 use ilBiblTranslationGUI;
 use ILIAS\Bibliographic\Field\DataRetrieval;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
 

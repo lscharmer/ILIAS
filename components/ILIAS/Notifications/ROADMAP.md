@@ -6,7 +6,7 @@ Atm the notification mail channel is always acitvated and not configurable via U
 It should have its own checkbox within the notification administration.
 
 * Get rid of time dependency in `\ILIAS\Notifications\Repository\ilNotificationOSDRepository`
-  and `\ILIAS\Notifications\ilNotificationDatabaseHandler`, use `\ILIAS\Data\Clock\ClockFactory` interface instead
+  and `\ILIAS\Notifications\ilNotificationDatabaseHandler`, use `\ILIAS\Refinery\Data\Clock\ClockFactory` interface instead
 
 ### Update of Toast Interface
 

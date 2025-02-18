@@ -21,10 +21,10 @@ declare(strict_types=1);
 namespace ILIAS\MetaData\XML\Copyright\Links;
 
 use ILIAS\StaticURL\Services as URLService;
-use ILIAS\Data\URI;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\URI;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\Export\ExportHandler\Factory as ExportService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class LinkGenerator implements LinkGeneratorInterface
 {

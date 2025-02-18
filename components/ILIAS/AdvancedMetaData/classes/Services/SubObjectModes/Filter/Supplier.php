@@ -22,7 +22,7 @@ namespace ILIAS\AdvancedMetaData\Services\SubObjectModes\Filter;
 
 use ILIAS\UI\Component\Input\Container\Filter\FilterInput;
 use ILIAS\UI\Factory as UIFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\AdvancedMetaData\Services\SubObjectIDInterface;
 use ILIAS\StaticURL\Services as StaticURL;
 use ILIAS\AdvancedMetaData\Services\Constants;

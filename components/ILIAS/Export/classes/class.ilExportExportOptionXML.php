@@ -18,9 +18,9 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\Factory as ilDataFactory;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\Factory as ilDataFactory;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\DI\Container;
 use ILIAS\Export\ExportHandler\I\Table\RowId\HandlerInterface as ilExportHandlerTableRowIdInterface;
 use ILIAS\StaticURL\Context as ilStaticURLContext;

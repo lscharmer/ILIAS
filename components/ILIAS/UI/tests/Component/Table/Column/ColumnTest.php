@@ -101,7 +101,7 @@ class ColumnTest extends ILIAS_UI_TestBase
 
     public function testDataTableColumnDateFormat(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         $format = $df->dateFormat()->germanShort();
         $dat = new \DateTimeImmutable();
         $col = new Column\Date($this->lng, 'col', $format);
@@ -110,7 +110,7 @@ class ColumnTest extends ILIAS_UI_TestBase
 
     public function testDataTableColumnTimespanFormat(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         $format = $df->dateFormat()->germanShort();
         $dat = new \DateTimeImmutable();
         $col = new Column\TimeSpan($this->lng, 'col', $format);
@@ -122,7 +122,7 @@ class ColumnTest extends ILIAS_UI_TestBase
 
     public function testDataTableColumnNumnberFormat(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         $dat = new \DateTimeImmutable();
         $col = new Column\Number($this->lng, 'col');
         $this->assertEquals('1', $col->format(1));

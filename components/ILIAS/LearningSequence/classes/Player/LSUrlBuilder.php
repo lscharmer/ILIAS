@@ -25,14 +25,14 @@ class LSUrlBuilder implements URLBuilder
     public const PARAM_LSO_COMMAND = 'lsocmd';
     public const PARAM_LSO_PARAMETER = 'lsov';
 
-    protected ILIAS\Data\URI $base_url;
+    protected ILIAS\Refinery\Data\URI $base_url;
 
-    public function __construct(ILIAS\Data\URI $base_url)
+    public function __construct(ILIAS\Refinery\Data\URI $base_url)
     {
         $this->base_url = $base_url;
     }
 
-    public function getURL(string $command, ?int $param = null): ILIAS\Data\URI
+    public function getURL(string $command, ?int $param = null): ILIAS\Refinery\Data\URI
     {
         $query = $this->base_url->getQuery();
         if (!$query) {

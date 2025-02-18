@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Component\Table\Data;
 use ILIAS\UI\Renderer as UIRenderer;

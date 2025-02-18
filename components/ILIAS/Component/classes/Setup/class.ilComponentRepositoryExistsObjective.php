@@ -62,7 +62,7 @@ class ilComponentRepositoryExistsObjective implements Setup\Objective
     {
         $db = $environment->getResource(Setup\Environment::RESOURCE_DATABASE);
 
-        $data_factory = new ILIAS\Data\Factory();
+        $data_factory = new ILIAS\Refinery\Data\Factory();
         $component_repository = new ilArtifactComponentRepository(
             $data_factory,
             new ilPluginStateDBOverIlDBInterface(

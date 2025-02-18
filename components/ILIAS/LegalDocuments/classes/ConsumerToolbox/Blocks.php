@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\ConsumerToolbox;
 
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\Value\DocumentContent;
 use ilNonEditableValueGUI;
 use ILIAS\Refinery\Transformation;
@@ -39,7 +39,7 @@ use ilObjUser;
 use ilDateTime;
 use ilDatePresentation;
 use DateTimeImmutable;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ilStartUpGUI;
 use ILIAS\LegalDocuments\PageFragment;
 use ILIAS\LegalDocuments\PageFragment\PageContent;

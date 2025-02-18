@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace Results\Toplist;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Test\Results\Toplist\TestTopListRepository;
 use ILIAS\Test\Results\Toplist\DataRetrieval;
 use ILIAS\Test\Results\Toplist\TopListOrder;

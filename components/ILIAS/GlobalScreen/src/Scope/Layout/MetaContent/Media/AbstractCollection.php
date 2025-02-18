@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media;
 
 use Iterator;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

@@ -29,7 +29,7 @@ use ILIAS\UI\Component\Panel\Standard as StandardPanel;
 use ILIAS\UI\Component\Modal\RoundTrip as RoundTripModal;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class TestScoringByQuestionGUI extends TestScoringByParticipantGUI
 {

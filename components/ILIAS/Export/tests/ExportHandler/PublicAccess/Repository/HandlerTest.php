@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Export\Test\ExportHandler\PublicAccess\Repository;
 
 use Exception;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use ILIAS\Export\ExportHandler\PublicAccess\Repository\Handler as ilExportHandlerPublicAccessRepository;

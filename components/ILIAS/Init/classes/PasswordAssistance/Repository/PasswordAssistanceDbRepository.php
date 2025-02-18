@@ -23,10 +23,10 @@ namespace ILIAS\Init\PasswordAssitance\Repository;
 use ILIAS\Init\PasswordAssitance\PasswordAssistanceRepository as RepositoryInterface;
 use ILIAS\Init\PasswordAssitance\ValueObject\PasswordAssistanceHash;
 use ILIAS\Init\PasswordAssitance\Entity\PasswordAssistanceSession;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 
 class PasswordAssistanceDbRepository implements RepositoryInterface
 {

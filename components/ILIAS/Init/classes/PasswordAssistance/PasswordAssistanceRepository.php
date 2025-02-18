@@ -22,8 +22,8 @@ namespace ILIAS\Init\PasswordAssitance;
 
 use ILIAS\Init\PasswordAssitance\ValueObject\PasswordAssistanceHash;
 use ILIAS\Init\PasswordAssitance\Entity\PasswordAssistanceSession;
-use ILIAS\Data\Result;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\ObjectId;
 
 interface PasswordAssistanceRepository
 {

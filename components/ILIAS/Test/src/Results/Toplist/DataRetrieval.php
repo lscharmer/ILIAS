@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Results\Toplist;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Component\Symbol\Icon\Standard as Icon;
 use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Factory as UIFactory;

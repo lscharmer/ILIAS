@@ -22,8 +22,8 @@ namespace ILIAS\UI\examples\Table\Data;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\URLBuilder;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -38,7 +38,7 @@ function base()
     global $DIC;
     $f = $DIC['ui.factory'];
     $r = $DIC['ui.renderer'];
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $refinery = $DIC['refinery'];
     $request = $DIC->http()->request();
 

@@ -34,7 +34,7 @@ use ILIAS\UI\URLBuilderToken;
 class ilObjLanguageFolderGUI extends ilObjectGUI
 {
     protected ilLanguageFolderTable $languageFolderTable;
-    protected ILIAS\Data\Factory $df;
+    protected ILIAS\Refinery\Data\Factory $df;
     protected URLBuilder $url_builder;
     protected URLBuilderToken $action_token;
     protected URLBuilderToken $id_token;
@@ -47,7 +47,7 @@ class ilObjLanguageFolderGUI extends ilObjectGUI
         $this->type = "lngf";
         parent::__construct($a_data, $a_id, $a_call_by_reference, false);
         $this->lng->loadLanguageModule("lng");
-        $this->df = new ILIAS\Data\Factory();
+        $this->df = new ILIAS\Refinery\Data\Factory();
 
         $here_uri = $this->df->uri($this->request->getUri()->__toString());
         $url_builder = new URLBuilder($here_uri);

@@ -47,7 +47,7 @@ class ilSkillProfileGUI
     protected ilToolbarGUI $toolbar;
     protected UI\Factory $ui_fac;
     protected UI\Renderer $ui_ren;
-    protected \ILIAS\Data\Factory $df;
+    protected \ILIAS\Refinery\Data\Factory $df;
     protected ServerRequestInterface $request;
     protected ArrayBasedRequestWrapper $query;
     protected int $id = 0;
@@ -112,7 +112,7 @@ class ilSkillProfileGUI
         $this->toolbar = $DIC->toolbar();
         $this->ui_fac = $DIC->ui()->factory();
         $this->ui_ren = $DIC->ui()->renderer();
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
         $this->request = $DIC->http()->request();
         $this->query = $DIC->http()->wrapper()->query();
         $this->tree_service = $DIC->skills()->tree();

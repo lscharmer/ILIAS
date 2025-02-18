@@ -24,8 +24,8 @@ require_once(__DIR__ . "/TableTestBase.php");
 use ILIAS\UI\Component;
 use ILIAS\UI\Implementation\Component as C;
 use ILIAS\UI\Component as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\URLBuilder;
 
@@ -38,7 +38,7 @@ class DataTest extends TableTestBase
     {
         return new C\Table\Factory(
             new C\SignalGenerator(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             new C\Table\Column\Factory(),
             new C\Table\Action\Factory(),
             new C\Table\DataRowBuilder(),
@@ -120,7 +120,7 @@ class DataTest extends TableTestBase
     public function testDataTableActions(): void
     {
         $f = $this->getTableFactory()->action();
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         $target = $df->uri('http://wwww.ilias.de?ref_id=1');
         $url_builder = new URLBuilder($target);
         list($builder, $token) = $url_builder->acquireParameter(['namespace'], 'rowids');

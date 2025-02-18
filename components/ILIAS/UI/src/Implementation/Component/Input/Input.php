@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Input;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\Transformation;

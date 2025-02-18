@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\components\WOPI\Handler;
 
 use ILIAS\ResourceStorage\Revision\Revision;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

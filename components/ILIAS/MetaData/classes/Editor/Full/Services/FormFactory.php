@@ -22,7 +22,7 @@ namespace ILIAS\MetaData\Editor\Full\Services;
 
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Component\Input\Container\Form\Standard as StandardForm;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Editor\Full\Services\Actions\Actions;
 use ILIAS\MetaData\Paths\PathInterface;
 use ILIAS\MetaData\Elements\ElementInterface;

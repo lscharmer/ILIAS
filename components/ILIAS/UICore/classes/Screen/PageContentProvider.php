@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UICore;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\GlobalScreen\Scope\Layout\Factory\ContentModification;
 use ILIAS\GlobalScreen\Scope\Layout\Factory\FooterModification;
 use ILIAS\GlobalScreen\Scope\Layout\Provider\AbstractModificationProvider;

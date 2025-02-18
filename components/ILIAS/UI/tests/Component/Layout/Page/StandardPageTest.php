@@ -34,8 +34,8 @@ use ILIAS\UI\Implementation\Component\Breadcrumbs\Breadcrumbs as Crumbs;
 use ILIAS\UI\Implementation\Component\Link\Standard as CrumbEntry;
 use ILIAS\UI\Implementation\Component\Button;
 use ILIAS\UI\Implementation\Component\Dropdown;
-use ILIAS\Data\Meta\Html;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Meta\Html;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * Tests for the Standard Page

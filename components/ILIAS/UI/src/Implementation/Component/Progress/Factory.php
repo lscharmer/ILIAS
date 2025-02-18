@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Progress;
 
 use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
 use ILIAS\UI\Component\Progress as C;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Thibeau Fuhrer <thibeau@sr.solutions>

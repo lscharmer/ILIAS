@@ -24,7 +24,7 @@ use ILIAS\UI\Component\Symbol\Icon\Icon;
 use ILIAS\UI\Component\Image\Image;
 use ILIAS\UI\Component\Player\Audio;
 use ILIAS\UI\Component\Chart\ProgressMeter\ProgressMeter;
-use ILIAS\Data\Color;
+use ILIAS\Refinery\Data\Color;
 use ILIAS\UI\Component\Dropdown\Standard as DropdownStandard;
 use ILIAS\UI\Component\Symbol\Avatar\Avatar;
 use ILIAS\UI\Component\Button\Standard as ButtonStandard;

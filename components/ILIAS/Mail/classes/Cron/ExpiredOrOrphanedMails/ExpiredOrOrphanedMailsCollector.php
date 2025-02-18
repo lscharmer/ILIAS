@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Mail\Cron\ExpiredOrOrphanedMails;
 
-use ILIAS\Data\Clock\ClockInterface;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Factory;
 use ilSetting;
 use ilDBConstants;
 use ilMailCronOrphanedMails;

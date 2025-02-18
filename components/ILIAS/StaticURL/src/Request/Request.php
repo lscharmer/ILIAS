@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\StaticURL\Request;
 
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

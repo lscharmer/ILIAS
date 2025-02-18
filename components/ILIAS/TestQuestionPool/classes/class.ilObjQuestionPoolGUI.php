@@ -29,7 +29,7 @@ use ILIAS\UI\Component\Input\Field\Select;
 use ILIAS\UI\Component\Input\Input;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\GlobalScreen\Services as GlobalScreen;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\Filesystem\Util\Archive\Archives;

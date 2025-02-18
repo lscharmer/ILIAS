@@ -27,7 +27,7 @@ use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Component\Input\InputData;
 use ILIAS\UI\Implementation\Component\Input\Container\Filter\Filter;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use Psr\Http\Message\ServerRequestInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use ILIAS\UI\Component\Input\Field\Group;

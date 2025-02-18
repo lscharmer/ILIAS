@@ -231,7 +231,7 @@ Fetches the file size.
 
 ```php
 <?php
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  * @var ILIAS\Filesystem\Filesystem $webDataRoot

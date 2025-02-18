@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\LegalDocuments\test\ConsumerToolbox\ConsumerSlots;
 
 use ILIAS\LegalDocuments\Value\Document;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\PageFragment\ShowOnScreenMessage;
 use ILIAS\LegalDocuments\ConsumerToolbox\ConsumerSlots\Agreement;
 use ILIAS\LegalDocuments\test\ContainerMock;

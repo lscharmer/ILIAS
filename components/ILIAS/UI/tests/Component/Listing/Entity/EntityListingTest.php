@@ -22,7 +22,7 @@ use ILIAS\UI\Implementation\Component\Listing;
 use ILIAS\UI\Implementation\Component\Entity;
 use ILIAS\UI\Component as I;
 use ILIAS\UI\Factory as UIFactory;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 class EntityListingTest extends ILIAS_UI_TestBase
 {

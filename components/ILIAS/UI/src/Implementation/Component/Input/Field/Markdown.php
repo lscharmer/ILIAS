@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Input\Field;
 use ILIAS\UI\Component\Input\Field\MarkdownRenderer;
 use ILIAS\UI\Component\Input\Field\Markdown as MarkdownInterface;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * @author Thibeau Fuhrer <thibeau@sr.solutions>

@@ -148,7 +148,7 @@ class ilADNNotificationUIFormGUI
                       );
 
         // PERMANENT AND DATES
-        $format = (new ILIAS\Data\Factory())->dateFormat()->standard();
+        $format = (new ILIAS\Refinery\Data\Factory())->dateFormat()->standard();
         $str = $format->toString() . ' H:i:s';
 
         $display_date_start = $field->dateTime($this->txt(self::F_DISPLAY_DATE_START))

@@ -74,7 +74,7 @@ function base()
     $ui = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
     $request = $DIC->http()->request();
-    $data = new \ILIAS\Data\Factory();
+    $data = new \ILIAS\Refinery\Data\Factory();
 
     //Step 1: Define the groups (with their fields and a label each)
     $group1 = $ui->input()->field()->group(

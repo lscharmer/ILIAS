@@ -34,9 +34,9 @@ class ChartBarTest extends ILIAS_UI_TestBase
         return new I\Component\Chart\Bar\Factory();
     }
 
-    public function getDataFactory(): ILIAS\Data\Factory
+    public function getDataFactory(): ILIAS\Refinery\Data\Factory
     {
-        return new ILIAS\Data\Factory();
+        return new ILIAS\Refinery\Data\Factory();
     }
 
     public function getUIFactory(): NoUIFactory
@@ -53,7 +53,7 @@ class ChartBarTest extends ILIAS_UI_TestBase
         };
     }
 
-    protected function getSimpleDataset(): \ILIAS\Data\Chart\Dataset
+    protected function getSimpleDataset(): \ILIAS\Refinery\Data\Chart\Dataset
     {
         $df = $this->getDataFactory();
 
@@ -65,7 +65,7 @@ class ChartBarTest extends ILIAS_UI_TestBase
         return $dataset;
     }
 
-    protected function getExtendedDataset(): \ILIAS\Data\Chart\Dataset
+    protected function getExtendedDataset(): \ILIAS\Refinery\Data\Chart\Dataset
     {
         $df = $this->getDataFactory();
 

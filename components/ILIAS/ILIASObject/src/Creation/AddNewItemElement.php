@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\ILIASObject\Creation;
 
 use ILIAS\UI\Component\Symbol\Icon\Icon;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class AddNewItemElement
 {

@@ -24,7 +24,7 @@ use ILIAS\components\WOPI\Discovery\AppDBRepository;
 use ILIAS\components\WOPI\Discovery\ActionDBRepository;
 use ILIAS\components\WOPI\Discovery\AppRepository;
 use ILIAS\components\WOPI\Discovery\ActionRepository;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Cron\Job\JobResult;
 use ILIAS\Cron\CronJob;
 

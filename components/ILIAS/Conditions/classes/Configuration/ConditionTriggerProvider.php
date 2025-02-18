@@ -19,12 +19,12 @@
 namespace ILIAS\Conditions\Configuration;
 
 use ILIAS\StaticURL;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ilConditionHandler;
 use ILIAS\UI\Factory as UIFactory;
 use ilObject;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ilLanguage;
 use ilConditionHandlerGUI as ilConditionHandlerGUI;
 

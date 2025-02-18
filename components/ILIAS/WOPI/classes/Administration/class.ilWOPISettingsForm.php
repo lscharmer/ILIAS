@@ -25,7 +25,7 @@ use ILIAS\UI\Component\Input\Container\Form\Standard;
 use ILIAS\UI\Component\Input\Field\Section;
 use Psr\Http\Message\RequestInterface;
 use ILIAS\components\WOPI\Discovery\Crawler;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author            Fabian Schmid <fabian@sr.solutions>

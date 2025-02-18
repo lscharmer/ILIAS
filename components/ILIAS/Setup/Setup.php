@@ -47,7 +47,7 @@ class Setup implements Component\Component
         $contribute[\ILIAS\Setup\Agent::class] = static fn() =>
             new \ilCommonSetupAgent(
                 $pull[\ILIAS\Refinery\Factory::class],
-                $pull[\ILIAS\Data\Factory::class]
+                $pull[\ILIAS\Refinery\Data\Factory::class]
             );
 
         $internal["command.install"] = static fn() =>
@@ -92,7 +92,7 @@ class Setup implements Component\Component
         $internal["agent_finder"] = static fn() =>
             new \ILIAS\Setup\ImplementationOfAgentFinder(
                 $pull[\ILIAS\Refinery\Factory::class],
-                $pull[\ILIAS\Data\Factory::class],
+                $pull[\ILIAS\Refinery\Data\Factory::class],
                 $use[\ILIAS\Language\Language::class],
                 $internal["interface_finder"],
                 $seek[\ILIAS\Setup\Agent::class]

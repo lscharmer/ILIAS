@@ -21,7 +21,7 @@ namespace ILIAS\Bibliographic\FieldFilter;
 use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\URLBuilderToken;
 
 /**

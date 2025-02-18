@@ -21,7 +21,7 @@ declare(strict_types=1);
 require_once 'components/ILIAS/UI/tests/AbstractFactoryTestCase.php';
 
 use ILIAS\UI\Component\Table\Column;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class ColumnFactoryTest extends AbstractFactoryTestCase
 {

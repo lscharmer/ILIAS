@@ -22,7 +22,7 @@ use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
 use ilADNAbstractGUI;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\URLBuilderToken;
 
 /**

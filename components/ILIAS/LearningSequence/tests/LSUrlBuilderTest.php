@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 
 class LSUrlBuilderTest extends TestCase
 {
@@ -34,7 +34,7 @@ class LSUrlBuilderTest extends TestCase
 
     public function testDataType(): void
     {
-        $this->assertInstanceOf(ILIAS\Data\URI::class, $this->ub->getURL('x'));
+        $this->assertInstanceOf(ILIAS\Refinery\Data\URI::class, $this->ub->getURL('x'));
     }
 
     public function testUrlConcatenation(): void

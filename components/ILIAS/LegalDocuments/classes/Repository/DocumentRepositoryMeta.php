@@ -22,7 +22,7 @@ namespace ILIAS\LegalDocuments\Repository;
 
 use ILIAS\LegalDocuments\Value\Criterion;
 use ILIAS\LegalDocuments\Value\Document;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 
 interface DocumentRepositoryMeta
 {

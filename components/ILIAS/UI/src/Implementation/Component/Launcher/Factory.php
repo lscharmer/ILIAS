@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Launcher;
 
-use ILIAS\Data\Link;
+use ILIAS\Refinery\Data\Link;
 use ILIAS\UI\Component\Launcher;
 use ILIAS\UI\Implementation\Component\Modal;
 

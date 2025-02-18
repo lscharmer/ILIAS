@@ -32,7 +32,7 @@ use ILIAS\UI\Component\Toast\Container;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
 use ILIAS\UI\Component\Component;
-use ILIAS\Data\Meta\Html;
+use ILIAS\Refinery\Data\Meta\Html;
 
 class Standard implements Page\Standard
 {

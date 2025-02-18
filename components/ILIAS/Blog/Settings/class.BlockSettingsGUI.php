@@ -27,7 +27,7 @@ use ILIAS\Blog\InternalDataService;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\Component\Table\OrderingBinding;
 use ILIAS\UI\Component\Table\OrderingRowBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Component\Table\Ordering;
 
 class BlockSettingsGUI

@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 use ILIAS\UI\Implementation\Component\Input\ViewControl as Control;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component\Input\InputData;
 
 class ViewControlGroupTest extends ViewControlTestBase

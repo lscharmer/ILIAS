@@ -122,7 +122,7 @@ class ilStudyProgrammeDIC
                 $DIC['tpl']
             );
 
-        $dic['DataFactory'] = static fn($dic) => new \ILIAS\Data\Factory();
+        $dic['DataFactory'] = static fn($dic) => new \ILIAS\Refinery\Data\Factory();
 
         return $dic;
     }
@@ -296,7 +296,7 @@ class ilStudyProgrammeDIC
                 $DIC->refinery()
             );
         $dic['DataFactory'] = static fn($dic) =>
-            new \ILIAS\Data\Factory();
+            new \ILIAS\Refinery\Data\Factory();
         $dic['ilOrgUnitObjectTypePositionSetting'] = static fn($dic) =>
             new ilOrgUnitObjectTypePositionSetting('prg');
 

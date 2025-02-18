@@ -25,7 +25,7 @@ use ILIAS\UI\Component\Listing\Entity\RecordToEntity;
 use ILIAS\UI\Component\Listing\Entity\DataRetrieval;
 use ILIAS\UI\Component\Entity\Entity;
 use ILIAS\UI\Component\Listing\Entity\Mapping;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 /**
  * ---

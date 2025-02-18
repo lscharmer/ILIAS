@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Export\ExportHandler\Table;
 
 use ilCtrl;
-use ILIAS\Data\Factory as ilDataFactory;
+use ILIAS\Refinery\Data\Factory as ilDataFactory;
 use ILIAS\DI\UIServices as ilUIServices;
 use ILIAS\Export\ExportHandler\I\FactoryInterface as ilExportHandlerFactoryInterface;
 use ILIAS\Export\ExportHandler\I\Table\DataRetrieval\HandlerInterface as ilExportHandlerTableDataRetrievalFactoryInterface;

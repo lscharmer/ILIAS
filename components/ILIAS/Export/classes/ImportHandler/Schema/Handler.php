@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\Schema;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\Export\ImportHandler\I\File\XSD\FactoryInterface as XSDFileFactoryInterface;
 use ILIAS\Export\ImportHandler\I\File\XSD\HandlerInterface as XSDFileInterface;
 use ILIAS\Export\ImportHandler\I\Parser\FactoryInterface as ParserFactoryInterface;

@@ -45,7 +45,7 @@ function simpleWithLink()
         ->simple('label');
 
 
-    $uri = new \ILIAS\Data\URI('https://ilias.de');
+    $uri = new \ILIAS\Refinery\Data\URI('https://ilias.de');
 
     $node2 = $factory->tree()
         ->node()

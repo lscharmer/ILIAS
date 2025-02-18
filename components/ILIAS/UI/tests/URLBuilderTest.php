@@ -24,17 +24,17 @@ use PHPUnit\Framework\TestCase;
 
 class URLBuilderTest extends TestCase
 {
-    private readonly \ILIAS\Data\URI $URI_COMPLETE;
+    private readonly \ILIAS\Refinery\Data\URI $URI_COMPLETE;
 
     protected function setUp(): void
     {
-        $this->URI_COMPLETE = new \ILIAS\Data\URI('https://www.ilias.de/foo/bar?var1=42&var2=foo#12345');
+        $this->URI_COMPLETE = new \ILIAS\Refinery\Data\URI('https://www.ilias.de/foo/bar?var1=42&var2=foo#12345');
     }
 
     public function testGetUrl(): void
     {
         $url = new URLBuilder($this->URI_COMPLETE);
-        $this->assertInstanceOf(\ILIAS\Data\URI::class, $url->buildURI());
+        $this->assertInstanceOf(\ILIAS\Refinery\Data\URI::class, $url->buildURI());
         $this->assertEquals('https://www.ilias.de/foo/bar?var1=42&var2=foo#12345', (string) $url->buildURI());
     }
 
@@ -179,7 +179,7 @@ class URLBuilderTest extends TestCase
         $url = new URLBuilder($this->URI_COMPLETE);
         $result = $url->acquireParameter(['test'], 'title', 'bar');
         $url = $result[0]->withURI(
-            new \ILIAS\Data\URI('http://test.ilias.de/bar/foo?test' . URLBuilder::SEPARATOR . 'title=foo&var1=46#12345')
+            new \ILIAS\Refinery\Data\URI('http://test.ilias.de/bar/foo?test' . URLBuilder::SEPARATOR . 'title=foo&var1=46#12345')
         );
         $this->assertEquals(
             'http://test.ilias.de/bar/foo?test' . URLBuilder::SEPARATOR . 'title=bar&var1=46#12345',

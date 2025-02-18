@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Poll\Image\I;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 use ILIAS\ResourceStorage\Revision\Revision;
 

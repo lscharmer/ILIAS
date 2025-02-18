@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Style\Content;
 
 use ILIAS\Filesystem;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\FileUpload\FileUpload;
 use Generator;
 use ILIAS\FileUpload\DTO\ProcessingStatus;

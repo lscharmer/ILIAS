@@ -24,7 +24,7 @@ use ILIAS\UI\Component\Component;
 use ILIAS\UI\Component\Button;
 use ILIAS\UI\Component\Prompt as I;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  *

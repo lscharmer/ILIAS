@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * URLBuilder
@@ -31,7 +31,7 @@ use ILIAS\Data\URI;
  * controlled by the component that added the parameter. This gives us better control
  * over who gets to change which parameter. Besides that, parameters are always given
  * a namespace so that parameters with the same name can exist beside each other.
- * The in- and output of the URLBuilder are \ILIAS\Data\URI objects.
+ * The in- and output of the URLBuilder are \ILIAS\Refinery\Data\URI objects.
  *
  * Along with this class, an equivalent Javascript class is provided in UI/Core that
  * offers a similar functionality. The PHP object can be "transferred" to JS in any renderer

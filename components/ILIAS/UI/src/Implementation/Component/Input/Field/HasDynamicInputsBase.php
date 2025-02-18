@@ -27,7 +27,7 @@ use ILIAS\UI\Component\Input\InputData;
 use ILIAS\UI\Component\Input\Container\Form\FormInput as FormInputInterface;
 use ILIAS\UI\Component\Input\Field\HasDynamicInputs;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use InvalidArgumentException;
 use LogicException;
 use ILIAS\Language\Language;

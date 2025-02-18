@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\Init\PasswordAssitance\Entity;
 
 use ILIAS\Init\PasswordAssitance\ValueObject\PasswordAssistanceHash;
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 
 final class PasswordAssistanceSession
 {

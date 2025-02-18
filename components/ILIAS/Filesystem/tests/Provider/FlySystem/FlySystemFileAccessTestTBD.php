@@ -22,7 +22,7 @@ use ILIAS\Filesystem\Exception\FileNotFoundException;
 use Mockery\LegacyMockInterface;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Attributes\Small;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Exception\FileAlreadyExistsException;
 use ILIAS\Filesystem\Exception\IOException;
 use League\Flysystem\Filesystem;

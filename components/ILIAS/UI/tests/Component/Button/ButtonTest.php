@@ -342,7 +342,7 @@ class ButtonTest extends ILIAS_UI_TestBase
     {
         $f = $this->getButtonFactory();
         $r = $this->getDefaultRenderer();
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
 
         $bgcol = $df->color('#00ff00');
 
@@ -363,7 +363,7 @@ class ButtonTest extends ILIAS_UI_TestBase
     {
         $f = $this->getButtonFactory();
         $r = $this->getDefaultRenderer();
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
 
         $classes = array('cl1', 'cl2');
         $b = $f->tag('tag', '#')

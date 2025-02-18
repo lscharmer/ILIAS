@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\DataProtection;
+namespace ILIAS\Refinery\DataProtection;
 
 use DateTimeImmutable;
 use ILIAS\LegalDocuments\ConsumerToolbox\Settings as SettingsInterface;

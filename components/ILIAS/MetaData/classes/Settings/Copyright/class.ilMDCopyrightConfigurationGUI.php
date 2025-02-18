@@ -27,7 +27,7 @@ use ILIAS\MetaData\Copyright\RendererInterface;
 use ILIAS\MetaData\Copyright\RepositoryInterface;
 use ILIAS\MetaData\Copyright\Renderer;
 use ILIAS\MetaData\Copyright\DatabaseRepository;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Copyright\EntryInterface;
 use ILIAS\FileUpload\MimeType;
 use ILIAS\ResourceStorage\Services as IRSS;

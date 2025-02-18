@@ -26,7 +26,7 @@ use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Component\Input\InputData;
 use ILIAS\Refinery\Transformation;
 use Psr\Http\Message\ServerRequestInterface;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 
 /**
  * This implements commonalities between all forms.

@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\UI\Component\Table;
 
 use Psr\Http\Message\ServerRequestInterface;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 
 /**
  * This describes a Data Table.

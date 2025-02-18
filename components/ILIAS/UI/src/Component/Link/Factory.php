@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Component\Link;
 
 use ILIAS\UI\Component\Symbol\Symbol;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * Link factory
@@ -92,7 +92,7 @@ interface Factory
      * ---
      * @param	\ILIAS\UI\Component\Symbol\Symbol	$symbol
      * @param	string	$label
-     * @param	\ILIAS\Data\URI		$target
+     * @param	\ILIAS\Refinery\Data\URI		$target
      * @return  \ILIAS\UI\Component\Link\Bulky
      */
     public function bulky(Symbol $symbol, string $label, URI $target): Bulky;

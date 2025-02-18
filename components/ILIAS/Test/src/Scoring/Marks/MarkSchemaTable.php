@@ -26,8 +26,8 @@ use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 class MarkSchemaTable implements DataRetrieval
 {

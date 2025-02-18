@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\MetaData\Editor\Http;
 
-use ILIAS\Data\URI;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\URI;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class LinkBuilder implements LinkBuilderInterface
 {

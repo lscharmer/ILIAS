@@ -21,7 +21,7 @@ declare(strict_types=1);
 use ILIAS\Export\ExportHandler\Consumer\ExportOption\BasicHandler as ilBasicExportOption;
 use ILIAS\Export\ExportHandler\I\Consumer\Context\HandlerInterface as ilExportHandlerConsumerContextInterface;
 use ILIAS\DI\Container;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 class ilForumExportOptionHTML extends ilBasicExportOption
 {
@@ -77,7 +77,7 @@ class ilForumExportOptionHTML extends ilBasicExportOption
     }
 
     public function onDownloadWithLink(
-        \ILIAS\Data\ReferenceId $reference_id,
+        \ILIAS\Refinery\Data\ReferenceId $reference_id,
         \ILIAS\Export\ExportHandler\I\Consumer\File\Identifier\HandlerInterface $file_identifier
     ): void {
         # Direct download on export creation, no local files

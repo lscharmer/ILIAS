@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Test\ExportImport;
 
 use ILIAS\TestQuestionPool\Questions\GeneralQuestionPropertiesRepository;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 
 /**
  * @author Fabian Helfer <fhelfer@databay.de>

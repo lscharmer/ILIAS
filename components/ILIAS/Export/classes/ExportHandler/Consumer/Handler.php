@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\Consumer;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Export\ExportHandler\I\Consumer\ExportWriter\HandlerInterface as ilExportHandlerConsumerExportWriterInterface;
 use ILIAS\Export\ExportHandler\I\Consumer\HandlerInterface as ilExportHandlerConsumerInterface;
 use ILIAS\Export\ExportHandler\I\FactoryInterface as ilExportHandlerFactoryInterface;

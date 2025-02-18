@@ -26,7 +26,7 @@ use ILIAS\UI\Implementation\Render\AbstractComponentRenderer;
 use ILIAS\UI\Implementation\Render\ResourceRegistry;
 use ILIAS\UI\Implementation\Render\Template;
 use ILIAS\UI\Renderer as RendererInterface;
-use ILIAS\Data\Dimension\Dimension;
+use ILIAS\Refinery\Data\Dimension\Dimension;
 use stdClass;
 use LogicException;
 

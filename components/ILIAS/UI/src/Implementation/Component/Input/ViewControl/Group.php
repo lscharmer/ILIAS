@@ -28,9 +28,9 @@ use ILIAS\UI\Implementation\Component\Input\Input;
 use ILIAS\UI\Implementation\Component\Input\Group as GroupInternals;
 use ILIAS\Language\Language;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component\Signal;
 
 /**

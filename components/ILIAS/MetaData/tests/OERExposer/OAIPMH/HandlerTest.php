@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\MetaData\OERExposer\OAIPMH;
 
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Settings\SettingsInterface;
 use ILIAS\MetaData\Settings\NullSettings;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\ParserInterface as RequestParserInterface;

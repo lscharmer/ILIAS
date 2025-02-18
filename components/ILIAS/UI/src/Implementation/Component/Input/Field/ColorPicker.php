@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Input\Field;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Component as C;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\Factory as Refinery;

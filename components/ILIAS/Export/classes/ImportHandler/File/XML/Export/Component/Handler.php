@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\File\XML\Export\Component;
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\Export\ImportHandler\File\XML\Export\Handler as XMLExportFile;
 use ILIAS\Export\ImportHandler\I\File\XSD\HandlerInterface as XSDFileInterface;
 use ILIAS\Export\ImportHandler\I\File\Namespace\FactoryInterface as FileNamespaceInterface;

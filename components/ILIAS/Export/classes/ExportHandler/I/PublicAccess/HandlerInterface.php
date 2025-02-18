@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\I\PublicAccess;
 
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 interface HandlerInterface
 {

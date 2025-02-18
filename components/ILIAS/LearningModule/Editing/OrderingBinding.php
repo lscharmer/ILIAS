@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\LearningModule\Table;
 
 use ILIAS\UI\Component\Table;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Component\Table\OrderingRowBuilder;
 
 class OrderingBinding implements Table\OrderingBinding

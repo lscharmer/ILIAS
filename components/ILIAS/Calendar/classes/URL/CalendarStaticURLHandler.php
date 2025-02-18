@@ -23,7 +23,7 @@ use ILIAS\StaticURL\Request\Request;
 use ILIAS\StaticURL\Response\Factory;
 use ILIAS\StaticURL\Handler\Handler as Handler;
 use ILIAS\StaticURL\Handler\BaseHandler as BaseHandler;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\StaticURL\Services;
 
 class CalendarStaticURLHandler extends BaseHandler implements Handler

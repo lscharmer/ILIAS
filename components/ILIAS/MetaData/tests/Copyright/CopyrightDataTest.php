@@ -22,7 +22,7 @@ namespace ILIAS\MetaData\Copyright;
 
 use PHPUnit\Framework\TestCase;
 use ILIAS\MetaData\Copyright\CopyrightData;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class CopyrightDataTest extends TestCase
 {

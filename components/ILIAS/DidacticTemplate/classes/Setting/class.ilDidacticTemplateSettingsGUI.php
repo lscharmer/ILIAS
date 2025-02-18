@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 use Psr\Http\Message\RequestInterface;
 use ILIAS\DI\Container;
 use ILIAS\HTTP\GlobalHttpState;
@@ -31,7 +31,7 @@ use ILIAS\Export\ImportStatus\ilFactory as ilImportStatusFactory;
 use ILIAS\Export\ImportStatus\StatusType as ImportStatusType;
 use ILIAS\MetaData\Services\ServicesInterface as LOMServices;
 use ILIAS\StaticURL\Services as StaticURLService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * Settings for a single didactic template

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Component\Chart\Bar;
 
-use ILIAS\Data\Color;
+use ILIAS\Refinery\Data\Color;
 
 /**
  * @author Thomas Famula <famula@leifos.de>

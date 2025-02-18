@@ -71,7 +71,7 @@ class ExamplesTest extends ILIAS_UI_TestBase
         $this->dic["tpl"] = $this->getTemplateFactory()->getTemplate("tpl.main.html", false, false);
         $this->dic["lng"] = $this->getLanguage();
         $this->dic["refinery"] = new \ILIAS\Refinery\Factory(
-            new ILIAS\Data\Factory(),
+            new ILIAS\Refinery\Data\Factory(),
             $this->getLanguage()
         );
 

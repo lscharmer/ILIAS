@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Component\Table;
 
 use Closure;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * Table factory

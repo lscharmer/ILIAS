@@ -33,7 +33,7 @@ class DataProtection implements Component\Component
         array | \ArrayAccess &$internal,
     ): void {
         $contribute[\ILIAS\Setup\Agent::class] = fn() =>
-            new \ILIAS\DataProtection\Setup\Agent(
+            new \ILIAS\Refinery\DataProtection\Setup\Agent(
                 $pull[\ILIAS\Refinery\Factory::class]
             );
     }

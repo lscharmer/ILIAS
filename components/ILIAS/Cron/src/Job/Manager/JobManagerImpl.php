@@ -30,7 +30,7 @@ readonly class JobManagerImpl implements \ILIAS\Cron\Job\JobManager
         private \ilDBInterface $db,
         private \ilSetting $settings,
         private \ilLogger $logger,
-        private \ILIAS\Data\Clock\ClockFactory $clock_factory
+        private \ILIAS\Refinery\Data\Clock\ClockFactory $clock_factory
     ) {
     }
 

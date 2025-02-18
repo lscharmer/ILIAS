@@ -22,7 +22,7 @@ require_once 'components/ILIAS/UI/tests/AbstractFactoryTestCase.php';
 
 use ILIAS\UI\Component\Input\Container\Form;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component\Input as I;
 use ILIAS\Refinery\Factory;
 

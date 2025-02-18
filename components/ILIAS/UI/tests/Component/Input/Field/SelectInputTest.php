@@ -21,7 +21,7 @@ declare(strict_types=1);
 require_once(__DIR__ . "/../../../Base.php");
 require_once(__DIR__ . "/CommonFieldRendering.php");
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Component\Input\InputData;
@@ -50,7 +50,7 @@ class SelectInputTest extends ILIAS_UI_TestBase
     {
         $options = ["one" => "Eins", "two" => "Zwei", "three" => "Drei"];
         $select = new SelectForTest(
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(ILIAS\Refinery\Factory::class),
             "",
             $options,
@@ -67,7 +67,7 @@ class SelectInputTest extends ILIAS_UI_TestBase
     {
         $options = [];
         $select = new SelectForTest(
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(ILIAS\Refinery\Factory::class),
             "",
             $options,
@@ -103,7 +103,7 @@ class SelectInputTest extends ILIAS_UI_TestBase
     {
         $options = [];
         $select = (new SelectForTest(
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(ILIAS\Refinery\Factory::class),
             "",
             $options,

@@ -20,15 +20,15 @@ declare(strict_types=1);
 
 use ILIAS\UI\Factory;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\UI\Renderer;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\RequestInterface;
 use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Implementation\Component\Link\Standard;
 use ILIAS\Badge\ilBadgeImage;
 use ILIAS\Badge\PresentationHeader;
@@ -221,7 +221,7 @@ class ilBadgePersonalTableGUI implements DataRetrieval
     /**
      * @return array<string, Column>
      */
-    private function getColumns(\ILIAS\Data\DateFormat\DateFormat $date_format): array
+    private function getColumns(\ILIAS\Refinery\Data\DateFormat\DateFormat $date_format): array
     {
         return [
             'image' => $this->factory->table()->column()->text($this->lng->txt('image'))->withIsSortable(false),
@@ -267,7 +267,7 @@ class ilBadgePersonalTableGUI implements DataRetrieval
 
     public function renderTable(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         if ((int) $this->user->getTimeFormat() === ilCalendarSettings::TIME_FORMAT_12) {
             $date_format = $df->dateFormat()->withTime12($this->user->getDateFormat());
         } else {

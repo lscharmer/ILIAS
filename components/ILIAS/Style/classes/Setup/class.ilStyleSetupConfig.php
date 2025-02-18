@@ -17,7 +17,7 @@
  *********************************************************************/
 
 use ILIAS\Setup;
-use ILIAS\Data\Password;
+use ILIAS\Refinery\Data\Password;
 
 class ilStyleSetupConfig implements Setup\Config
 {

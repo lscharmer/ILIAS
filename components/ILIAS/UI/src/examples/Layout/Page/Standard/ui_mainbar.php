@@ -22,7 +22,7 @@ namespace ILIAS\UI\examples\Layout\Page\Standard;
 
 use ILIAS\DI\Container;
 use Psr\Http\Message\RequestInterface;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\UI\Component\MainControls\MainBar;
 
 /**
@@ -114,7 +114,7 @@ function ui_mainbar(): string
     ]);
 }
 
-function getUIMainbar(\ILIAS\UI\Factory $f, \ILIAS\Data\URI $uri, bool $condensed = false): MainBar
+function getUIMainbar(\ILIAS\UI\Factory $f, \ILIAS\Refinery\Data\URI $uri, bool $condensed = false): MainBar
 {
     $symbol = $f->symbol()->icon()->standard('rcat', 'Fischotter');
     $link010 = $f->link()->bulky($symbol, '2021 - Fischotter', $uri->withParameter('c', 1));
@@ -298,7 +298,7 @@ if ($request_wrapper->has('ui_mainbar')
 }
 
 
-function getURI(): \ILIAS\Data\URI
+function getURI(): \ILIAS\Refinery\Data\URI
 {
     $df = new Factory();
     return $df->uri(

@@ -23,7 +23,7 @@ namespace ILIAS\MetaData\OERExposer\OAIPMH\Responses;
 use ILIAS\MetaData\OERExposer\OAIPMH\Responses\Error;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\RequestInterface;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Argument;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Verb;
 use ILIAS\MetaData\OERExposer\OAIPMH\DateHelper;
 

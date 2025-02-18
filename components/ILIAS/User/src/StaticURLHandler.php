@@ -27,7 +27,7 @@ use ILIAS\StaticURL\Response\Response;
 use ILIAS\StaticURL\Response\Factory;
 use ILIAS\StaticURL\Handler\BaseHandler;
 use ILIAS\StaticURL\Builder\StandardURIBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class StaticURLHandler extends BaseHandler implements Handler
 {

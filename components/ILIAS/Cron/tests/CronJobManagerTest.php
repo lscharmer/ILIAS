@@ -26,12 +26,12 @@ use ILIAS\Cron\Job\Manager\JobManagerImpl;
 
 class CronJobManagerTest extends TestCase
 {
-    private function createClockFactoryMock(): \ILIAS\Data\Clock\ClockFactory
+    private function createClockFactoryMock(): \ILIAS\Refinery\Data\Clock\ClockFactory
     {
-        $clock_factory = $this->createMock(ILIAS\Data\Clock\ClockFactory::class);
+        $clock_factory = $this->createMock(ILIAS\Refinery\Data\Clock\ClockFactory::class);
         $now = new DateTimeImmutable('@' . time());
         $clock_factory->method('system')->willReturn(
-            new class ($now) implements \ILIAS\Data\Clock\ClockInterface {
+            new class ($now) implements \ILIAS\Refinery\Data\Clock\ClockInterface {
                 private DateTimeImmutable $now;
 
                 public function __construct(DateTimeImmutable $now)

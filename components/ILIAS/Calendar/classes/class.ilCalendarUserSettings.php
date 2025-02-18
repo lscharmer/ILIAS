@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 
 /**
  * @author  Stefan Meyer <smeyer.ilias@gmx.de>

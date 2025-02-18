@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\Consumer\ExportOption;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Export\ExportHandler\I\Consumer\ExportOption\HandlerInterface as ilExportHandlerConsumerExportOptionInterface;
 
 abstract class BasicHandler implements ilExportHandlerConsumerExportOptionInterface

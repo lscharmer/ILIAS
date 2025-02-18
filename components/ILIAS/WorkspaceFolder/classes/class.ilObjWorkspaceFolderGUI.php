@@ -1001,7 +1001,7 @@ class ilObjWorkspaceFolderGUI extends ilObject2GUI
             AddNewItemElementTypes::Object,
             $this->lng->txt('wsp_type_' . $type),
             $icon,
-            new \ILIAS\Data\URI(ILIAS_HTTP_PATH . '/' . $this->ctrl->getLinkTargetByClass(self::class, 'create'))
+            new \ILIAS\Refinery\Data\URI(ILIAS_HTTP_PATH . '/' . $this->ctrl->getLinkTargetByClass(self::class, 'create'))
         );
         $this->ctrl->clearParameterByClass(self::class, 'new_type', $type);
         return $element;

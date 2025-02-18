@@ -29,7 +29,7 @@ use ILIAS\UI\Component\MainControls\MetaBar;
 use ILIAS\UI\Component\MainControls\ModeInfo;
 use ILIAS\UI\Component\MainControls\Footer;
 use ILIAS\UI\Component\Toast\Container;
-use ILIAS\Data\Meta\Html;
+use ILIAS\Refinery\Data\Meta\Html;
 
 /**
  * This describes the Page.

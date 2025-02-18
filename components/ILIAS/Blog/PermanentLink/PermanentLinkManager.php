@@ -24,7 +24,7 @@ use ILIAS\Blog\InternalGUIService;
 use ILIAS\Blog\InternalDomainService;
 use ILIAS\UICore\PageContentProvider;
 use ILIAS\StaticURL\Services as StaticUrl;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 /**
  * search for illink::

@@ -43,7 +43,7 @@ class ilSkillTreeAdminGUI
     protected ilLanguage $lng;
     protected \ILIAS\UI\Factory $ui_fac;
     protected \ILIAS\UI\Renderer $ui_ren;
-    protected \ILIAS\Data\Factory $df;
+    protected \ILIAS\Refinery\Data\Factory $df;
     protected RequestInterface $request;
     protected int $requested_ref_id = 0;
     protected ilTabsGUI $tabs;
@@ -64,7 +64,7 @@ class ilSkillTreeAdminGUI
         $this->lng = $DIC->language();
         $this->ui_fac = $DIC->ui()->factory();
         $this->ui_ren = $DIC->ui()->renderer();
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
         $this->request = $DIC->http()->request();
         $this->tabs = $DIC->tabs();
         $this->admin_gui_request = $DIC->skills()->internal()->gui()->admin_request();

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\UI\Component\Input\Field;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\FileUpload\Handler\AbstractCtrlAwareUploadHandler;
 
 class ilIndividualAssessmentUserGrading
@@ -135,7 +135,7 @@ class ilIndividualAssessmentUserGrading
         ilLanguage $lng,
         Refinery $refinery,
         AbstractCtrlAwareUploadHandler $file_handler,
-        \ILIAS\Data\DateFormat\DateFormat $date_format,
+        \ILIAS\Refinery\Data\DateFormat\DateFormat $date_format,
         string $record_template,
         array $grading_options,
         bool $may_be_edited = true,

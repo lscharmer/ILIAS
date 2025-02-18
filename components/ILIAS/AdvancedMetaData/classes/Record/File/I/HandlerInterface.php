@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\AdvancedMetaData\Record\File\I;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Element\CollectionInterface as FileRepositoryElementCollectionInterface;
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Element\HandlerInterface as FileRepositoryElementInterface;
 use ILIAS\Filesystem\Stream\FileStream;

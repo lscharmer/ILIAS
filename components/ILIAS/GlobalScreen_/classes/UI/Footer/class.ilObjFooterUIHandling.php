@@ -26,7 +26,7 @@ use ILIAS\HTTP\Services;
 use ILIAS\GlobalScreen_\UI\Translator;
 use ILIAS\UI\URLBuilderToken;
 use ILIAS\GlobalScreen\Scope\MainMenu\Collector\Renderer\Hasher;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\UI\Component\Input\Container\Form\Form;
 use ILIAS\UI\Implementation\Component\Modal\InterruptiveItem\KeyValue;

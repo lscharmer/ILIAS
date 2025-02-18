@@ -15,7 +15,7 @@
  *
  *********************************************************************/
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Filesystem;
 use ILIAS\TestQuestionPool\Questions\SuggestedSolution\SuggestedSolution;
 use ILIAS\TestQuestionPool\Questions\SuggestedSolution\SuggestedSolutionsDatabaseRepository;

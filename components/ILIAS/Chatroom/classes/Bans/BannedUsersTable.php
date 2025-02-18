@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Chatroom\Bans;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 use Psr\Http\Message\ServerRequestInterface;
 use ilArrayUtil;
@@ -63,7 +63,7 @@ class BannedUsersTable implements UI\Component\Table\DataRetrieval
             ->table()
             ->data($this->lng->txt('ban_table_title'), $columns, $this)
             ->withId(self::class . '_' . $this->room_id)
-            ->withOrder(new \ILIAS\Data\Order('datetime', \ILIAS\Data\Order::DESC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('datetime', \ILIAS\Refinery\Data\Order::DESC))
             ->withActions($actions)
             ->withRequest($this->request);
     }

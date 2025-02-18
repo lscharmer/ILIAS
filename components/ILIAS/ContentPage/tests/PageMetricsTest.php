@@ -139,7 +139,7 @@ class PageMetricsTest extends TestCase
         $service = new PageMetricsService(
             $repo,
             new \ILIAS\Refinery\Factory(
-                new \ILIAS\Data\Factory(),
+                new \ILIAS\Refinery\Data\Factory(),
                 $this->getMockBuilder(\ilLanguage::class)->disableOriginalConstructor()->getMock(),
             )
         );

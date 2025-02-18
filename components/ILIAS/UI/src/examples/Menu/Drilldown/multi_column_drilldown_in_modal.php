@@ -109,7 +109,7 @@ function renderModalAsync(string $content): void
             $button = $f->button()->bulky($ico->withAbbreviation('>'), 'Modal', '')
                 ->withOnClick($replace_signal->withAsyncRenderUrl($url . '&content=image&replaceSignal=' . $replace_signal->getId()));
 
-            $uri = new \ILIAS\Data\URI('https://ilias.de');
+            $uri = new \ILIAS\Refinery\Data\URI('https://ilias.de');
             $link = $f->link()->bulky($ico->withAbbreviation('>'), 'Link', $uri);
             $divider = $f->divider()->horizontal();
 

@@ -23,7 +23,7 @@ require_once(__DIR__ . "/TableTestBase.php");
 
 use ILIAS\UI\Component;
 use ILIAS\UI\Implementation\Component as I;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component\Signal;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\URLBuilder;
@@ -88,7 +88,7 @@ class DataRendererTest extends TableTestBase
             $this->getLanguage(),
             $this->getJavaScriptBinding(),
             new ilImagePathResolver(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             new \ILIAS\UI\Help\TextRetriever\Echoing(),
             $this->getUploadLimitResolver()
         );
@@ -233,7 +233,7 @@ class DataRendererTest extends TableTestBase
     public function testDataTableRenderTableHeader()
     {
         $renderer = $this->getRenderer();
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
         $tpl = $this->getTemplateFactory()->getTemplate("components/ILIAS/UI/src/templates/default/Table/tpl.datatable.html", true, true);
         $f = $this->getColumnFactory();
         $data = new class () implements ILIAS\UI\Component\Table\DataRetrieval {
@@ -315,7 +315,7 @@ EOT;
     public function testDataTableRenderHeaderWithoutSortableColums(): void
     {
         $renderer = $this->getRenderer();
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
         $tpl = $this->getTemplateFactory()->getTemplate("components/ILIAS/UI/src/templates/default/Table/tpl.datatable.html", true, true);
         $f = $this->getColumnFactory();
         $data = new class () implements ILIAS\UI\Component\Table\DataRetrieval {
@@ -388,7 +388,7 @@ EOT;
     public function testDataTableRenderHeaderWithActions(): void
     {
         $renderer = $this->getRenderer();
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
         $tpl = $this->getTemplateFactory()->getTemplate("components/ILIAS/UI/src/templates/default/Table/tpl.datatable.html", true, true);
         $f = $this->getColumnFactory();
 

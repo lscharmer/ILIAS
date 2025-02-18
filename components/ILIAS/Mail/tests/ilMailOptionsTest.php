@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 
 /**

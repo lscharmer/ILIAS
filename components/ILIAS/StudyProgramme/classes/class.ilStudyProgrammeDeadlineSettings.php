@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\UI\Component\Input\Field;
 use ILIAS\Refinery\Factory as Refinery;
 

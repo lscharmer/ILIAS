@@ -18,8 +18,8 @@
 
 namespace ILIAS\Bibliographic\FieldFilter;
 
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\UI\Component\Table as I;
 
 /**

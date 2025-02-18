@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\components\ResourceStorage\Container\View\ActionBuilder;
 
 use ILIAS\UI\Implementation\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

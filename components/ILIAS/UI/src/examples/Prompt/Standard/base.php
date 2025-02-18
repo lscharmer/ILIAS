@@ -43,7 +43,7 @@ function base()
     $factory = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
 
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $refinery = $DIC['refinery'];
 
     $here_uri = $df->uri($DIC->http()->request()->getUri()->__toString());

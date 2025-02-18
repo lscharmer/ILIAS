@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\examples\Input\ViewControl\Sortation;
 
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ---

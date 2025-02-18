@@ -1223,7 +1223,7 @@ class ilObjLTIConsumer extends ilObject2
         }
         $uri = str_replace("components/ILIAS/LTIConsumer", "", $uri);
         $iliasHttpPath = ilContext::modifyHttpPath(implode('', [$protocol, $host, $uri]));
-        $f = new \ILIAS\Data\Factory();
+        $f = new \ILIAS\Refinery\Data\Factory();
         $uri = $f->uri(rtrim($iliasHttpPath, "/"));
         return $uri->getBaseURI();
     }

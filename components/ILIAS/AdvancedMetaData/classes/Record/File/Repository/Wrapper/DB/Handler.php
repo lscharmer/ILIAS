@@ -27,7 +27,7 @@ use ILIAS\AdvancedMetaData\Record\File\I\Repository\Wrapper\DB\HandlerInterface 
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Element\CollectionInterface as FileRepositoryElementCollectionInterface;
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Element\FactoryInterface as FileRepositoryElementFactoryInterface;
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Key\FactoryInterface as FileRepositoryKeyFactoryInterface;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 class Handler implements FileRepositoryDBWrapperInterface
 {

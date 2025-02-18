@@ -77,7 +77,7 @@ class ilTestQuestionBrowserTableGUITest extends ilTestBaseTestCase
             $this->createMock(ilAccessHandler::class),
             $this->createMock(\ILIAS\HTTP\GlobalHttpState::class),
             new \ILIAS\Refinery\Factory(
-                new \ILIAS\Data\Factory(),
+                new \ILIAS\Refinery\Data\Factory(),
                 $this->getMockBuilder(ilLanguage::class)->disableOriginalConstructor()->getMock()
             ),
             $this->createMock(ILIAS\UI\Factory::class),
@@ -88,7 +88,7 @@ class ilTestQuestionBrowserTableGUITest extends ilTestBaseTestCase
             $ctrl_mock,
             $mainTpl_mock,
             $this->createMock(ilUIService::class),
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(ILIAS\Taxonomy\DomainService::class),
             fn(int $questionPoolId) => 'testLink'
         );

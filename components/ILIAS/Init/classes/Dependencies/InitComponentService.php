@@ -36,7 +36,7 @@ class InitComponentService
     public function initInternal(\ILIAS\DI\Container $c): \Pimple\Container
     {
         $int = new \Pimple\Container();
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
 
         $int["plugin_state_db"] = fn($int): \ilPluginStateDB => new ilPluginStateDBOverIlDBInterface(
             $data_factory,

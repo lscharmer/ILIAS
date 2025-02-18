@@ -26,9 +26,9 @@ use ILIAS\MetaData\Paths\FactoryInterface as PathFactory;
 use ILIAS\MetaData\Paths\Navigator\NavigatorFactoryInterface;
 use ILIAS\MetaData\Paths\PathInterface;
 use ILIAS\MetaData\Paths\Filters\FilterType;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\MetaData\XML\Copyright\Links\LinkGeneratorInterface;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class SimpleDC implements SimpleDCInterface
 {

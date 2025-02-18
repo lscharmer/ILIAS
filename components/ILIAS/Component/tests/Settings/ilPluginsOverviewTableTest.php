@@ -20,7 +20,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\UI\Component\Dropdown\Dropdown;
 use ILIAS\UI\Component\Dropdown\Standard;
 use ILIAS\UI\Component\Button\Shy;

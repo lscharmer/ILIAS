@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\examples\Input\Field\Rating;
 
-use ILIAS\Data\FiveStarRatingScale;
+use ILIAS\Refinery\Data\FiveStarRatingScale;
 
 /**
  * ---

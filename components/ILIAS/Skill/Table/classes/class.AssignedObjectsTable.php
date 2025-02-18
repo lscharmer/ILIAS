@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Skill\Table;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 use Psr\Http\Message\ServerRequestInterface;
 

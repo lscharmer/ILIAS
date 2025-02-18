@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Poll\Image\I\Repository\Key;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 interface HandlerInterface
 {

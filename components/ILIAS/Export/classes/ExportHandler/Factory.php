@@ -23,7 +23,7 @@ namespace ILIAS\Export\ExportHandler;
 use ilAccessHandler;
 use ilCtrlInterface;
 use ilDBInterface;
-use ILIAS\Data\Factory as ilDataFactory;
+use ILIAS\Refinery\Data\Factory as ilDataFactory;
 use ILIAS\DI\UIServices as ilUIServices;
 use ILIAS\Export\ExportHandler\Consumer\Factory as ilExportHandlderConsumerFactory;
 use ILIAS\Export\ExportHandler\I\Consumer\FactoryInterface as ilExportHandlderConsumerFactoryInterface;

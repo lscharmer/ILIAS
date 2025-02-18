@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 namespace ILIAS\GlobalScreen\Scope\Layout\MetaContent;
 
-use ILIAS\Data\Meta\Html\OpenGraph\TagCollection;
-use ILIAS\Data\Meta\Html\Tag;
-use ILIAS\Data\Meta\Html\UserDefined;
+use ILIAS\Refinery\Data\Meta\Html\OpenGraph\TagCollection;
+use ILIAS\Refinery\Data\Meta\Html\Tag;
+use ILIAS\Refinery\Data\Meta\Html\UserDefined;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\Css;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\CssCollection;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\InlineCss;
@@ -32,8 +32,8 @@ use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\JsCollection;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\OnLoadCode;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\Media\OnLoadCodeCollection;
 use ILIAS\UI\Component\Layout\Page\Standard;
-use ILIAS\Data\Meta\Html\OpenGraph;
-use ILIAS\Data\Meta\Html;
+use ILIAS\Refinery\Data\Meta\Html\OpenGraph;
+use ILIAS\Refinery\Data\Meta\Html;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

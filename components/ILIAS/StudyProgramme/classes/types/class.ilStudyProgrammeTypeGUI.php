@@ -27,7 +27,7 @@ use ILIAS\Refinery;
 use ILIAS\Filesystem\Filesystem;
 use ILIAS\HTTP\Wrapper\RequestWrapper;
 use ILIAS\ResourceStorage\Services as IRSS;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
 

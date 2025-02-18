@@ -25,7 +25,7 @@ require_once(__DIR__ . "/CommonFieldRendering.php");
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Component as C;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Implementation\Component\Symbol as S;
 

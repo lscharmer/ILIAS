@@ -23,7 +23,7 @@ use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
 use ILIAS\UI\Component\Item\Item;
 use ILIAS\components\WOPI\Discovery\Crawler;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\components\WOPI\Discovery\AppDBRepository;
 use ILIAS\components\WOPI\Discovery\ActionDBRepository;
 use ILIAS\components\WOPI\Discovery\ActionRepository;

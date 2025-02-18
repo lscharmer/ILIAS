@@ -18,8 +18,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataTypeFactory;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Factory as DataTypeFactory;
+use ILIAS\Refinery\Data\Result;
 
 final class ilSamlIdpXmlMetadataParser
 {

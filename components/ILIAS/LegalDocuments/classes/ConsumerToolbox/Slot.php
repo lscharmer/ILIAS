@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\ConsumerToolbox;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ilLink;
 use ILIAS\Refinery\Constraint;
 use ILIAS\LegalDocuments\ConsumerToolbox\ConsumerSlots\OnlineStatusFilter;

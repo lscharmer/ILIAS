@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 use ILIAS\InfoScreen\StandardGUIRequest;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 
 /**
  * Test clipboard repository

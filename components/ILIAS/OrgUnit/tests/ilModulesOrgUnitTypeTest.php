@@ -43,7 +43,7 @@ class ilModulesOrgUnitTypeTest extends TestCase
 {
     public function getRefinery(): \ILIAS\Refinery\Factory
     {
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
         $language = $this->createMock(ilLanguage::class);
         $refinery = new \ILIAS\Refinery\Factory($data_factory, $language);
         return $refinery;
@@ -79,7 +79,7 @@ class ilModulesOrgUnitTypeTest extends TestCase
             public function input(): Component\Input\Factory
             {
                 $signal_generator = new Component\SignalGenerator();
-                $data_factory = new \ILIAS\Data\Factory();
+                $data_factory = new \ILIAS\Refinery\Data\Factory();
 
                 $field_factory = new Component\Input\Field\Factory(
                     $this->upload_limit_resolver,

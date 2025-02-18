@@ -55,7 +55,7 @@ class JobTable implements \ILIAS\UI\Component\Table\DataRetrieval
         $this->lng = $lng;
         $this->request = $request;
 
-        $form_action = (new \ILIAS\Data\Factory())->uri(
+        $form_action = (new \ILIAS\Refinery\Data\Factory())->uri(
             \ilUtil::_getHttpPath() . '/' .
             $ctrl->getLinkTarget($a_parent_obj, $a_parent_cmd)
         );
@@ -74,8 +74,8 @@ class JobTable implements \ILIAS\UI\Component\Table\DataRetrieval
     public function getRows(
         \ILIAS\UI\Component\Table\DataRowBuilder $row_builder,
         array $visible_column_ids,
-        \ILIAS\Data\Range $range,
-        \ILIAS\Data\Order $order,
+        \ILIAS\Refinery\Data\Range $range,
+        \ILIAS\Refinery\Data\Order $order,
         ?array $filter_data,
         ?array $additional_parameters
     ): \Generator {
@@ -133,7 +133,7 @@ class JobTable implements \ILIAS\UI\Component\Table\DataRetrieval
     /**
      * @return list<JobEntity>
      */
-    private function getRecords(\ILIAS\Data\Range $range, \ILIAS\Data\Order $order): array
+    private function getRecords(\ILIAS\Refinery\Data\Range $range, \ILIAS\Refinery\Data\Order $order): array
     {
         [$order_field, $order_direction] = $order->join([], static function ($ret, $key, $value) {
             return [$key, $value];
@@ -178,7 +178,7 @@ class JobTable implements \ILIAS\UI\Component\Table\DataRetrieval
                     return 0;
                 }
             },
-            $order_direction === \ILIAS\Data\Order::DESC
+            $order_direction === \ILIAS\Refinery\Data\Order::DESC
         );
 
         $records = \array_slice($collection->toArray(), $range->getStart(), $range->getLength());
@@ -452,6 +452,6 @@ class JobTable implements \ILIAS\UI\Component\Table\DataRetrieval
             ->withActions($this->getActions())
             ->withId(self::class)
             ->withRequest($this->request)
-            ->withOrder(new \ILIAS\Data\Order('title', \ILIAS\Data\Order::ASC));
+            ->withOrder(new \ILIAS\Refinery\Data\Order('title', \ILIAS\Refinery\Data\Order::ASC));
     }
 }

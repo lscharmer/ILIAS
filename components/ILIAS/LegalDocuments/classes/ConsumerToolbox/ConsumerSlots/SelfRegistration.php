@@ -30,7 +30,7 @@ use ilCheckboxInputGUI;
 use ilPropertyFormGUI;
 use ilObjUser;
 use ILIAS\LegalDocuments\Provide;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use Closure;
 use ILIAS\UI\Component\Component;
 use ilFormPropertyGUI;

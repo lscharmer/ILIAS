@@ -43,7 +43,7 @@ class ilPasswordAssistanceGUI implements ilCtrlSecurityInterface
     private ILIAS\UI\Factory $ui_factory;
     private ILIAS\UI\Renderer $ui_renderer;
     private ilObjUser $actor;
-    private ILIAS\Data\Clock\ClockInterface $clock;
+    private ILIAS\Refinery\Data\Clock\ClockInterface $clock;
     private ILIAS\Init\PasswordAssitance\PasswordAssistanceRepository $pwa_repository;
 
     public function __construct()
@@ -62,7 +62,7 @@ class ilPasswordAssistanceGUI implements ilCtrlSecurityInterface
         $this->ui_factory = $DIC->ui()->factory();
         $this->ui_renderer = $DIC->ui()->renderer();
         $this->actor = $DIC->user();
-        $this->clock = (new ILIAS\Data\Factory())->clock()->utc();
+        $this->clock = (new ILIAS\Refinery\Data\Factory())->clock()->utc();
         $this->pwa_repository = new \ILIAS\Init\PasswordAssitance\Repository\PasswordAssistanceDbRepository(
             $DIC->database(),
             $this->clock
@@ -388,7 +388,7 @@ class ilPasswordAssistanceGUI implements ilCtrlSecurityInterface
 
         $session = $this->pwa_repository->createSession(
             $this->pwa_repository->generateHash(),
-            new \ILIAS\Data\ObjectId($userObj->getId())
+            new \ILIAS\Refinery\Data\ObjectId($userObj->getId())
         );
 
         $pwassist_url = $this->buildUrl(
@@ -470,12 +470,12 @@ class ilPasswordAssistanceGUI implements ilCtrlSecurityInterface
                                 ->withRevelation(true)
                                 ->withAdditionalTransformation(
                                     $this->refinery->custom()->constraint(
-                                        static function (ILIAS\Data\Password $value): bool {
+                                        static function (ILIAS\Refinery\Data\Password $value): bool {
                                             return ilSecuritySettingsChecker::isPassword(
                                                 trim($value->toString())
                                             );
                                         },
-                                        static function (Closure $lng, ILIAS\Data\Password $value): string {
+                                        static function (Closure $lng, ILIAS\Refinery\Data\Password $value): string {
                                             $problem = $lng('passwd_invalid');
                                             $custom_problem = null;
                                             if (!ilSecuritySettingsChecker::isPassword(
@@ -491,7 +491,7 @@ class ilPasswordAssistanceGUI implements ilCtrlSecurityInterface
                                 )
                                 ->withAdditionalTransformation(
                                     $this->refinery->custom()->transformation(
-                                        static function (ILIAS\Data\Password $value): string {
+                                        static function (ILIAS\Refinery\Data\Password $value): string {
                                             return trim($value->toString());
                                         }
                                     )

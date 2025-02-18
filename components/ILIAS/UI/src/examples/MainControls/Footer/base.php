@@ -41,7 +41,7 @@ function base(): string
     $renderer = $DIC->ui()->renderer();
     $request = $DIC->http()->wrapper()->query();
     $request_url = $DIC->http()->request()->getUri();
-    $data_factory = new \ILIAS\Data\Factory();
+    $data_factory = new \ILIAS\Refinery\Data\Factory();
     $refinery_factory = new \ILIAS\Refinery\Factory($data_factory, $DIC->language());
 
     $example_uri = $data_factory->uri($request_url->__toString());

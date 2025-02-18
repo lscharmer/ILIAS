@@ -34,7 +34,7 @@ class BarTest extends \ILIAS_UI_TestBase
     protected I\Symbol\Glyph\Factory $glyph_factory;
     protected I\Symbol\Glyph\Glyph $glyph_mock;
     protected string $glyph_html;
-    protected \ILIAS\Data\URI $uri_mock;
+    protected \ILIAS\Refinery\Data\URI $uri_mock;
     protected string $uri;
 
     protected function setUp(): void
@@ -50,7 +50,7 @@ class BarTest extends \ILIAS_UI_TestBase
 
         $this->uri = sha1('https://example.com?foo=bar&bar=foobar');
 
-        $this->uri_mock = $this->createMock(\ILIAS\Data\URI::class);
+        $this->uri_mock = $this->createMock(\ILIAS\Refinery\Data\URI::class);
         $this->uri_mock->method('__toString')->willReturn($this->uri);
 
         $this->signal_generator = new \IncrementalSignalGenerator();

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\MetaData\OERExposer\OAIPMH;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Handler
 {

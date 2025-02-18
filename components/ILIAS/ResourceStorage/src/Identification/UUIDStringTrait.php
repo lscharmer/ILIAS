@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\ResourceStorage\Identification;
 
-use ILIAS\Data\UUID\Factory;
+use ILIAS\Refinery\Data\UUID\Factory;
 
 /**
  * Class UniqueIDCollectionIdentificationGenerator

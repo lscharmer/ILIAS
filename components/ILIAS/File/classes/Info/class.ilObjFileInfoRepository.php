@@ -17,7 +17,7 @@
  *********************************************************************/
 
 use ILIAS\ResourceStorage\Services;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\FileUpload\MimeType;
 
 /**

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\test;
 
-use ILIAS\Data\Clock\ClockInterface as Clock;
+use ILIAS\Refinery\Data\Clock\ClockInterface as Clock;
 use PHPUnit\Framework\TestCase;
 use ILIAS\LegalDocuments\UserAction;
 use ilObjUser;

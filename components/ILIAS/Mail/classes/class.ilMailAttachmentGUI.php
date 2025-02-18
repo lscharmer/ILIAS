@@ -284,7 +284,7 @@ class ilMailAttachmentGUI extends AbstractCtrlAwareUploadHandler
             $this->lng,
             $this->ctrl,
             $this->http->request(),
-            new ILIAS\Data\Factory(),
+            new ILIAS\Refinery\Data\Factory(),
             'handleTableActions',
             $this->mode
         );

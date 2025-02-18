@@ -40,7 +40,7 @@ function base()
     $f = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
 
-    $target = new \ILIAS\Data\URI("https://ilias.de");
+    $target = new \ILIAS\Refinery\Data\URI("https://ilias.de");
 
     $ico = $f->symbol()->icon()
              ->standard('someExample', 'Example')

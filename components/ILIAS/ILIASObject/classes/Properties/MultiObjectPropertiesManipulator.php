@@ -26,7 +26,7 @@ use ILIAS\UI\Component\Button\Standard as StandardButton;
 use ILIAS\UI\Component\Modal\RoundTrip as RoundTripModal;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use Psr\Http\Message\ServerRequestInterface;
 
 class MultiObjectPropertiesManipulator

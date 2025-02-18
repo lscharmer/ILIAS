@@ -33,7 +33,7 @@ use ILIAS\UI\Implementation\Render\Template as UITemplateWrapper;
 use ILIAS\UI\Implementation\Component\MainControls as I;
 use ILIAS\UI\Implementation\Render\Template;
 use ILIAS\UI\Renderer as RendererInterface;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Implementation\Render\ResourceRegistry;
 use LogicException;
 

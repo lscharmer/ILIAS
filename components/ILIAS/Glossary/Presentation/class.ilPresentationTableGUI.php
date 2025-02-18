@@ -367,7 +367,7 @@ class ilPresentationTableGUI
 
     protected function setStartAndLengthForViewControl(array $vc_data): void
     {
-        /** @var \ILIAS\Data\Range $range */
+        /** @var \ILIAS\Refinery\Data\Range $range */
         $range = $vc_data[0];
         if (($start = $range->getStart()) >= 0) {
             $this->manager->setSessionViewControlStart($start);

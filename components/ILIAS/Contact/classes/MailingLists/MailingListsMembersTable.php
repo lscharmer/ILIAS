@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Contact\MailingLists;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 use Psr\Http\Message\ServerRequestInterface;
 use ilArrayUtil;
@@ -63,7 +63,7 @@ class MailingListsMembersTable implements UI\Component\Table\DataRetrieval
                 $this
             )
             ->withId(self::class . '_' . $this->mailing_list->getId())
-            ->withOrder(new \ILIAS\Data\Order('login', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('login', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($actions)
             ->withRequest($this->request);
     }

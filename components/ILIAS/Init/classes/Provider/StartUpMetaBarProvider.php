@@ -23,7 +23,7 @@ namespace ILIAS\Init\Provider;
 use ILIAS\GlobalScreen\Identification\IdentificationInterface;
 use ILIAS\GlobalScreen\Scope\MetaBar\Provider\AbstractStaticMetaBarProvider;
 use Psr\Http\Message\UriInterface;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class StartUpMetaBarProvider extends AbstractStaticMetaBarProvider
 {

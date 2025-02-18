@@ -51,7 +51,7 @@ class CacheTest extends TestCase
     {
         $this->language_mock = $this->createMock(\ilLanguage::class);
         $this->refinery = new Factory(
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->language_mock
         );
         // prevent chached values between tests

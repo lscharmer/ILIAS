@@ -20,7 +20,7 @@ namespace ILIAS\StaticURL\Tests;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use ILIAS\StaticURL\Builder\StandardURIBuilder;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 require_once "Base.php";
 

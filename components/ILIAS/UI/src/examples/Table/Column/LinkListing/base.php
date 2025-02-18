@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\UI\examples\Table\Column\LinkListing;
 
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ---

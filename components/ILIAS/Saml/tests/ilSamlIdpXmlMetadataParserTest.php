@@ -28,7 +28,7 @@ class ilSamlIdpXmlMetadataParserTest extends TestCase
     {
         parent::setUp();
         $this->parser = new ilSamlIdpXmlMetadataParser(
-            new ILIAS\Data\Factory(),
+            new ILIAS\Refinery\Data\Factory(),
             new ilSamlIdpXmlMetadataErrorFormatter()
         );
     }

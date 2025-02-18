@@ -26,10 +26,10 @@ use ILIAS\UI\Component\Symbol\Icon\Standard as UIStandardIcon;
 use ILIAS\HTTP\Services as HTTPServices;
 use ILIAS\Tracking\View\Factory as ViewFactory;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Component\Item\Standard as UIStandardItem;
 use ILIAS\StaticURL\Services as StaticURL;
-use ILIAS\Data\URI as URI;
+use ILIAS\Refinery\Data\URI as URI;
 
 /**
  * @ilCtrl_IsCalledBy ilLPPersonalGUI: ilDashboardGUI

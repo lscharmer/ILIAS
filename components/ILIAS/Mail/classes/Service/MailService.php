@@ -24,7 +24,7 @@ use ILIAS\DI\Container;
 use ILIAS\Mail\Autoresponder\AutoresponderServiceImpl;
 use ILIAS\Mail\Autoresponder\AutoresponderService;
 use ilMailTemplateService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Mail\Autoresponder\AutoresponderDatabaseRepository;
 use ilMailTemplateRepository;
 use ilMailTemplateServiceInterface;

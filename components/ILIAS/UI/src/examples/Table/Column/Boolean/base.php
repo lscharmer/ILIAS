@@ -22,8 +22,8 @@ namespace ILIAS\UI\examples\Table\Column\Boolean;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ---

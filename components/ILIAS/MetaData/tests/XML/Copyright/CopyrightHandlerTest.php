@@ -27,7 +27,7 @@ use ILIAS\MetaData\Copyright\NullRepository;
 use ILIAS\MetaData\Copyright\Identifiers\NullHandler;
 use ILIAS\MetaData\Copyright\EntryInterface;
 use ILIAS\MetaData\Copyright\NullEntry;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Copyright\CopyrightDataInterface;
 use ILIAS\MetaData\Copyright\NullCopyrightData;
 use ILIAS\MetaData\Copyright\RendererInterface;

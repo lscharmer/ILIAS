@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\test\ConsumerToolbox;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\Component\Input\Container\Form\Form;
 use ILIAS\Refinery\Transformation;

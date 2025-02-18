@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\File\XML\Export\DataSet;
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\Export\ImportHandler\File\XML\Export\Handler as XMLExportFileHandler;
 use ILIAS\Export\ImportHandler\I\File\Namespace\FactoryInterface as FileNamespaceFactoryInterface;
 use ILIAS\Export\ImportHandler\I\File\XML\Export\DataSet\HandlerInterface as DataSetXMLExportFileHandlerInterface;

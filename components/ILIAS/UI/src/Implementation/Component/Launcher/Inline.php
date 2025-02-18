@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Launcher;
 
 use ILIAS\UI\Implementation\Component\ComponentHelper;
-use ILIAS\Data\Link;
+use ILIAS\Refinery\Data\Link;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Component\Input\Field\Group;
@@ -30,7 +30,7 @@ use ILIAS\UI\Component\Chart\ProgressMeter\ProgressMeter;
 use ILIAS\UI\Component\Symbol\Icon\Icon;
 use ILIAS\UI\Component\Modal;
 use Psr\Http\Message\ServerRequestInterface;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 
 class Inline implements C\Launcher\Inline
 {

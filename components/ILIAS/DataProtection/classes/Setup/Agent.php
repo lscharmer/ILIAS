@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\DataProtection\Setup;
+namespace ILIAS\Refinery\DataProtection\Setup;
 
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\Transformation;

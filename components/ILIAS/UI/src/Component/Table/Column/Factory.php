@@ -54,7 +54,7 @@ interface Factory
      * ---
      * @return \ILIAS\UI\Component\Table\Column\Date
      */
-    public function date(string $title, \ILIAS\Data\DateFormat\DateFormat $format): Date;
+    public function date(string $title, \ILIAS\Refinery\Data\DateFormat\DateFormat $format): Date;
 
     /**
      * ---
@@ -119,7 +119,7 @@ interface Factory
      * ---
      * @return \ILIAS\UI\Component\Table\Column\TimeSpan
      */
-    public function timeSpan(string $title, \ILIAS\Data\DateFormat\DateFormat $format): TimeSpan;
+    public function timeSpan(string $title, \ILIAS\Refinery\Data\DateFormat\DateFormat $format): TimeSpan;
 
     /**
      * ---

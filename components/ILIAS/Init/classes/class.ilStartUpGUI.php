@@ -23,7 +23,7 @@ use ILIAS\UICore\PageContentProvider;
 use ILIAS\Refinery\Factory as RefineryFactory;
 use ILIAS\HTTP\Services as HTTPServices;
 use ILIAS\TermsOfService\Consumer as TermsOfService;
-use ILIAS\DataProtection\Consumer as DataProtection;
+use ILIAS\Refinery\DataProtection\Consumer as DataProtection;
 use ILIAS\components\Authentication\Logout\ConfigurableLogoutTarget;
 use ILIAS\LegalDocuments\Conductor;
 use ILIAS\components\Authentication\Pages\AuthPageEditorContext;
@@ -575,7 +575,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
                     )
                     ->withAdditionalTransformation(
                         $this->refinery->custom()->transformation(
-                            static function (ILIAS\Data\Password $value): string {
+                            static function (ILIAS\Refinery\Data\Password $value): string {
                                 return $value->toString();
                             }
                         )
@@ -1141,7 +1141,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
                     ->withRevelation(true)
                     ->withAdditionalTransformation(
                         $this->refinery->custom()->transformation(
-                            static function (ILIAS\Data\Password $value): string {
+                            static function (ILIAS\Refinery\Data\Password $value): string {
                                 return $value->toString();
                             }
                         )

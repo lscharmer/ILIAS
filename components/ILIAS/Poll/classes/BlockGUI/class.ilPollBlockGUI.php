@@ -21,7 +21,7 @@ declare(strict_types=1);
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer as UIRenderer;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Poll\Image\I\FactoryInterface as ilPollImageFactoryInterface;
 use ILIAS\Poll\Image\Factory as ilPollImageFactory;
 

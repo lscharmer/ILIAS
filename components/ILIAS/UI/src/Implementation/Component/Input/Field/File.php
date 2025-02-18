@@ -24,7 +24,7 @@ use ILIAS\UI\Implementation\Component\Input\UploadLimitResolver;
 use ILIAS\UI\Component\Input\Field\UploadHandler;
 use ILIAS\UI\Component\Input\Field\FileUpload;
 use ILIAS\UI\Component\Input\Container\Form\FormInput;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Component as C;
 use ILIAS\Refinery\Constraint;

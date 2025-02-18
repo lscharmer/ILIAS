@@ -20,12 +20,12 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\ConsumerToolbox\ConsumerSlots;
 
-use ILIAS\Data\URI;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\URI;
+use ILIAS\Refinery\Data\Result\Error;
 use ILIAS\UI\Component\Component;
 use ILIAS\LegalDocuments\Value\DocumentContent;
 use ilTemplate;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\UI\Component\MainControls\Footer;
 use ILIAS\LegalDocuments\test\ContainerMock;
 use ILIAS\LegalDocuments\Provide;

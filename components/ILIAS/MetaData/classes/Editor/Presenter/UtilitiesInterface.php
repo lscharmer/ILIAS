@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\MetaData\Editor\Presenter;
 
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 
 interface UtilitiesInterface
 {

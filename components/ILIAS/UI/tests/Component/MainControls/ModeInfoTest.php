@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Implementation\Component\MainControls\ModeInfo;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Implementation\Component\Symbol\Factory;

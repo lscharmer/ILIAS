@@ -22,7 +22,7 @@ require_once(__DIR__ . "/../../../../../../vendor/composer/vendor/autoload.php")
 require_once(__DIR__ . "/../../Base.php");
 
 use ILIAS\UI\Implementation\Component as I;
-use ILIAS\Data\LanguageTag;
+use ILIAS\Refinery\Data\LanguageTag;
 use ILIAS\UI\Component\Link\Relationship;
 
 /**

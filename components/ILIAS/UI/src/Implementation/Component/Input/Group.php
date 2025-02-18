@@ -23,9 +23,9 @@ namespace ILIAS\UI\Implementation\Component\Input;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\Constraint;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\Language\Language;
 use ILIAS\UI\Component\Input\InputData;
 

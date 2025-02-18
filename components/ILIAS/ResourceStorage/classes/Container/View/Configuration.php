@@ -22,7 +22,7 @@ namespace ILIAS\components\ResourceStorage\Container\View;
 
 use ILIAS\ResourceStorage\Stakeholder\ResourceStakeholder;
 use ILIAS\ResourceStorage\Resource\StorableContainerResource;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\components\ResourceStorage\Container\View\ActionBuilder\ExternalSingleAction;
 
 /**

@@ -26,7 +26,7 @@ use ILIAS\UI\Component\Counter as C;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\Symbol\Glyph\Glyph;
 use ILIAS\UI\Implementation\Component\Symbol\Glyph\Renderer;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\HelpTextRetriever;
 
 /**

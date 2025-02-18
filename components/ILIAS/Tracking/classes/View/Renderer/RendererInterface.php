@@ -25,7 +25,7 @@ use ILIAS\Tracking\View\DataRetrieval\Info\ObjectDataInterface;
 use ILIAS\Tracking\View\PropertyList\PropertyListInterface;
 use ILIAS\UI\Component\Item\Standard as UIStandardItem;
 use ILIAS\UI\Component\Chart\ProgressMeter\Standard as UIStandardProgressMeter;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 interface RendererInterface
 {

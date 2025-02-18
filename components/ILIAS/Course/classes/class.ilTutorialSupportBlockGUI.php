@@ -22,7 +22,7 @@ use ILIAS\HTTP\Services as HttpServices;
 use ILIAS\Refinery\Factory as RefineryFactory;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer as UIRenderer;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\Implementation\Component\Symbol\Avatar\Picture;
 use ILIAS\UI\Component\Button\Shy as ShyButton;

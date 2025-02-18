@@ -25,7 +25,7 @@ use ILIAS\MetaData\OERExposer\OAIPMH\HTTP\WrapperInterface as HTTPWrapper;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Verb;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\RequestInterface;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Request;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Parser implements ParserInterface
 {

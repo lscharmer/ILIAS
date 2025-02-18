@@ -20,16 +20,16 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\ConsumerToolbox;
 
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Error;
 use ilObjUser;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\Value\Document;
 use Closure;
 use ILIAS\LegalDocuments\ConsumerToolbox\Setting\BooleanSetting;
 use ILIAS\LegalDocuments\Provide;
 use ilAuthUtils;
-use ILIAS\Data\Clock\ClockInterface as Clock;
+use ILIAS\Refinery\Data\Clock\ClockInterface as Clock;
 use DateTimeImmutable;
 
 class User

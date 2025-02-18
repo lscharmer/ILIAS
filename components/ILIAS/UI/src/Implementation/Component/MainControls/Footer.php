@@ -27,7 +27,7 @@ use ILIAS\UI\Component\Link\Standard as Link;
 use ILIAS\UI\Component\Symbol\Icon\Icon;
 use ILIAS\UI\Component\Button\Shy;
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Footer implements MainControls\Footer
 {

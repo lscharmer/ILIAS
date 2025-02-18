@@ -21,7 +21,7 @@ declare(strict_types=1);
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\DI\RBACServices;
 use ILIAS\HTTP\GlobalHttpState;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\UI\Component\Input\Container\Form\Standard as StandardForm;
 
 /**

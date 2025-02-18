@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Filesystem;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Finder\Finder;
 use ILIAS\Filesystem\Provider\DirectoryAccess;
 use ILIAS\Filesystem\Provider\FileAccess;

@@ -22,7 +22,7 @@ namespace ILIAS\Export\Test\ExportHandler\Repository\Element;
 
 use DateTimeImmutable;
 use Exception;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Export\ExportHandler\I\Repository\Element\Wrapper\IRSS\FactoryInterface as ilExportHandlerRepositoryElementIRSSWrapperFactoryInterface;
 use ILIAS\Export\ExportHandler\I\Repository\Element\Wrapper\IRSS\HandlerInterface as ilExportHandlerRepositoryElementIRSSWrapperInterface;
 use ILIAS\Export\ExportHandler\I\Repository\Element\Wrapper\IRSSInfo\FactoryInterface as ilExportHandlerRepositoryElementIRSSInfoWrapperFactoryInterface;

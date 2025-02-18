@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\LegalDocuments\test\Table;
 
 use ilCtrl;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\LegalDocuments\EditLinks;
 use ILIAS\UI\Component\Component;
 use ILIAS\UI\Factory as UIFactory;

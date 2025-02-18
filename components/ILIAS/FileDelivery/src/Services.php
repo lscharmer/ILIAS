@@ -25,7 +25,7 @@ use ILIAS\FileDelivery\Token\DataSigner;
 use ILIAS\Filesystem\Stream\FileStream;
 use ILIAS\FileDelivery\Delivery\Disposition;
 use ILIAS\FileDelivery\Delivery\LegacyDelivery;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

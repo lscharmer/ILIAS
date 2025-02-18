@@ -28,7 +28,7 @@ use ILIAS\MetaData\OERHarvester\ExposedRecords\DatabaseRepository;
 use ILIAS\MetaData\OERHarvester\XML\Writer;
 use ILIAS\MetaData\OERHarvester\Settings\SettingsInterface;
 use ILIAS\Export\ExportHandler\Factory as ExportService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\MetaData\Copyright\RepositoryInterface;
 
 class Initiator

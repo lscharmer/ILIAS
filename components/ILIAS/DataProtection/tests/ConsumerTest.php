@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\DataProtection\test;
+namespace ILIAS\Refinery\DataProtection\test;
 
 use ilCtrl;
 use ILIAS\Refinery\ByTrying;
@@ -29,7 +29,7 @@ use ILIAS\LegalDocuments\test\ContainerMock;
 use PHPUnit\Framework\TestCase;
 use ILIAS\LegalDocuments\LazyProvide;
 use ILIAS\LegalDocuments\UseSlot;
-use ILIAS\DataProtection\Consumer;
+use ILIAS\Refinery\DataProtection\Consumer;
 
 require_once __DIR__ . '/bootstrap.php';
 

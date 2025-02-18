@@ -30,7 +30,7 @@ function base()
 {
     global $DIC;
     $ui_factory = $DIC->ui()->factory();
-    $data_factory = new \ILIAS\Data\Factory();
+    $data_factory = new \ILIAS\Refinery\Data\Factory();
     $renderer = $DIC->ui()->renderer();
     $spacer = $ui_factory->divider()->horizontal();
 

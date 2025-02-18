@@ -42,7 +42,7 @@ function with_lead_text()
         $f->button()->shy("GitHub", "https://www.github.com")
     ));
 
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
 
     $list_item1 = $f->item()->standard("Weekly Meeting")
         ->withActions($actions)

@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Link;
 
 use ILIAS\UI\Component\Link as L;
 use ILIAS\UI\Component\Symbol\Symbol;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Factory implements L\Factory
 {

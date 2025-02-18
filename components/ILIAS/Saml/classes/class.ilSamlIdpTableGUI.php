@@ -33,7 +33,7 @@ final class ilSamlIdpTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
         private readonly ilLanguage $lng,
         private readonly ilCtrlInterface $ctrl,
         private readonly \Psr\Http\Message\ServerRequestInterface $http_request,
-        private readonly \ILIAS\Data\Factory $df,
+        private readonly \ILIAS\Refinery\Data\Factory $df,
         private readonly string $parent_cmd,
         private readonly bool $has_write_access
     ) {
@@ -65,7 +65,7 @@ final class ilSamlIdpTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
                 $this
             )
             ->withId(self::class)
-            ->withOrder(new \ILIAS\Data\Order('title', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('title', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($this->getActions())
             ->withRequest($this->http_request);
     }
@@ -141,7 +141,7 @@ final class ilSamlIdpTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
     /**
      * @return list<ilSamlIdp>
      */
-    private function getRecords(\ILIAS\Data\Range $range, \ILIAS\Data\Order $order): array
+    private function getRecords(\ILIAS\Refinery\Data\Range $range, \ILIAS\Refinery\Data\Order $order): array
     {
         $records = $this->idps;
 
@@ -157,7 +157,7 @@ final class ilSamlIdpTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
             return (int) $right->isActive() <=> (int) $left->isActive();
         });
 
-        if ($order_direction === \ILIAS\Data\Order::DESC) {
+        if ($order_direction === \ILIAS\Refinery\Data\Order::DESC) {
             $records = array_reverse($records);
         }
 
@@ -169,8 +169,8 @@ final class ilSamlIdpTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
     public function getRows(
         \ILIAS\UI\Component\Table\DataRowBuilder $row_builder,
         array $visible_column_ids,
-        \ILIAS\Data\Range $range,
-        \ILIAS\Data\Order $order,
+        \ILIAS\Refinery\Data\Range $range,
+        \ILIAS\Refinery\Data\Order $order,
         ?array $filter_data,
         ?array $additional_parameters
     ): Generator {

@@ -22,9 +22,9 @@ namespace ILIAS\Test\Questions\Presentation;
 
 use ILIAS\Taxonomy\DomainService as TaxonomyService;
 use GuzzleHttp\Psr7\ServerRequest;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\UI\Component\Table\Action\Standard as TableAction;
 use ILIAS\UI\Component\Table\Column\Column;
 use ILIAS\UI\Component\Table\DataRetrieval;

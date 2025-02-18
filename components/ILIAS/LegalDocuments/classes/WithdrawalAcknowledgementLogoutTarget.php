@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ilCtrlInterface;
 use ILIAS\Authentication\Logout\LogoutDestinations;
 use ILIAS\components\Authentication\Logout\LogoutTarget;

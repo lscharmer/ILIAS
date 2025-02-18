@@ -22,9 +22,9 @@ namespace ILIAS\LegalDocuments;
 
 use ILIAS\LegalDocuments\Intercept\LazyIntercept;
 use ILIAS\LegalDocuments\Intercept\NullIntercept;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
 use ILIAS\Init\StartupSequence\StartUpSequenceStep;
 use ilCtrl;
 use Closure;

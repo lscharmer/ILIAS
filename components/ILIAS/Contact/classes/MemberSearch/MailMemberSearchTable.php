@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Contact\MemberSearch;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 use Psr\Http\Message\ServerRequestInterface;
 use ilArrayUtil;
@@ -61,7 +61,7 @@ class MailMemberSearchTable implements UI\Component\Table\DataRetrieval
                 $this
             )
             ->withId(self::class . '_' . $this->ref_id)
-            ->withOrder(new \ILIAS\Data\Order('login', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('login', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($actions)
             ->withRequest($this->request);
     }

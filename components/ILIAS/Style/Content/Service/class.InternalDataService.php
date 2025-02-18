@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Style\Content;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  * Content style data object factory

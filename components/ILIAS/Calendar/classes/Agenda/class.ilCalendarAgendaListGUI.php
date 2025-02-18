@@ -141,7 +141,7 @@ class ilCalendarAgendaListGUI extends ilCalendarViewGUI
         $events = $this->getEvents();
         $events = ilArrayUtil::sortArray($events, "dstart", "asc", true);
 
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         $items = array();
         $groups = array();
         $modals = array();

@@ -18,7 +18,7 @@
 
 namespace ILIAS\Filesystem\Provider;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Exception\FileNotFoundException;
 use ILIAS\Filesystem\Exception\IOException;
 

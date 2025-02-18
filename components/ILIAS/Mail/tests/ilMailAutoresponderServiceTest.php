@@ -22,7 +22,7 @@ use ILIAS\Mail\Autoresponder\AutoresponderService;
 use ILIAS\Mail\Autoresponder\AutoresponderServiceImpl;
 use ILIAS\Mail\Autoresponder\AutoresponderDto;
 use ILIAS\Mail\Autoresponder\AutoresponderRepository;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 
 class ilMailAutoresponderServiceTest extends ilMailBaseTestCase
 {

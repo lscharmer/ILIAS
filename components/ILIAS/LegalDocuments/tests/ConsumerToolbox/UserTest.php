@@ -20,15 +20,15 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\test\ConsumerToolbox;
 
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\Value\Document;
 use ILIAS\LegalDocuments\Provide\ProvideHistory;
 use ILIAS\LegalDocuments\Provide\ProvideDocument;
 use ILIAS\LegalDocuments\ConsumerToolbox\Setting;
 use ILIAS\LegalDocuments\test\ContainerMock;
-use ILIAS\Data\Clock\ClockInterface as Clock;
+use ILIAS\Refinery\Data\Clock\ClockInterface as Clock;
 use ILIAS\LegalDocuments\Provide;
 use ILIAS\LegalDocuments\ConsumerToolbox\UserSettings;
 use ILIAS\LegalDocuments\ConsumerToolbox\Settings;

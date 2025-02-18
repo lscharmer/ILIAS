@@ -26,7 +26,7 @@ use ILIAS\ResourceStorage\Collection\ResourceCollection;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 use ILIAS\ResourceStorage\Resource\StorableContainerResource;
 use ILIAS\ResourceStorage\Resource\StorableResource;
-use ILIAS\Dataset\IRSSContainerExportConfig;
+use ILIAS\Refinery\Dataset\IRSSContainerExportConfig;
 
 interface HandlerInterface
 {

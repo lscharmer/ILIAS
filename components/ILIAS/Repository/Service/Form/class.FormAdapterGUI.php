@@ -37,7 +37,7 @@ class FormAdapterGUI
     protected const ASYNC_NONE = 0;
     protected const ASYNC_MODAL = 1;
     protected const ASYNC_ON = 2;
-    protected \ILIAS\Data\Factory $data;
+    protected \ILIAS\Refinery\Data\Factory $data;
     protected \ilObjUser $user;
     protected string $last_key = "";
     protected \ILIAS\Refinery\Factory $refinery;
@@ -88,7 +88,7 @@ class FormAdapterGUI
         $this->lng = $DIC->language();
         $this->main_tpl = $DIC->ui()->mainTemplate();
         $this->user = $DIC->user();
-        $this->data = new \ILIAS\Data\Factory();
+        $this->data = new \ILIAS\Refinery\Data\Factory();
         $this->submit_caption = $submit_caption;
         self::initJavascript();
         $this->initStdObjProperties($DIC);

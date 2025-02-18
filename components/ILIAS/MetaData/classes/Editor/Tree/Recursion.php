@@ -23,7 +23,7 @@ namespace ILIAS\MetaData\Editor\Tree;
 use ILIAS\UI\Component\Tree\TreeRecursion;
 use ILIAS\UI\Component\Tree\Node\Factory;
 use ILIAS\UI\Component\Tree\Node\Node;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Elements\ElementInterface;
 use ILIAS\MetaData\Paths\FactoryInterface as PathFactoryInterface;
 use ILIAS\MetaData\Editor\Presenter\PresenterInterface;

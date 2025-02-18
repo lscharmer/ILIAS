@@ -22,7 +22,7 @@ namespace ILIAS\UI\examples\Table\Ordering;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * ---

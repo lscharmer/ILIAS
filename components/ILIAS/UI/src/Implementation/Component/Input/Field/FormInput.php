@@ -22,13 +22,13 @@ namespace ILIAS\UI\Implementation\Component\Input\Field;
 
 use ILIAS\Refinery\Constraint;
 use ILIAS\UI\Implementation\Component\Input\Input;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Component\Signal;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
 use ILIAS\UI\Implementation\Component\Triggerer;
 use ILIAS\UI\Component\Input\InputData;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use Generator;
 
 abstract class FormInput extends Input implements FormInputInternal

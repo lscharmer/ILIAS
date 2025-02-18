@@ -22,7 +22,7 @@ namespace ILIAS\MetaData\OERExposer\OAIPMH\Requests;
 
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Verb;
 use ILIAS\MetaData\OERExposer\OAIPMH\Requests\Argument;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class NullRequest implements RequestInterface
 {

@@ -19,7 +19,7 @@
 use ILIAS\Style\Content\Access;
 use ILIAS\Style\Content;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
-use ILIAS\Dataset\IRSSContainerExportConfig;
+use ILIAS\Refinery\Dataset\IRSSContainerExportConfig;
 
 /**
  * Style Data set class

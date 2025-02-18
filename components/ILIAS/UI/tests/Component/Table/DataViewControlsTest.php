@@ -24,8 +24,8 @@ require_once(__DIR__ . "/TableTestBase.php");
 use ILIAS\UI\Component;
 use ILIAS\UI\Implementation\Component as C;
 use ILIAS\UI\Component as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\URLBuilder;
 

@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Component;
 
-use ILIAS\Data\LanguageTag;
+use ILIAS\Refinery\Data\LanguageTag;
 
 interface HasContentLanguage
 {

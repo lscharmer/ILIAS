@@ -31,7 +31,7 @@ use ILIAS\ResourceStorage\Revision\RevisionStatus;
 use ILIAS\components\WOPI\Discovery\ActionDBRepository;
 use ILIAS\components\WOPI\Discovery\ActionRepository;
 use ILIAS\components\WOPI\Embed\EmbeddedApplication;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\FileUpload\MimeType;
 use ILIAS\MetaData\Services\ServicesInterface as LOMServices;
 use ILIAS\File\Capabilities\Capabilities;

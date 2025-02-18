@@ -34,7 +34,7 @@ class FooterTest extends ILIAS_UI_TestBase
     protected I\Button\Factory $button_factory;
     protected I\Link\Factory $link_factory;
     protected I\Listing\Factory $listing_factory;
-    protected \ILIAS\Data\URI $uri_mock;
+    protected \ILIAS\Refinery\Data\URI $uri_mock;
     protected string $link_html;
     protected string $icon_html;
     protected string $shy_html;
@@ -68,7 +68,7 @@ class FooterTest extends ILIAS_UI_TestBase
         $this->listing_factory = $this->createMock(I\Listing\Factory::class);
         $this->listing_factory->method('unordered')->willReturn($this->unordered_mock);
 
-        $this->uri_mock = $this->createMock(\ILIAS\Data\URI::class);
+        $this->uri_mock = $this->createMock(\ILIAS\Refinery\Data\URI::class);
 
         parent::setUp();
     }

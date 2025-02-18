@@ -23,7 +23,7 @@ use ILIAS\Export\ExportHandler\I\Consumer\Context\HandlerInterface as ilExportHa
 use ILIAS\Export\ExportHandler\I\Info\File\CollectionInterface as ilExportHandlerFileInfoCollectionInterface;
 use ILIAS\Export\ExportHandler\I\Consumer\File\Identifier\CollectionInterface as ilExportHandlerConsumerFileIdentifierCollectionInterface;
 use ILIAS\DI\Container;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 class ilDataCollectionExportOptionsXLSX extends ilBasicLegacyExportOption
 {

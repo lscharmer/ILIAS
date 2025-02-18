@@ -21,7 +21,7 @@ declare(strict_types=1);
 require_once 'components/ILIAS/UI/tests/AbstractFactoryTestCase.php';
 
 use ILIAS\UI\Component\Table\Action;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\URLBuilder;
 
 class ActionFactoryTest extends AbstractFactoryTestCase

@@ -38,7 +38,7 @@ class TableAdapterGUI
     protected URLBuilderToken $row_id_token;
     protected URLBuilderToken $action_parameter_token;
     protected URLBuilder $url_builder;
-    protected \ILIAS\Data\Factory $df;
+    protected \ILIAS\Refinery\Data\Factory $df;
 
     protected \ilLanguage $lng;
     protected ?Table $table = null;
@@ -62,7 +62,7 @@ class TableAdapterGUI
         $this->http = $DIC->http();
         $this->lng = $DIC->language();
         $this->refinery = $DIC->refinery();
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
         $this->initRequest($this->http, $this->refinery);
         if ($namespace === "") {
             $this->namespace = $id;

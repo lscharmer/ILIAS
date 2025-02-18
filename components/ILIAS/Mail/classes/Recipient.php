@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 namespace ILIAS\Mail;
 
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\LegalDocuments\Conductor;
 use ilObjUser;
 use ilMailOptions;

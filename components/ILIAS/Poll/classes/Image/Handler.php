@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Poll\Image;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\Poll\Image\I\HandlerInterface as ilPollImageInterface;
 use ILIAS\Poll\Image\I\Repository\FactoryInterface as ilPollImageRepositoryFactoryInterface;

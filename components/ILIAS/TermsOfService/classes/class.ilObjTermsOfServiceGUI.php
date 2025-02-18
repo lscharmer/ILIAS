@@ -24,7 +24,7 @@ use ILIAS\LegalDocuments\Config;
 use ILIAS\LegalDocuments\Legacy\Confirmation;
 use ILIAS\LegalDocuments\ConsumerToolbox\UI;
 use ILIAS\LegalDocuments\ConsumerToolbox\Blocks;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Component\Input\Container\Form\Form;
 
 /**

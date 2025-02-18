@@ -39,7 +39,7 @@ use ILIAS\MetaData\XML\Writer\SimpleDC\SimpleDCInterface;
 use ILIAS\MetaData\XML\Writer\SimpleDC\SimpleDC;
 use ILIAS\MetaData\XML\Copyright\Links\LinkGenerator;
 use ILIAS\Export\ExportHandler\Factory as ExportService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class Services
 {

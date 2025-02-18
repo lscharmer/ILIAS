@@ -20,17 +20,17 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Input\Field;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Component\Signal;
 use ILIAS\UI\Implementation\Component\Input\GroupInternal;
 use ILIAS\UI\Implementation\Component\Input\Group as GroupInternals;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Language\Language;
 use ILIAS\Refinery\Constraint;
 use Closure;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use Generator;
 use ILIAS\UI\Implementation\Component\Input\NameSource;
 

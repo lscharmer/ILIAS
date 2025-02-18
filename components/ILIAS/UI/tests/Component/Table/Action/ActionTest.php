@@ -23,7 +23,7 @@ require_once(__DIR__ . "/../../../Base.php");
 
 use ILIAS\UI\Component\Table\Action as I;
 use ILIAS\UI\Implementation\Component\Table\Action as Implementation;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component\Signal;
 use ILIAS\UI\URLBuilder;
 

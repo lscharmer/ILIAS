@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Input\Field;
 
 use ILIAS\UI\Component as C;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Language\Language;
 
@@ -72,7 +72,7 @@ class Link extends Group implements C\Input\Field\Link
 
     protected function addTransformation(): void
     {
-        $trafo = $this->refinery->custom()->transformation(function ($v): ?\ILIAS\Data\Link {
+        $trafo = $this->refinery->custom()->transformation(function ($v): ?\ILIAS\Refinery\Data\Link {
             list($label, $url) = $v;
             if (is_null($url) || $url === "") {
                 return null;

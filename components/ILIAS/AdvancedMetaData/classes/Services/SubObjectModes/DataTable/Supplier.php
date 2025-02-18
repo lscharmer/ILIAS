@@ -22,7 +22,7 @@ namespace ILIAS\AdvancedMetaData\Services\SubObjectModes\DataTable;
 
 use ILIAS\UI\Component\Table\Column\Column;
 use ILIAS\UI\Factory as UIFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\AdvancedMetaData\Services\SubObjectIDInterface;
 use ILIAS\StaticURL\Services as StaticURL;
 use ILIAS\AdvancedMetaData\Services\Constants;

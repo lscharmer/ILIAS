@@ -38,7 +38,7 @@ class ilStudyProgrammeChangeDeadlineGUI
     protected Renderer $renderer;
     protected Psr\Http\Message\ServerRequestInterface $request;
     protected ILIAS\Refinery\Factory $refinery_factory;
-    protected ILIAS\Data\Factory $data_factory;
+    protected ILIAS\Refinery\Data\Factory $data_factory;
     protected ilPRGMessagePrinter $messages;
 
     protected ?string $back_target = null;
@@ -56,7 +56,7 @@ class ilStudyProgrammeChangeDeadlineGUI
         Renderer $renderer,
         Psr\Http\Message\ServerRequestInterface $request,
         ILIAS\Refinery\Factory $refinery_factory,
-        ILIAS\Data\Factory $data_factory,
+        ILIAS\Refinery\Data\Factory $data_factory,
         ilPRGMessagePrinter $messages
     ) {
         $this->ctrl = $ctrl;

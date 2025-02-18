@@ -19,8 +19,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Calendar\ConsultationHours;
 
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ilConsultationHourAppointments;
 use ilDatePresentation;
 use ilBookingEntry;
@@ -31,7 +31,7 @@ use ilLink;
 use DateTimeImmutable;
 use ilArrayUtil;
 use ILIAS\StaticURL;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ilConsultationHoursGUI;
 use ilCalendarEntry;
 use ilDate;

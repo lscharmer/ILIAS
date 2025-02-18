@@ -26,8 +26,8 @@ use ILIAS\HTTP\Services as HTTPService;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\URI;
 
 class QuestionsTableQuery
 {

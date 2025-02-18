@@ -115,7 +115,7 @@ $DIC->globalScreen()->layout()->meta()->addOnloadCode('alert();');
 **MetaData**
 
 ```php
-$data = new \ILIAS\Data\Factory();
+$data = new \ILIAS\Refinery\Data\Factory();
 $DIC->globalScreen()->layout()->meta()->addMetaDatum(
     $data->htmlMetadata()->userDefined('keywords', 'Learning,Management')
 );

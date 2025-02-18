@@ -24,7 +24,7 @@ use ilObjUser;
 use ilCheckboxInputGUI;
 use ilPropertyFormGUI;
 use ILIAS\LegalDocuments\Value\Document;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\test\ContainerMock;
 use ILIAS\LegalDocuments\Provide;
 use ILIAS\LegalDocuments\ConsumerToolbox\User;

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\KioskMode;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 /**
  * The URLBuilder allows views to get links that are used somewhere inline in

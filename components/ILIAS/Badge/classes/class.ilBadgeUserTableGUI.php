@@ -22,8 +22,8 @@ namespace ILIAS\Badge;
 
 use ILIAS\UI\Factory;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ilLanguage;
 use ilGlobalTemplateInterface;
 use ILIAS\UI\Renderer;
@@ -43,7 +43,7 @@ use ilObjectDataDeletionLog;
 use ilTree;
 use ilCalendarSettings;
 use ilObjUser;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 use ILIAS\UI\Component\Table\Column\Column;
 use ILIAS\UI\Component\Table\Action\Action;
 
@@ -342,7 +342,7 @@ class ilBadgeUserTableGUI implements DataRetrieval
 
     public function renderTable(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         if ((int) $this->user->getTimeFormat() === ilCalendarSettings::TIME_FORMAT_12) {
             $this->date_format = $df->dateFormat()->withTime12($this->user->getDateFormat());
         } else {

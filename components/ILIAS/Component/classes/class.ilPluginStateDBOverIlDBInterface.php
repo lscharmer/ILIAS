@@ -17,8 +17,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data;
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data;
+use ILIAS\Refinery\Data\Version;
 
 /**
  * Implementation of ilPluginStateDB over ilDBInterface.

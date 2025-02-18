@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Component\Table;
 
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use Generator;
 
 interface DataRetrieval

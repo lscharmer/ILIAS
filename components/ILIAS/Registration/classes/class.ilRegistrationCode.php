@@ -258,7 +258,7 @@ class ilRegistrationCode
 
         $row = $ilDB->fetchAssoc($res);
         if ($row['alimit'] === 'absolute') {
-            $clock_factory = (new \ILIAS\Data\Factory())->clock();
+            $clock_factory = (new \ILIAS\Refinery\Data\Factory())->clock();
             $right_interval = new DateTimeImmutable(
                 $row['alimitdt'],
                 $clock_factory->system()->now()->getTimezone()

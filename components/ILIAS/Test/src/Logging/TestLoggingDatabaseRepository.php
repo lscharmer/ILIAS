@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\Test\Logging;
 
 use ILIAS\Test\Logging\LogTable;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 class TestLoggingDatabaseRepository implements TestLoggingRepository
 {
@@ -88,8 +88,8 @@ class TestLoggingDatabaseRepository implements TestLoggingRepository
     public function getLogs(
         array $valid_types,
         ?array $test_filter,
-        ?\ILIAS\Data\Range $range = null,
-        ?\ILIAS\Data\Order $order = null,
+        ?\ILIAS\Refinery\Data\Range $range = null,
+        ?\ILIAS\Refinery\Data\Order $order = null,
         ?int $from_filter = null,
         ?int $to_filter = null,
         ?array $admin_filter = null,

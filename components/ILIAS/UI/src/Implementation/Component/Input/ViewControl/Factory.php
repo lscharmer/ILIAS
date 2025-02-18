@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Input\ViewControl;
 
 use ILIAS\UI\Component\Input\ViewControl as VCInterface;
 use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Implementation\Component\Input\Field\Factory as FieldFactory;
 use ILIAS\Language\Language;

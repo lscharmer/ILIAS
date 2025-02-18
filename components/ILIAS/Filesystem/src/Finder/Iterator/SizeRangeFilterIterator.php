@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Filesystem\Finder\Iterator;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Filesystem;
 use ILIAS\Filesystem\DTO\Metadata;
 use ILIAS\Filesystem\Finder\Comparator\NumberComparator;

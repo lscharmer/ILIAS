@@ -81,7 +81,7 @@ class InitUIFramework
             );
         };
         $c["ui.data_factory"] = function ($c) {
-            return new ILIAS\Data\Factory();
+            return new ILIAS\Refinery\Data\Factory();
         };
         $c["ui.signal_generator"] = function ($c) {
             return new ILIAS\UI\Implementation\Component\SignalGenerator();

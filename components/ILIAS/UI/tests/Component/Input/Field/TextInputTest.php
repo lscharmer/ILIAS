@@ -26,7 +26,7 @@ require_once(__DIR__ . "/CommonFieldRendering.php");
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Component\Input\Field;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 
 class TextInputTest extends ILIAS_UI_TestBase

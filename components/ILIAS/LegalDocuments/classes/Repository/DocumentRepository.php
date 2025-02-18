@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\Repository;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\LegalDocuments\DocumentId;
 use ILIAS\LegalDocuments\Value\CriterionContent;
 use ILIAS\LegalDocuments\Value\Document;

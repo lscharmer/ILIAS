@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\LegalDocuments\Conductor;
 use ILIAS\Refinery\Transformation;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Mail\Recipient;
 
 class RecipientTest extends ilMailBaseTestCase

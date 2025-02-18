@@ -36,7 +36,7 @@ function base()
     global $DIC;
     $factory = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $here_uri = $df->uri($DIC->http()->request()->getUri()->__toString());
     $url_builder = new URLBuilder($here_uri);
 

@@ -18,8 +18,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 
 class ilIndividualAssessmentDateFormatter
 {

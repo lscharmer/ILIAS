@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\I\Info\Export\Container\ObjectId;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 interface HandlerInterface
 {

@@ -21,7 +21,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\MockObject\MockObject;
 use ILIAS\Filesystem\DTO\Metadata;
 use PHPUnit\Framework\Attributes\Depends;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem;
 use ILIAS\Filesystem\Finder\Finder;
 use ILIAS\Filesystem\MetadataType;

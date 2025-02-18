@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Tests\Questions\Presentation;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Test\Questions\Presentation\QuestionsOfAttemptTable;
 
 class QuestionsOfAttemptTableTest extends \ilTestBaseTestCase

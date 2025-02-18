@@ -24,9 +24,9 @@ use ILIAS\UI\Component\Table as T;
 use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
 use ILIAS\UI\Implementation\Component\Input\ViewControl\Factory as ViewControlFactory;
 use ILIAS\UI\Implementation\Component\Input\Container\ViewControl\Factory as ViewControlContainerFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use Closure;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Factory implements T\Factory
 {

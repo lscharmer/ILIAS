@@ -26,7 +26,7 @@ use ILIAS\UI\Component\Button\Standard as Button;
 use ILIAS\UI\Component\Signal;
 use ILIAS\UI\Component\Modal\RoundTrip as RoundtripModal;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\FileUpload\MimeType;
 use ILIAS\Filesystem\Filesystem;
 use ILIAS\MetaData\Vocabularies\Manager\ManagerInterface as VocabManager;

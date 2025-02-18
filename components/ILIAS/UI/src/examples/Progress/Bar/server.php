@@ -48,7 +48,7 @@ function server(): string
     $request = $http->wrapper()->query();
     $factory = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
-    $data_factory = new \ILIAS\Data\Factory();
+    $data_factory = new \ILIAS\Refinery\Data\Factory();
 
     $endpoint_flag = 'progress_bar_example_endpoint';
     $endpoint_url = $uri . "&$endpoint_flag=1";

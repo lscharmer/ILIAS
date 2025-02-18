@@ -42,7 +42,7 @@ class ilChatroomSettingsGUI extends ilChatroomGUIHandler
             true
         );
 
-        $result = (new \ILIAS\Data\Factory())->error($this->ilLng->txt('form_input_not_valid'));
+        $result = (new \ILIAS\Refinery\Data\Factory())->error($this->ilLng->txt('form_input_not_valid'));
         if ($this->http->request()->getMethod() === 'POST') {
             $settingsForm = $settingsForm->withRequest($this->http->request());
             $result = $settingsForm->getInputGroup()->getContent();

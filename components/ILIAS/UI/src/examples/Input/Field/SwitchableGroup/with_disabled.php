@@ -35,7 +35,7 @@ function with_disabled()
     $ui = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
     $request = $DIC->http()->request();
-    $data = new \ILIAS\Data\Factory();
+    $data = new \ILIAS\Refinery\Data\Factory();
 
     $group1 = $ui->input()->field()->group([$ui->input()->field()->text("Item 1", "Just some field")], "Group 1");
     $group2 = $ui->input()->field()->group([$ui->input()->field()->text("Item 2", "Just some field")], "Group 2");

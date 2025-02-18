@@ -22,8 +22,8 @@ namespace ILIAS\UI\examples\Table\Column\TimeSpan;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ---
@@ -36,7 +36,7 @@ function base()
     global $DIC;
     $f = $DIC['ui.factory'];
     $r = $DIC['ui.renderer'];
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
 
     $columns = [
         'd1' => $f->table()->column()->timeSpan("German Long", $df->dateFormat()->germanLong()),

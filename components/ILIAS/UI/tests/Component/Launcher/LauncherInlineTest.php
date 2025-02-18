@@ -23,17 +23,17 @@ require_once(__DIR__ . "/../../Base.php");
 
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Implementation\Component as I;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Refinery\Factory as Refinery;
 
 class LauncherInlineTest extends ILIAS_UI_TestBase
 {
-    protected ILIAS\Data\Factory $df;
+    protected ILIAS\Refinery\Data\Factory $df;
     protected ILIAS\Language\Language $language;
 
     public function setUp(): void
     {
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
     }
 
     protected function getInputFactory(): I\Input\Field\Factory

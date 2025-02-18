@@ -22,9 +22,9 @@ namespace ILIAS\LegalDocuments;
 
 use Closure;
 use Exception;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\Intercept\ConditionalIntercept;
 use ILIAS\LegalDocuments\GotoLink\ConditionalGotoLink;
 use ILIAS\LegalDocuments\ConsumerSlots\Agreement;

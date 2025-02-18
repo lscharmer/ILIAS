@@ -20,12 +20,12 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\I\Consumer\ExportWriter;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Filesystem\Stream\FileStream;
 use ILIAS\ResourceStorage\Collection\ResourceCollection;
 use ILIAS\ResourceStorage\Resource\StorableContainerResource;
 use ILIAS\ResourceStorage\Resource\StorableResource;
-use ILIAS\Dataset\IRSSContainerExportConfig;
+use ILIAS\Refinery\Dataset\IRSSContainerExportConfig;
 
 interface HandlerInterface
 {

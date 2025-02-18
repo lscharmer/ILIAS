@@ -45,7 +45,7 @@ class ilTestRandomQuestionSetConfigGUITest extends ilTestBaseTestCase
             $DIC['ilAccess'],
             $DIC['ui.factory'],
             $DIC['ui.renderer'],
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(\ILIAS\Test\Presentation\TabsManager::class),
             $DIC['lng'],
             $this->createMock(ILIAS\Test\Logging\TestLogger::class),

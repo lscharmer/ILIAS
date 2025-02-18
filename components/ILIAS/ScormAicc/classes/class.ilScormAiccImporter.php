@@ -18,12 +18,12 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataTypeFactory;
+use ILIAS\Refinery\Data\Factory as DataTypeFactory;
 
 class ilScormAiccImporter extends ilXmlImporter
 {
     private ilScormAiccDataSet $dataset;
-    private \ILIAS\Data\Result $result;
+    private \ILIAS\Refinery\Data\Result $result;
     private DataTypeFactory $df;
     /**
      * @var array<string, string|SimpleXMLElement>
@@ -45,16 +45,16 @@ class ilScormAiccImporter extends ilXmlImporter
         $this->module_properties = [];
     }
 
-    private function publishResult(\ILIAS\Data\Result $result): \ILIAS\Data\Result
+    private function publishResult(\ILIAS\Refinery\Data\Result $result): \ILIAS\Refinery\Data\Result
     {
         $this->result = $result;
         return $this->result;
     }
 
     /**
-     * @return \ILIAS\Data\Result|\ILIAS\Data\Result\Ok<array<string, string|SimpleXMLElement>>
+     * @return \ILIAS\Refinery\Data\Result|\ILIAS\Refinery\Data\Result\Ok<array<string, string|SimpleXMLElement>>
      */
-    public function getResult(): \ILIAS\Data\Result
+    public function getResult(): \ILIAS\Refinery\Data\Result
     {
         return $this->result;
     }
@@ -90,7 +90,7 @@ class ilScormAiccImporter extends ilXmlImporter
                         &$xml_directory,
                         $a_id,
                         $a_mapping
-                    ): ?\ILIAS\Data\Result {
+                    ): ?\ILIAS\Refinery\Data\Result {
                         if ($a_id !== '' &&
                             $a_mapping !== null &&
                             ($new_id = $a_mapping->getMapping('Services/Container', 'objs', $a_id))) {
@@ -101,7 +101,7 @@ class ilScormAiccImporter extends ilXmlImporter
                         return $this->df->ok($xml_directory);
                     }
                 )
-                ->then(function (string $xml_directory): ?\ILIAS\Data\Result {
+                ->then(function (string $xml_directory): ?\ILIAS\Refinery\Data\Result {
                     if (!is_dir($xml_directory)) {
                         return $this->df->error(
                             sprintf('Directory lost while importing: %s', $xml_directory)
@@ -110,7 +110,7 @@ class ilScormAiccImporter extends ilXmlImporter
 
                     return null;
                 })
-                ->then(function (string $xml_directory): ?\ILIAS\Data\Result {
+                ->then(function (string $xml_directory): ?\ILIAS\Refinery\Data\Result {
                     $manifest_file = $xml_directory . '/manifest.xml';
                     if (!file_exists($manifest_file)) {
                         return $this->df->error(
@@ -124,7 +124,7 @@ class ilScormAiccImporter extends ilXmlImporter
 
                     return $this->df->ok($manifest_file);
                 })
-                ->then(function (string $manifest_file): ?\ILIAS\Data\Result {
+                ->then(function (string $manifest_file): ?\ILIAS\Refinery\Data\Result {
                     $manifest_file_content = file_get_contents($manifest_file);
                     if (!is_string($manifest_file_content) || $manifest_file_content === '') {
                         return $this->df->error(
@@ -137,7 +137,7 @@ class ilScormAiccImporter extends ilXmlImporter
 
                     return $this->df->ok($manifest_file_content);
                 })
-                ->then(function (string $manifest_file_content) use ($xml_directory): ?\ILIAS\Data\Result {
+                ->then(function (string $manifest_file_content) use ($xml_directory): ?\ILIAS\Refinery\Data\Result {
                     $properties_file = $xml_directory . '/properties.xml';
                     $properties_file_content = file_get_contents($properties_file);
                     if (!is_string($properties_file_content) || $properties_file_content === '') {
@@ -151,11 +151,11 @@ class ilScormAiccImporter extends ilXmlImporter
 
                     return $this->df->ok($properties_file_content);
                 })
-                ->then(function (string $properties_file_content): ?\ILIAS\Data\Result {
+                ->then(function (string $properties_file_content): ?\ILIAS\Refinery\Data\Result {
                     return (new ilScormImportParser($this->df))->parse($properties_file_content);
                 })
                 ->then(
-                    function (SimpleXMLElement $properties_xml_doc): ?\ILIAS\Data\Result {
+                    function (SimpleXMLElement $properties_xml_doc): ?\ILIAS\Refinery\Data\Result {
                         try {
                             foreach ($this->dataset->properties as $key => $value) {
                                 $this->module_properties[$key] = $properties_xml_doc->{$key};
@@ -181,7 +181,7 @@ class ilScormAiccImporter extends ilXmlImporter
                     $a_mapping,
                     $new_object,
                     $DIC
-                ): ?\ILIAS\Data\Result {
+                ): ?\ILIAS\Refinery\Data\Result {
                     if ($a_id !== '' &&
                         $a_mapping !== null &&
                         ($new_id = $a_mapping->getMapping(

@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Chart\Bar;
 
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Component\Chart\Bar\XAxis;
-use ILIAS\Data\Chart\Dataset;
+use ILIAS\Refinery\Data\Chart\Dataset;
 
 class Horizontal extends Bar implements C\Chart\Bar\Horizontal
 {

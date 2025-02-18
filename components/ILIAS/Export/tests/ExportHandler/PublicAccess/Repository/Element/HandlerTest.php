@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Export\Test\ExportHandler\PublicAccess\Repository\Element;
 
 use Exception;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Export\ExportHandler\I\PublicAccess\Repository\Key\HandlerInterface as ilExportHandlerPublicAccessRepositoryKeyInterface;
 use ILIAS\Export\ExportHandler\I\PublicAccess\Repository\Values\HandlerInterface as ilExportHandlerPublicAccessRepositoryValuesInteface;
 use ILIAS\Export\ExportHandler\PublicAccess\Repository\Element\Handler as ilExportHandlerPublicAccessRepositoryElement;

@@ -22,7 +22,7 @@ namespace ILIAS\AdvancedMetaData\Services\SubObjectModes;
 
 use ILIAS\DI\Container;
 use ILIAS\AdvancedMetaData\Services\SubObjectIDInterface;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\AdvancedMetaData\Services\SubObjectModes\DataTable;
 use ILIAS\AdvancedMetaData\Services\SubObjectModes\Filter;
 

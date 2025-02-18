@@ -22,7 +22,7 @@ namespace ILIAS\GlobalScreen\Scope\Footer\Collector\Renderer;
 
 use ILIAS\UI\Component\Component;
 use ILIAS\GlobalScreen\Scope\Footer\Factory\isItem;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

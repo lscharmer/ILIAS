@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 
 /**
  * Repository interface for plugin state data.

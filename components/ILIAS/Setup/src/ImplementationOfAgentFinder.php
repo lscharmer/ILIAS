@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Setup;
 
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class ImplementationOfAgentFinder implements AgentFinder
 {

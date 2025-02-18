@@ -23,7 +23,7 @@ use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Implementation\Component\Input\Field\Factory as FieldFactory;
 use ILIAS\UI\Implementation\Component as I;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Implementation\Component\Input\UploadLimitResolver;
 

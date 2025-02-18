@@ -25,7 +25,7 @@ use PHPUnit\Framework\TestCase;
 
 use ILIAS\UI\Implementation\Crawler\Entry\ComponentEntry as Entry;
 use ILIAS\UI\Implementation\Crawler\Entry\ComponentEntries as Entries;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class KSDocumentationTreeRecursionTest extends TestCase
 {

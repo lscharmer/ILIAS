@@ -17,7 +17,7 @@
  *********************************************************************/
 
 use ILIAS\StaticURL\Services;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 /**
  * @deprecated Use ILIAS\components\StaticURL instead

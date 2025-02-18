@@ -20,7 +20,7 @@ use ILIAS\ResourceStorage\Collection\ResourceCollection;
 use ILIAS\ResourceStorage\Resource\StorableContainerResource;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 use ILIAS\ResourceStorage\Resource\StorableResource;
-use ILIAS\Dataset\IRSSContainerExportConfig;
+use ILIAS\Refinery\Dataset\IRSSContainerExportConfig;
 
 /**
  * A dataset contains in data in a common structure that can be

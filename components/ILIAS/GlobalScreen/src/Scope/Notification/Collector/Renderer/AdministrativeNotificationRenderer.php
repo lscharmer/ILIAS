@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\GlobalScreen\Scope\Notification\Collector\Renderer;
 
 use ILIAS\UI\Component\Component;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\GlobalScreen\Client\Notifications as ClientNotifications;
 use ILIAS\GlobalScreen\Scope\MainMenu\Collector\Renderer\Hasher;
 use ILIAS\GlobalScreen\Scope\Notification\Factory\isItem;

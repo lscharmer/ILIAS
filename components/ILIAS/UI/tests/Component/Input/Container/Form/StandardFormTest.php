@@ -24,7 +24,7 @@ require_once(__DIR__ . "/FormTest.php");
 require_once(__DIR__ . "/../../Field/CommonFieldRendering.php");
 
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component\Button\Factory;
 use ILIAS\UI\Implementation\Component as I;
 use Psr\Http\Message\ServerRequestInterface;

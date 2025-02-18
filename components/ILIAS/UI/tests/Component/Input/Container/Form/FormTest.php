@@ -27,7 +27,7 @@ use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Component\Input\InputData;
 use ILIAS\UI\Implementation\Component\Input\Container\Form\Form;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\Component\Input\Group;
 use ILIAS\Refinery\Custom\Transformation;

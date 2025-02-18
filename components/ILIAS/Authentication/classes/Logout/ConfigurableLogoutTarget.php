@@ -23,7 +23,7 @@ namespace ILIAS\components\Authentication\Logout;
 use ilLink;
 use ilObject;
 use ilSetting;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ilCtrlInterface;
 use InvalidArgumentException;
 use ILIAS\Authentication\Logout\LogoutDestinations;

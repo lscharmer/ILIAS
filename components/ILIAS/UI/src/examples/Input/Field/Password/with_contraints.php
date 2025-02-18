@@ -38,9 +38,9 @@ namespace ILIAS\UI\examples\Input\Field\Password;
  *
  *   Array
  *   (
- *      [pwd] => ILIAS\Data\Password Object
+ *      [pwd] => ILIAS\Refinery\Data\Password Object
  *      (
- *          [pass:ILIAS\Data\Password:private] => Passwort-1
+ *          [pass:ILIAS\Refinery\Data\Password:private] => Passwort-1
  *      )
  *   )
  * ---
@@ -53,7 +53,7 @@ function with_contraints()
     $lng = $DIC->language();
     $renderer = $DIC->ui()->renderer();
     $request = $DIC->http()->request();
-    $data = new \ILIAS\Data\Factory();
+    $data = new \ILIAS\Refinery\Data\Factory();
     $refinery = new \ILIAS\Refinery\Factory($data, $lng);
     $pw_validation = $refinery->password();
 

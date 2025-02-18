@@ -22,7 +22,7 @@ namespace ILIAS\StaticURL\Handler;
 
 use ILIAS\StaticURL\Request\Request;
 use ILIAS\StaticURL\Request\RequestBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\StaticURL\Response\Factory;
 use ILIAS\StaticURL\Context;
 use ILIAS\StaticURL\Builder\StandardURIBuilder;

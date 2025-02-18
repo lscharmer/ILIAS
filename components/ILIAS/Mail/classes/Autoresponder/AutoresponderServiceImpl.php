@@ -22,7 +22,7 @@ namespace ILIAS\Mail\Autoresponder;
 
 use DateInterval;
 use ilMailOptions;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 use DateTimeZone;
 use DateTimeImmutable;
 

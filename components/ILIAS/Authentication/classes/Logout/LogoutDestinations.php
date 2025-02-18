@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Authentication\Logout;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ilCtrlInterface;
 use ilStartUpGUI;
 

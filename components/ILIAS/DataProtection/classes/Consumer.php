@@ -18,17 +18,17 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\DataProtection;
+namespace ILIAS\Refinery\DataProtection;
 
 use ilLink;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\LegalDocuments\ConsumerToolbox\UI;
 use ILIAS\LegalDocuments\ConsumerToolbox\User;
 use ilDBConstants;
 use ilDBInterface;
 use ILIAS\LegalDocuments\UseSlot;
 use ILIAS\LegalDocuments\Consumer as ConsumerInterface;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ilObjUser;
 use ILIAS\LegalDocuments\ConsumerToolbox\Blocks;
 use ILIAS\LegalDocuments\LazyProvide;

@@ -28,7 +28,7 @@ use ILIAS\UI\Component\Listing\Descriptive as DescriptiveListing;
 use ILIAS\UI\Component\Input\Container\ViewControl\ViewControl;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\HTTP\Services as HTTPService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Language\Language;
 
 class Factory

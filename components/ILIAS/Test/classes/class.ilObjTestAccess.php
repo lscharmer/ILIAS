@@ -25,8 +25,8 @@ use ILIAS\Test\Access\SimpleAccess;
 use ILIAS\Test\Access\Readable;
 use ILIAS\Test\Settings\ScoreReporting\ScoreSettingsDatabaseRepository;
 use ILIAS\Test\Settings\ScoreReporting\ScoreReportingTypes;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
 
 /**
 * Class ilObjTestAccess

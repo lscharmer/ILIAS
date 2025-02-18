@@ -18,12 +18,12 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer as UIRenderer;
 use ILIAS\Poll\Image\I\FactoryInterface as PollImageFactoryInterface;
 use ILIAS\Poll\Image\Factory as PollImageFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * Class ilObjPollGUI

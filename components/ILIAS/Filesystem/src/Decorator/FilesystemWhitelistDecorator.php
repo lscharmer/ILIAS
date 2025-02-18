@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Filesystem\Decorator;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Exception\DirectoryNotFoundException;
 use ILIAS\Filesystem\Exception\IOException;
 use ILIAS\Filesystem\Filesystem;

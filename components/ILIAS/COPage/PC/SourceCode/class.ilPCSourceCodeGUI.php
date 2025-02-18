@@ -416,7 +416,7 @@ class ilPCSourceCodeGUI extends ilPageContentGUI
         FileUpload $upload,
         UploadResult $result
     ): BasicHandlerResult {
-        $fac = new ILIAS\Data\UUID\Factory();
+        $fac = new ILIAS\Refinery\Data\UUID\Factory();
         $uuid = $fac->uuid4AsString();
         $name = $uuid . ".txt";
         $upload->moveOneFileTo(

@@ -39,7 +39,7 @@ use PHPUnit\Framework\TestCase;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use PHPUnit\Framework\MockObject\MockObject;
 use ILIAS\UI\Component\Component;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\HelpTextRetriever;
 use ILIAS\UI\Help;
 use ILIAS\UI\Implementation\Component\Input\UploadLimitResolver;

@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Export\Test\ExportHandler\Repository\Key;
 
 use Exception;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Export\ExportHandler\I\Repository\Key\HandlerInterface as ilExportHandlerRepositoryKeyInterface;
 use ILIAS\Export\ExportHandler\Repository\Key\Collection as ilExportHandlerRepositoryKeyCollection;
 use PHPUnit\Framework\TestCase;

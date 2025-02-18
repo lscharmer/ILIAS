@@ -21,7 +21,7 @@ use ILIAS\GlobalScreen\Provider\ProviderCollection;
 use ILIAS\GlobalScreen\Scope\MainMenu\Provider\AbstractStaticPluginMainMenuProvider;
 use ILIAS\Setup\Environment;
 use ILIAS\Setup\ArrayEnvironment;
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 
 /**
  * @author   Richard Klees <richard.klees@concepts-and-training.de>

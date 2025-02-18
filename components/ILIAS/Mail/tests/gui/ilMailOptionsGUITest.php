@@ -47,7 +47,7 @@ class ilMailOptionsGUITest extends ilMailBaseTestCase
             $lng,
             $user,
             $httpState,
-            new Factory(new \ILIAS\Data\Factory(), $lng),
+            new Factory(new \ILIAS\Refinery\Data\Factory(), $lng),
             $mail_options
         );
     }
@@ -82,7 +82,7 @@ class ilMailOptionsGUITest extends ilMailBaseTestCase
         $options = new ilMailOptions(
             0,
             null,
-            $this->createMock(\ILIAS\Data\Clock\ClockInterface::class),
+            $this->createMock(\ILIAS\Refinery\Data\Clock\ClockInterface::class),
             $settings,
             $this->createMock(ilDBInterface::class)
         );
@@ -123,7 +123,7 @@ class ilMailOptionsGUITest extends ilMailBaseTestCase
         $options = new ilMailOptions(
             0,
             null,
-            $this->createMock(\ILIAS\Data\Clock\ClockInterface::class),
+            $this->createMock(\ILIAS\Refinery\Data\Clock\ClockInterface::class),
             $settings,
             $this->createMock(ilDBInterface::class)
         );
@@ -171,7 +171,7 @@ class ilMailOptionsGUITest extends ilMailBaseTestCase
         $options = new ilMailOptions(
             0,
             null,
-            $this->createMock(\ILIAS\Data\Clock\ClockInterface::class),
+            $this->createMock(\ILIAS\Refinery\Data\Clock\ClockInterface::class),
             $settings,
             $this->createMock(ilDBInterface::class)
         );

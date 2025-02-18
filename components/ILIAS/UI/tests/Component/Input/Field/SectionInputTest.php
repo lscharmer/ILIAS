@@ -23,7 +23,7 @@ require_once(__DIR__ . "/../../../Base.php");
 require_once(__DIR__ . "/CommonFieldRendering.php");
 
 use ILIAS\UI\Implementation\Component\Input\Field;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class SectionInputTest extends ILIAS_UI_TestBase
 {

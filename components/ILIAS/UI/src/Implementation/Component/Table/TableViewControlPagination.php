@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Table;
 
 use ILIAS\UI\Implementation\Component\Input\ViewControl\Pagination;
 use ILIAS\UI\Implementation\Component\Input\ViewControl;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 trait TableViewControlPagination
 {

@@ -16,7 +16,7 @@
  *********************************************************************/
 
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class ilNullPluginStateDBTest extends TestCase
 {

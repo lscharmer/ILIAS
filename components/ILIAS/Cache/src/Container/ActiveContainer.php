@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Cache\Container;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Cache\Adaptor\Adaptor;
 use ILIAS\Cache\Config;
 use ILIAS\Refinery\Transformation;

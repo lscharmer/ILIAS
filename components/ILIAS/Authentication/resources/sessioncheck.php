@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 if (!file_exists('../ilias.ini.php')) {
     die('The ILIAS setup is not completed. Please run the setup routine.');

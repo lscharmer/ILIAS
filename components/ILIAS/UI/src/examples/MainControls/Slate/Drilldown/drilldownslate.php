@@ -35,7 +35,7 @@ function drilldownslate()
     $renderer = $DIC->ui()->renderer();
 
     $ico = $f->symbol()->icon()->standard('', '')->withSize('small')->withAbbreviation('+');
-    $uri = new \ILIAS\Data\URI('https://ilias.de');
+    $uri = new \ILIAS\Refinery\Data\URI('https://ilias.de');
     $link = [$f->link()->bulky($ico->withAbbreviation('>'), 'Link', $uri)];
 
     $items = [

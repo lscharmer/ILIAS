@@ -28,9 +28,9 @@ use ILIAS\UI\Component\Chart\Bar\BarConfig;
  */
 class BarConfigTest extends ILIAS_UI_TestBase
 {
-    public function getDataFactory(): ILIAS\Data\Factory
+    public function getDataFactory(): ILIAS\Refinery\Data\Factory
     {
-        return new ILIAS\Data\Factory();
+        return new ILIAS\Refinery\Data\Factory();
     }
 
     public function testWithColor(): void

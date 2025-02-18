@@ -18,7 +18,7 @@
 
 use ILIAS\Setup;
 use ILIAS\Refinery;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 
 class ilStyleSetupAgent implements Setup\Agent

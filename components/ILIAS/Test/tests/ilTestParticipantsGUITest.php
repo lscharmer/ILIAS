@@ -46,7 +46,7 @@ class ilTestParticipantsGUITest extends ilTestBaseTestCase
             $DIC['ui.factory'],
             $DIC['ui.renderer'],
             $this->createMock(ilUIService::class),
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $DIC['lng'],
             $DIC['ilCtrl'],
             $DIC['refinery'],

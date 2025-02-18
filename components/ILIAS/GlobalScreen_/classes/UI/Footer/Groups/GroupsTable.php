@@ -21,7 +21,7 @@ namespace ILIAS\GlobalScreen\UI\Footer\Groups;
 use ILIAS\UI\Factory;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\GlobalScreen_\UI\Translator;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Component\Table\Ordering;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;

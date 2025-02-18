@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\MetaData\Presentation;
 
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 
 class UtilitiesTest extends TestCase
 {

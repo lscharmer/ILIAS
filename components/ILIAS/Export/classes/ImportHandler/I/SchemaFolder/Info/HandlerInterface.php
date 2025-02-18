@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\I\SchemaFolder\Info;
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use SplFileInfo;
 
 interface HandlerInterface

@@ -26,10 +26,10 @@ use ILIAS\UI\Component\Dropdown\Standard;
 use ILIAS\UI\Component\Table\Data;
 use ILIAS\UI\Factory;
 use ILIAS\components\ResourceStorage\Container\DataProvider\TableDataProvider;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\HTTP\Services;
 use ILIAS\components\ResourceStorage\URLSerializer;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\Component\Signal;
@@ -48,7 +48,7 @@ class RequestToDataTable implements RequestToComponents, DataRetrieval
     public const F_MODIFICATION_DATE = 'create_date';
     public const FIELD_TITLE = 'title';
     public const HOME = 'HOME';
-    private \ILIAS\Data\Factory $data_factory;
+    private \ILIAS\Refinery\Data\Factory $data_factory;
     private \ILIAS\ResourceStorage\Services $irss;
     private Renderer $ui_renderer;
     private \ilCtrlInterface $ctrl;
@@ -68,7 +68,7 @@ class RequestToDataTable implements RequestToComponents, DataRetrieval
         private UploadBuilder $upload_builder
     ) {
         global $DIC;
-        $this->data_factory = new \ILIAS\Data\Factory();
+        $this->data_factory = new \ILIAS\Refinery\Data\Factory();
         $this->ui_renderer = $DIC->ui()->renderer();
         $this->ctrl = $DIC->ctrl();
         $this->actions = $this->action_builder->getActionProvider()->getSingleActions(

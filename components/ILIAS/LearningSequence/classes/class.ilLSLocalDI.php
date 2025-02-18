@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use Pimple\Container;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\HTTP\Wrapper\ArrayBasedRequestWrapper;
 
 /**

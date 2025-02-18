@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\Setup;
 use ILIAS\Refinery;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 
 class ilHttpSetupAgent implements Setup\Agent

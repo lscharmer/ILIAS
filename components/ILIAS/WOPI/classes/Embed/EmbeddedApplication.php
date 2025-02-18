@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\WOPI\Embed;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\components\WOPI\Discovery\Action;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 use ILIAS\ResourceStorage\Stakeholder\ResourceStakeholder;

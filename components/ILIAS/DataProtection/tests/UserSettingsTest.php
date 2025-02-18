@@ -18,14 +18,14 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\DataProtection\test;
+namespace ILIAS\Refinery\DataProtection\test;
 
 use ILIAS\LegalDocuments\ConsumerToolbox\Convert;
 use ILIAS\LegalDocuments\ConsumerToolbox\Setting;
 use ILIAS\LegalDocuments\ConsumerToolbox\Marshal;
 use ILIAS\LegalDocuments\test\ContainerMock;
 use ILIAS\LegalDocuments\ConsumerToolbox\SelectSetting;
-use ILIAS\DataProtection\UserSettings;
+use ILIAS\Refinery\DataProtection\UserSettings;
 use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/bootstrap.php';

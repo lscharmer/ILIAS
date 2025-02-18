@@ -19,7 +19,7 @@
 use ILIAS\Setup\Metrics;
 use ILIAS\Setup\ImplementationOfInterfaceFinder;
 use ILIAS\Setup\ImplementationOfAgentFinder;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Setup\CLI\StatusCommand;
 
 /**

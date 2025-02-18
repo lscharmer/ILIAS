@@ -23,7 +23,7 @@ namespace ILIAS\components\ResourceStorage\Collections\View;
 use ILIAS\UI\URLBuilderToken;
 use ILIAS\UI\Implementation\Component\Dropdown\Standard;
 use ILIAS\UI\Factory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 use ILIAS\components\ResourceStorage\BinToHexSerializer;
 use ILIAS\ResourceStorage\Services;

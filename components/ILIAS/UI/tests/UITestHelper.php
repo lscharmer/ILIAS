@@ -25,7 +25,7 @@ use ILIAS\DI\Container;
 use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
 use ILIAS\Refinery\Factory as RefinaryFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * Class UITestHelper can be helpful for test cases outside the UI Components, to inject a working

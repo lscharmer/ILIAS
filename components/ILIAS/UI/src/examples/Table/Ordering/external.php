@@ -22,7 +22,7 @@ namespace ILIAS\UI\examples\Table\Ordering;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * ---
@@ -54,7 +54,7 @@ function external()
      */
     $refinery = $DIC['refinery'];
 
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $request = $DIC->http()->request();
     $request_wrapper = $DIC->http()->wrapper()->query();
 

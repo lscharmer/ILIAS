@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\examples\Link\Standard;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * ---

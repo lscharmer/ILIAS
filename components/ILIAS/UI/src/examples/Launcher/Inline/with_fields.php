@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\examples\Launcher\Inline;
 
-use ILIAS\Data\URI;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\URI;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component\Launcher\Launcher;
 
 /**
@@ -37,7 +37,7 @@ function with_fields()
     global $DIC;
     $ui_factory = $DIC['ui.factory'];
     $renderer = $DIC['ui.renderer'];
-    $data_factory = new \ILIAS\Data\Factory();
+    $data_factory = new \ILIAS\Refinery\Data\Factory();
     $request = $DIC->http()->request();
     $ctrl = $DIC['ilCtrl'];
     $spacer = $ui_factory->divider()->horizontal();

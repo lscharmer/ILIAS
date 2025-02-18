@@ -18,7 +18,7 @@
 
 namespace ILIAS\UI\Component\Progress;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Thibeau Fuhrer <thibeau@sr.solutions>
@@ -66,7 +66,7 @@ interface Factory
      *     1: >
      *       The Progress Bar must be fully understandable without any graphical UI.
      * ---
-     * @param \ILIAS\Data\URI $async_url
+     * @param \ILIAS\Refinery\Data\URI $async_url
      * @param string          $label
      * @return \ILIAS\UI\Component\Progress\Bar
      */

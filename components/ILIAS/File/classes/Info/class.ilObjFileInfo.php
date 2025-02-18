@@ -16,7 +16,7 @@
  *
  *********************************************************************/
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\ResourceStorage\Identification\ResourceIdentification;
 
 /**

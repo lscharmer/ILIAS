@@ -19,7 +19,7 @@
 use ILIAS\TestQuestionPool\Presentation\QuestionTable;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer as UIRenderer;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
 use ILIAS\Taxonomy\DomainService as TaxonomyService;

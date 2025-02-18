@@ -37,7 +37,7 @@ function with_tooltip()
     $f = $DIC->ui()->factory();
     $renderer = $DIC->ui()->renderer();
 
-    $target = new \ILIAS\Data\URI("https://ilias.de");
+    $target = new \ILIAS\Refinery\Data\URI("https://ilias.de");
     $glyph = $f->symbol()->glyph()->comment();
 
     $link = $f->link()->bulky($glyph, 'Link to ilias.de with Glyph', $target)

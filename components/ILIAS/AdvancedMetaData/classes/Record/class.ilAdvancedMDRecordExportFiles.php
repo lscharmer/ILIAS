@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\AdvancedMetaData\Record\File\Factory as ilAMDRecordFileFactory;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Filesystem\Stream\Streams;
 
 /**

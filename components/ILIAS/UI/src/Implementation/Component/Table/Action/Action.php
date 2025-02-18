@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Table\Action;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\UI\Component\Table\Action as I;
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
 

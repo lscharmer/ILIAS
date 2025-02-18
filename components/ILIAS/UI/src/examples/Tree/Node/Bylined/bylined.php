@@ -46,10 +46,10 @@ function bylined()
 
     $node1 = $f->tree()->node()->bylined('label', 'byline');
     $node2 = $f->tree()->node()->bylined('label', $long_byline)
-               ->withLink(new \ILIAS\Data\URI('https://docu.ilias.de'));
+               ->withLink(new \ILIAS\Refinery\Data\URI('https://docu.ilias.de'));
     $node3 = $f->tree()->node()->bylined('label', 'byline', $icon);
     $node4 = $f->tree()->node()->bylined('label', 'byline', $icon)
-               ->withLink(new \ILIAS\Data\URI('https://docu.ilias.de'));
+               ->withLink(new \ILIAS\Refinery\Data\URI('https://docu.ilias.de'));
     $data = [['node' => $node1, 'children' => [
         ['node' => $node2]]],
              ['node' => $node3, 'children' => [

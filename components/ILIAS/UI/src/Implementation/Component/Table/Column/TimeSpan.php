@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Table\Column;
 
 use ILIAS\UI\Component\Table\Column as C;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 use ILIAS\Language\Language;
 
 class TimeSpan extends Column implements C\TimeSpan

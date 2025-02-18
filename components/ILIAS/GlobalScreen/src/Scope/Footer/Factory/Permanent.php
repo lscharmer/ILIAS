@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\GlobalScreen\Scope\Footer\Factory;
 
 use ILIAS\GlobalScreen\Identification\IdentificationInterface;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

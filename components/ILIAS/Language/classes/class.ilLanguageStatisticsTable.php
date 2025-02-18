@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 use ILIAS\UI\Component\Table as DataTableInterface;
 use ILIAS\UI\Implementation\Component\Table as DataTable;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 class ilLanguageStatisticsTable implements DataTableInterface\DataRetrieval
 {
@@ -126,8 +126,8 @@ class ilLanguageStatisticsTable implements DataTableInterface\DataRetrieval
     public function getRows(
         \ILIAS\UI\Component\Table\DataRowBuilder $row_builder,
         array $visible_column_ids,
-        \ILIAS\Data\Range $range,
-        \ILIAS\Data\Order $order,
+        \ILIAS\Refinery\Data\Range $range,
+        \ILIAS\Refinery\Data\Order $order,
         ?array $filter_data,
         ?array $additional_parameters
     ): Generator {

@@ -34,7 +34,7 @@ use ILIAS\MetaData\Editor\Dictionary\TagFactory;
 use ILIAS\MetaData\Editor\Http\LinkFactoryInterface;
 use ILIAS\MetaData\Editor\Http\RequestParserInterface;
 use ILIAS\MetaData\Editor\Http\LinkFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\MetaData\Editor\Http\RequestParser;
 use ILIAS\MetaData\Editor\Dictionary\DictionaryInterface;
 use ILIAS\MetaData\Repository\Services\Services as RepositoryServices;

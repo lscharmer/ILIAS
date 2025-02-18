@@ -31,7 +31,7 @@ function base()
     //Loading factories
     global $DIC;
     $f = $DIC->ui()->factory();
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $renderer = $DIC->ui()->renderer();
 
     //Generating Dimensions

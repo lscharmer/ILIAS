@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\UUID\Factory;
+use ILIAS\Refinery\Data\UUID\Factory;
 
 /**
  * Collection of basic placeholder values that can be used
@@ -45,7 +45,7 @@ class ilDefaultPlaceholderValues implements ilCertificatePlaceholderValues
         ?ilLanguage $language = null,
         ?ilCertificateUtilHelper $utilHelper = null,
         ?ilUserDefinedFieldsPlaceholderValues $userDefinedFieldsPlaceholderValues = null,
-        ?ILIAS\Data\UUID\Factory $uuid_factory = null,
+        ?ILIAS\Refinery\Data\UUID\Factory $uuid_factory = null,
         ?int $birthdayDateFormat = null
     ) {
         $this->objectHelper = $objectHelper ?? new ilCertificateObjectHelper();
@@ -66,7 +66,7 @@ class ilDefaultPlaceholderValues implements ilCertificatePlaceholderValues
         $this->utilHelper = $utilHelper ?? new ilCertificateUtilHelper();
         $this->userDefinedFieldsPlaceholderValues =
             $userDefinedFieldsPlaceholderValues ?? new ilUserDefinedFieldsPlaceholderValues();
-        $this->uuid_factory = $uuid_factory ?? new ILIAS\Data\UUID\Factory();
+        $this->uuid_factory = $uuid_factory ?? new ILIAS\Refinery\Data\UUID\Factory();
 
         $this->placeholder = [
             'CERTIFICATE_ID' => '',

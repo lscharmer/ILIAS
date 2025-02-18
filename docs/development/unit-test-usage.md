@@ -1080,7 +1080,7 @@ explained in an earlier chapter.
 
 ```php
 <?php
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\Filesystem\Exception\FileAlreadyExistsException;
 use ILIAS\Filesystem\Exception\IOException;
 use League\Flysystem\FileExistsException;

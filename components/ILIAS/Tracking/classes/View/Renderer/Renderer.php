@@ -31,7 +31,7 @@ use ILIAS\UI\Component\Symbol\Icon\Icon as UIIconIcon;
 use ILIAS\UI\Component\Symbol\Icon\Standard as UIStandardIcon;
 use ilLPObjSettings;
 use ilLPStatus;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Renderer implements RendererInterface
 {

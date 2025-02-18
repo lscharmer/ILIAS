@@ -24,7 +24,7 @@ use ILIAS\UI\Renderer;
 use ILIAS\UI\Component\Dropdown\Standard;
 use ILIAS\UI\Component\Item\Item;
 use ILIAS\UI\Component\Modal\RoundTrip;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Forum\Drafts\ForumDraftsTable;
 
 /**
@@ -1104,7 +1104,7 @@ class ilObjForumGUI extends ilObjectGUI implements ilDesktopItemHandling, ilForu
         Item $list_item
     ): Item {
         if ($current_thread->isSticky()) {
-            $df = new \ILIAS\Data\Factory();
+            $df = new \ILIAS\Refinery\Data\Factory();
             $list_item = $list_item->withColor($df->color('#B54F00'));
         }
 
@@ -1501,7 +1501,7 @@ class ilObjForumGUI extends ilObjectGUI implements ilDesktopItemHandling, ilForu
                     $this->uiFactory->link()->bulky(
                         $target,
                         $this->lng->txt('select'),
-                        new \ILIAS\Data\URI(
+                        new \ILIAS\Refinery\Data\URI(
                             ILIAS_HTTP_PATH . '/' . $this->ctrl->getLinkTarget($this, 'selectPost', (string) $node->getId())
                         )
                     )

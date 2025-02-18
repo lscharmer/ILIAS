@@ -43,7 +43,7 @@ class Factory implements I\Factory
         return new Number($this->lng, $title);
     }
 
-    public function date(string $title, \ILIAS\Data\DateFormat\DateFormat $format): Date
+    public function date(string $title, \ILIAS\Refinery\Data\DateFormat\DateFormat $format): Date
     {
         return new Date($this->lng, $title, $format);
     }
@@ -71,7 +71,7 @@ class Factory implements I\Factory
         return new EMail($this->lng, $title);
     }
 
-    public function timeSpan(string $title, \ILIAS\Data\DateFormat\DateFormat $format): TimeSpan
+    public function timeSpan(string $title, \ILIAS\Refinery\Data\DateFormat\DateFormat $format): TimeSpan
     {
         return new TimeSpan($this->lng, $title, $format);
     }

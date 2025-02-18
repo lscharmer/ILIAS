@@ -26,7 +26,7 @@ use ILIAS\Setup;
 use ILIAS\UI\Component\Input\Field\Factory as FieldFactory;
 use ILIAS\Refinery\Transformation;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use PHPUnit\Framework\TestCase;
 
 class AgentCollectionTest extends TestCase

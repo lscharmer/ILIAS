@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Prompt\State;
 
 use ILIAS\UI\Component\Prompt as I;
 use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Factory implements I\State\Factory
 {

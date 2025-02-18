@@ -34,7 +34,7 @@ use ILIAS\LegalDocuments\Legacy\Confirmation;
 use ILIAS\LegalDocuments\Provide;
 use ILIAS\LegalDocuments\Provide\ProvideDocument;
 use ILIAS\LegalDocuments\Repository\DocumentRepository;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\HTTP\Services as HTTPServices;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\Refinery\Factory as Refinery;

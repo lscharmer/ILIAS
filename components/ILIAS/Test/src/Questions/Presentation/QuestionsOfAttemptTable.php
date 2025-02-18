@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Questions\Presentation;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\HTTP\GlobalHttpState;
 use ILIAS\UI\Component\Component;
 use ILIAS\UI\Component\Table\Column\Column;

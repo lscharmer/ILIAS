@@ -22,8 +22,8 @@ namespace ILIAS\MetaData\Settings\Vocabularies;
 
 use ILIAS\UI\Component\Table\DataRetrieval as BaseDataRetrieval;
 use ILIAS\UI\Component\Table\DataRowBuilder;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\MetaData\Vocabularies\Manager\Manager as VocabManager;
 use ILIAS\MetaData\Vocabularies\VocabularyInterface;
 use ILIAS\UI\Factory as UIFactory;

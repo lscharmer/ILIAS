@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Input\Container\ViewControl;
 use ILIAS\UI\Component\Input\Container\ViewControl as V;
 use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
 use ILIAS\UI\Implementation\Component\Input;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class Factory implements V\Factory
 {

@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 
 /**
  * Writeable part of repository interface to ilComponentDataDB.

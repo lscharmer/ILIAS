@@ -25,7 +25,7 @@ use ILIAS\UI\Component as C;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\MainControls\Slate\Legacy;
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use PHPUnit\Framework\MockObject\MockObject;
 
 /**

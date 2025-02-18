@@ -20,9 +20,9 @@ declare(strict_types=1);
 
 namespace ILIAS\MetaData\XML\Copyright\Links;
 
-use ILIAS\Data\URI;
-use ILIAS\Data\ReferenceId;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\URI;
+use ILIAS\Refinery\Data\ReferenceId;
+use ILIAS\Refinery\Data\ObjectId;
 
 interface LinkGeneratorInterface
 {

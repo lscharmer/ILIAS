@@ -33,9 +33,9 @@ namespace ILIAS\UI\examples\Input\Field\Password;
  *
  *   Array
  *   (
- *      [password] => ILIAS\Data\Password Object
+ *      [password] => ILIAS\Refinery\Data\Password Object
  *      (
- *          [pass:ILIAS\Data\Password:private] => Passwort Test
+ *          [pass:ILIAS\Refinery\Data\Password:private] => Passwort Test
  *      )
  *   )
  * ---

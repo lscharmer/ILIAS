@@ -23,7 +23,7 @@ namespace ILIAS\components\ResourceStorage\Container\View;
 use ILIAS\UI\URLBuilderToken;
 use ILIAS\components\ResourceStorage\Container\View\ActionBuilder\ExternalSingleAction;
 use ILIAS\UI\Factory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\components\ResourceStorage\URLSerializer;
 use ILIAS\ResourceStorage\Services;
 use ILIAS\UI\Component\Modal\Modal;

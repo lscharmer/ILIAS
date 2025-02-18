@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Participants;
 
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 
 class ParticipantRepository
 {

@@ -23,7 +23,7 @@ namespace ILIAS\UI\Component\Prompt;
 use ILIAS\UI\Component\Component;
 use ILIAS\UI\Component\JavaScriptBindable;
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 interface Prompt extends Component, JavaScriptBindable
 {

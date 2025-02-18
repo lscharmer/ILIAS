@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Input;
 
 use ILIAS\UI\Component\Input\InputData;
 use ILIAS\UI\Component\Input\Input;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Implementation\Component\Input\NameSource;
 
 /**

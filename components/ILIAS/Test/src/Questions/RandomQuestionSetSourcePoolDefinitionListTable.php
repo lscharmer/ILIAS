@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Questions;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Test\Utilities\TitleColumnsBuilder;
 use ILIAS\Test\RequestDataCollector;
 use ILIAS\UI\Component\Table\OrderingBinding;

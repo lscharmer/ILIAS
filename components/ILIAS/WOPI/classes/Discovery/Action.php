@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\WOPI\Discovery;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

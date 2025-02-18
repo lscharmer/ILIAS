@@ -241,7 +241,7 @@ class ScoreSettingsTest extends ilTestBaseTestCase
 
     public function testScoreSettingsSectionSummary(): void
     {
-        $data_factory = new \ILIAS\Data\Factory();
+        $data_factory = new \ILIAS\Refinery\Data\Factory();
         $language = $this->getLanguage();
         $refinery = new \ILIAS\Refinery\Factory($data_factory, $language);
 

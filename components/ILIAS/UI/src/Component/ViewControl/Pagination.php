@@ -24,7 +24,7 @@ use ILIAS\UI\Component\Component;
 use ILIAS\UI\Component\Signal;
 use ILIAS\UI\Component\JavaScriptBindable;
 use ILIAS\UI\Component\Triggerer;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 /**
  * This describes a Pagination Control

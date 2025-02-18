@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\Dataset;
+namespace ILIAS\Refinery\Dataset;
 
 use ILIAS\ResourceStorage\Resource\StorableResource;
 

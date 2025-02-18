@@ -24,8 +24,8 @@ declare(strict_types=1);
  * @author Stefan Meyer <meyer@leifos.com>
  */
 
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
 
 class ilSoapAdministration
 {

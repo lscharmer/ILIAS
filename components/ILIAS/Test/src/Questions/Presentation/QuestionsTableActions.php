@@ -26,7 +26,7 @@ use ILIAS\UI\Renderer as UIRenderer;
 use ILIAS\UI\Component\Table\OrderingRow;
 use ILIAS\UI\Component\Table\Action\Action as TableAction;
 use ILIAS\UI\Component\Modal\Interruptive;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Language\Language;
 use Psr\Http\Message\ServerRequestInterface;
 

@@ -25,7 +25,7 @@ use ILIAS\UI\Implementation\Component\Input\NameSource;
 use PHPUnit\Framework\TestCase;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Language\Language;
 use Closure;
 

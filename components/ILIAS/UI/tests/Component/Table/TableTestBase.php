@@ -38,7 +38,7 @@ abstract class TableTestBase extends ILIAS_UI_TestBase
         return new FieldFactory(
             $this->createMock(UploadLimitResolver::class),
             new C\SignalGenerator(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->buildRefinery(),
             $this->getLanguage()
         );
@@ -47,7 +47,7 @@ abstract class TableTestBase extends ILIAS_UI_TestBase
     protected function buildRefinery(): Refinery
     {
         return new Refinery(
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->createMock(ILIAS\Language\Language::class)
         );
     }
@@ -56,7 +56,7 @@ abstract class TableTestBase extends ILIAS_UI_TestBase
     {
         return new ViewControl\Factory(
             $this->buildFieldFactory(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->buildRefinery(),
             new C\SignalGenerator(),
             $this->getLanguage(),
@@ -77,7 +77,7 @@ abstract class TableTestBase extends ILIAS_UI_TestBase
             new C\SignalGenerator(),
             $this->getViewControlFactory(),
             $this->getViewControlContainerFactory(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             new C\Table\Column\Factory($this->getLanguage()),
             new C\Table\Action\Factory(),
             $this->getMockStorage(),

@@ -43,7 +43,7 @@ class WrapperTest extends AbstractBaseTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $this->refinery = new Factory(new \ILIAS\Data\Factory(), $language);
+        $this->refinery = new Factory(new \ILIAS\Refinery\Data\Factory(), $language);
     }
 
 

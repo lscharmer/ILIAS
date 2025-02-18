@@ -18,8 +18,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\Factory as ilDataFactory;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\Factory as ilDataFactory;
 use ILIAS\DI\UIServices as ilUIServices;
 use ILIAS\Export\ExportHandler\I\Consumer\Context\HandlerInterface as ilExportHandlerConsumerContextInterface;
 use ILIAS\Export\ExportHandler\I\Consumer\ExportOption\CollectionInterface as ilExportHandlerConsumerExportOptionCollectionInterface;

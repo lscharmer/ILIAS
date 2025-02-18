@@ -44,7 +44,7 @@ function modeinfo(): string
     $request_wrapper = $DIC->http()->wrapper()->query();
 
     $icon = $f->symbol()->icon()->standard('root', '')->withSize('large');
-    $target = new \ILIAS\Data\URI(
+    $target = new \ILIAS\Refinery\Data\URI(
         $DIC->http()->request()->getUri()->__toString() . '&new_mode_info=' . MODE_INFO_ACTIVE
     );
     return $renderer->render([
@@ -73,7 +73,7 @@ if ($request_wrapper->has('new_mode_info')
 function renderModeInfoFullscreenMode(\ILIAS\DI\Container $dic)
 {
     $f = $dic->ui()->factory();
-    $data_factory = new \ILIAS\Data\Factory();
+    $data_factory = new \ILIAS\Refinery\Data\Factory();
     $renderer = $dic->ui()->renderer();
 
     $panel_content = $f->legacy()->content("Mode Info is Active");

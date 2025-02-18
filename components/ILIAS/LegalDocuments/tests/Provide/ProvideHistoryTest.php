@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\test\Provide;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component\Legacy;
 use ILIAS\LegalDocuments\Legacy\Table as LegacyTable;
 use ILIAS\LegalDocuments\Table as TableInterface;

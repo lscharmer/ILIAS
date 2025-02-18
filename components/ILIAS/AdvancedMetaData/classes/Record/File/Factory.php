@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\AdvancedMetaData\Record\File;
 
 use ilDBInterface;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\AdvancedMetaData\Record\File\Handler as File;
 use ILIAS\AdvancedMetaData\Record\File\I\FactoryInterface as FileFactoryInterface;
 use ILIAS\AdvancedMetaData\Record\File\I\HandlerInterface as FileInterface;

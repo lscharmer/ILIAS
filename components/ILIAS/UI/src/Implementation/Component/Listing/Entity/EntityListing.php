@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Listing\Entity;
 use ILIAS\UI\Component\Listing\Entity as I;
 use ILIAS\UI\Component\Entity as IEntity;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 abstract class EntityListing implements I\EntityListing
 {

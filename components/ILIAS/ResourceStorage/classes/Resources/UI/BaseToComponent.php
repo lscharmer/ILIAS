@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\components\ResourceStorage\Resources\UI;
 
 use ILIAS\UI\Factory;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\components\ResourceStorage\Resources\UI\Actions\ActionGenerator;
 use ILIAS\components\ResourceStorage\Resources\UI\Actions\NullActionGenerator;
 

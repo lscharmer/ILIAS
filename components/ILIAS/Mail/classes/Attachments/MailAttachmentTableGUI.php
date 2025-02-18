@@ -30,7 +30,7 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
     private readonly \ILIAS\UI\URLBuilder $url_builder;
     private readonly \ILIAS\UI\URLBuilderToken $action_parameter_token;
     private readonly \ILIAS\UI\URLBuilderToken $row_id_token;
-    private readonly \ILIAS\Data\Factory $data_factory;
+    private readonly \ILIAS\Refinery\Data\Factory $data_factory;
 
     /**
      * @param list<array{"filename": string, "filesize": int, "filecreatedate": int}> $records
@@ -44,7 +44,7 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
         private readonly \ilLanguage $lng,
         private readonly \ilCtrlInterface $ctrl,
         private readonly \Psr\Http\Message\ServerRequestInterface $http_request,
-        private readonly \ILIAS\Data\Factory $df,
+        private readonly \ILIAS\Refinery\Data\Factory $df,
         private readonly string $parent_cmd,
         private readonly AttachmentManagement $mode
     ) {
@@ -63,7 +63,7 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
             'filename'
         );
 
-        $this->data_factory = new \ILIAS\Data\Factory();
+        $this->data_factory = new \ILIAS\Refinery\Data\Factory();
     }
 
     public function get(): \ILIAS\UI\Component\Table\Data
@@ -76,7 +76,7 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
                 $this
             )
             ->withId(self::class . '_' . $this->mode->name)
-            ->withOrder(new \ILIAS\Data\Order('filename', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('filename', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($this->getActions())
             ->withRequest($this->http_request);
     }
@@ -138,7 +138,7 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
     /**
      * @return list<array{"filename": string, "filesize": int, "filecreatedate": int}>
      */
-    private function getRecords(\ILIAS\Data\Range $range, \ILIAS\Data\Order $order): array
+    private function getRecords(\ILIAS\Refinery\Data\Range $range, \ILIAS\Refinery\Data\Order $order): array
     {
         $records = $this->records;
 
@@ -166,8 +166,8 @@ class MailAttachmentTableGUI implements \ILIAS\UI\Component\Table\DataRetrieval
     public function getRows(
         \ILIAS\UI\Component\Table\DataRowBuilder $row_builder,
         array $visible_column_ids,
-        \ILIAS\Data\Range $range,
-        \ILIAS\Data\Order $order,
+        \ILIAS\Refinery\Data\Range $range,
+        \ILIAS\Refinery\Data\Order $order,
         ?array $filter_data,
         ?array $additional_parameters
     ): \Generator {

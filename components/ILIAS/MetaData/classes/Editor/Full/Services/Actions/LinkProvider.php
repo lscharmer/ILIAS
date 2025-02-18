@@ -22,7 +22,7 @@ namespace ILIAS\MetaData\Editor\Full\Services\Actions;
 
 use ILIAS\MetaData\Paths\PathInterface;
 use ILIAS\MetaData\Editor\Http\LinkFactoryInterface as LinkFactory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Editor\Http\Command;
 use ILIAS\MetaData\Editor\Http\Parameter;
 use ILIAS\MetaData\Paths\FactoryInterface as PathFactory;

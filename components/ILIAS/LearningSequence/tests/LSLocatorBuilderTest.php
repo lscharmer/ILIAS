@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\KioskMode\ControlBuilder;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Implementation\Component\BreadCrumbs\Breadcrumbs;
 
 require_once('IliasMocks.php');

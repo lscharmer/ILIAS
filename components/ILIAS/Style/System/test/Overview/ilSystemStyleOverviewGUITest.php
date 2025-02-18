@@ -22,7 +22,7 @@ require_once('vendor/composer/vendor/autoload.php');
 include_once('./components/ILIAS/UI/tests/UITestHelper.php');
 
 use ILIAS\HTTP\Wrapper\WrapperFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\FileUpload\FileUpload;
 use ILIAS\Tests\Refinery\ilLanguageMock;

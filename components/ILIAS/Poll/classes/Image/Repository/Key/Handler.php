@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Poll\Image\Repository\Key;
 
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 use ILIAS\Poll\Image\I\Repository\Key\HandlerInterface as ilPollImageRepositoryKeyInterface;
 
 class Handler implements ilPollImageRepositoryKeyInterface

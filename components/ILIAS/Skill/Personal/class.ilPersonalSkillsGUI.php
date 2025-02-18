@@ -23,7 +23,7 @@ use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
 use ILIAS\Skill\Service;
 use ILIAS\ResourceStorage\Services as ResourceStorage;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Component\Chart\Bar\BarConfig;
 use ILIAS\UI\Component\Chart\Bar\XAxis;
 use ILIAS\Skill\Profile;
@@ -183,7 +183,7 @@ class ilPersonalSkillsGUI
         $this->request = $DIC->http()->request();
         $this->ui = $DIC->ui();
         $this->storage = $DIC->resourceStorage();
-        $this->data_fac = new \ILIAS\Data\Factory();
+        $this->data_fac = new \ILIAS\Refinery\Data\Factory();
         $this->tree = $DIC->repositoryTree();
         $this->obj_definition = $DIC["objDefinition"];
         $this->personal_gui_request = $DIC->skills()->internal()->gui()->personal_request();

@@ -22,7 +22,7 @@ require_once 'components/ILIAS/UI/tests/AbstractFactoryTestCase.php';
 
 use ILIAS\UI\Component\Input\Container\Filter;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component\Input\Container\Filter\Factory;
 
 class FilterFactoryTest extends AbstractFactoryTestCase

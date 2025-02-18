@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Table;
 use ILIAS\UI\Component\Input\ViewControl\Sortation;
 use ILIAS\UI\Implementation\Component\Input\ViewControl;
 use ILIAS\UI\Component\Table\Column\Column;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 
 trait TableViewControlOrdering
 {

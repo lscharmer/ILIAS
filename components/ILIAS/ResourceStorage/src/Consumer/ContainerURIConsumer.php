@@ -21,7 +21,7 @@ namespace ILIAS\ResourceStorage\Consumer;
 use ILIAS\Filesystem\Util\Archive\Archives;
 use ILIAS\ResourceStorage\Resource\StorableResource;
 use ILIAS\ResourceStorage\Consumer\StreamAccess\StreamAccess;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\FileDelivery\Delivery\StreamDelivery;
 
 /**

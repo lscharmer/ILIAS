@@ -24,7 +24,7 @@ use ILIAS\Exercise\InternalGUIService;
 use ILIAS\Exercise\InternalDomainService;
 use ILIAS\UICore\PageContentProvider;
 use ILIAS\StaticURL\Services as StaticUrl;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 /**
  * Link to exercise: goto.php?target=exc_<exc_ref_id>

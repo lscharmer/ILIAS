@@ -16,8 +16,8 @@
  *
  *********************************************************************/
 
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\Notes\Service as NotesService;
 use ILIAS\Refinery\Factory as Refinery;
 

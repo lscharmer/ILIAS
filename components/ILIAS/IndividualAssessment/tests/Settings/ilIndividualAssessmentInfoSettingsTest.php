@@ -66,7 +66,7 @@ class ilIndividualAssessmentInfoSettingsTest extends TestCase
             ->willReturn("label")
         ;
 
-        $df = new ILIAS\Data\Factory();
+        $df = new ILIAS\Refinery\Data\Factory();
         $refinery = new ILIAS\Refinery\Factory($df, $lng);
         $f = new ILIAS\UI\Implementation\Component\Input\Field\Factory(
             $this->createMock(\ILIAS\UI\Implementation\Component\Input\UploadLimitResolver::class),

@@ -117,7 +117,7 @@ class ilStudyProgrammeAssessmentSettingsTest extends TestCase
     public function testToFormInput(): void
     {
         $lng = $this->createMock(ilLanguage::class);
-        $df = new ILIAS\Data\Factory();
+        $df = new ILIAS\Refinery\Data\Factory();
         $refinery = new ILIAS\Refinery\Factory($df, $lng);
 
         $f = new ILIAS\UI\Implementation\Component\Input\Field\Factory(

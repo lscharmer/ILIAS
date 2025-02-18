@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Input\Field;
 
-use ILIAS\Data\DateFormat;
+use ILIAS\Refinery\Data\DateFormat;
 use ILIAS\UI\Component;
 use ILIAS\UI\Implementation\Component\Input\Field as F;
 use ILIAS\UI\Component\Input\Field as FI;
@@ -33,9 +33,9 @@ use LogicException;
 use Closure;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
 use ILIAS\FileUpload\Handler\FileInfoResult;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\UI\Implementation\Component\Input\Input;
-use ILIAS\Data\FiveStarRatingScale;
+use ILIAS\Refinery\Data\FiveStarRatingScale;
 use ILIAS\UI\Implementation\Component\Input\Container\Filter\ProxyFilterField;
 
 /**

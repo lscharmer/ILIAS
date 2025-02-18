@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\I\Manager;
 
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\Export\ExportHandler\I\Info\Export\Container\HandlerInterface as ilExportHandlerContainerExportInfoInterface;
 use ILIAS\Export\ExportHandler\I\Info\Export\Container\ObjectId\CollectionBuilderInterface as ilExportHandlerContainerExportInfoObjectIdCollectionBuilderInterface;
 use ILIAS\Export\ExportHandler\I\Info\Export\Container\ObjectId\CollectionInterface as ilExportHandlerContainerExportInfoObjectIdCollectionInterface;

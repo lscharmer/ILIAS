@@ -61,7 +61,7 @@ class ilStaticComponentRepositoryExistsObjective implements Setup\Objective
      */
     public function achieve(Setup\Environment $environment): Setup\Environment
     {
-        $data_factory = new ILIAS\Data\Factory();
+        $data_factory = new ILIAS\Refinery\Data\Factory();
         $component_repository = new ilArtifactComponentRepository(
             $data_factory,
             new ilNullPluginStateDB(),

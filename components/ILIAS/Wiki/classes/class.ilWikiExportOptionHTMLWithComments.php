@@ -18,8 +18,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\ObjectId;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ObjectId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\Export\ExportHandler\Consumer\ExportOption\BasicLegacyHandler as ilBasicLegacyExportOption;
 use ILIAS\Export\ExportHandler\I\Consumer\Context\HandlerInterface as ilExportHandlerConsumerContextInterface;
 use ILIAS\DI\Container;

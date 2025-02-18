@@ -47,7 +47,7 @@ function base()
     $lng = $DIC->language();
     $renderer = $DIC->ui()->renderer();
     $request = $DIC->http()->request();
-    $data = new \ILIAS\Data\Factory();
+    $data = new \ILIAS\Refinery\Data\Factory();
     $refinery = $DIC->refinery();
 
     //Step 1: Implement transformation and constraints

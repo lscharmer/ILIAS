@@ -21,10 +21,10 @@ declare(strict_types=1);
 namespace ILIAS\LegalDocuments\Provide;
 
 use Closure;
-use ILIAS\Data\Factory;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Factory;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\DI\Container;
 use ILIAS\LegalDocuments\Condition;
 use ILIAS\LegalDocuments\ConditionDefinition;

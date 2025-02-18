@@ -122,7 +122,7 @@ function ui(): string
     $renderer = $DIC->ui()->renderer();
 
     $icon = $f->symbol()->icon()->standard('root', '')->withSize('large');
-    $target = new \ILIAS\Data\URI(
+    $target = new \ILIAS\Refinery\Data\URI(
         $DIC->http()->request()->getUri()->__toString() . '&new_ui=1'
     );
     return $renderer->render(
@@ -240,7 +240,7 @@ function pagedemoContent(\ILIAS\UI\Factory $f, Renderer $r, MainBar $mainbar): a
 
 function pagedemoFooter(\ILIAS\UI\Factory $f): \ILIAS\UI\Component\MainControls\Footer
 {
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $text = 'Additional info:';
     $links = [];
     $links[] = $f->link()->standard("Goto ILIAS", "http://www.ilias.de");
@@ -333,7 +333,7 @@ function getDemoEntryRepository(\ILIAS\UI\Factory $f): \ILIAS\UI\Component\MainC
         './components/ILIAS/UI/src/examples/Layout/Page/Standard/ui.php?new_ui=1'
     );
 
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $url = $df->uri(
         $_SERVER['REQUEST_SCHEME'] . '://'
         . $_SERVER['SERVER_NAME'] . ':'

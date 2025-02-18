@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Export\ImportHandler\SchemaFolder;
 
 use DirectoryIterator;
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\Export\ImportHandler\I\SchemaFolder\Info\FactoryInterface as SchemaInfoFactoryInterface;
 use ILIAS\Export\ImportHandler\I\SchemaFolder\HandlerInterface as SchemaFolderInterface;
 use ILIAS\Export\ImportHandler\I\SchemaFolder\Info\CollectionInterface as SchemaInfoCollectionInterface;

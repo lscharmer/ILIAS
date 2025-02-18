@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Component\Table\Action;
 
 use ILIAS\UI\Component\Signal;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 interface Action extends \ILIAS\UI\Component\Component
 {

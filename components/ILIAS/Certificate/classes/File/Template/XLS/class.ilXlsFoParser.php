@@ -36,7 +36,7 @@ class ilXlsFoParser
         ?ilCertificateXlsFileLoader $certificateXlsFileLoader = null
     ) {
         if (null === $xmlChecker) {
-            $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+            $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
         }
         $this->xmlChecker = $xmlChecker;
 

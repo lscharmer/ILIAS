@@ -384,7 +384,7 @@ abstract class ilTreeExplorerGUI extends ilExplorerBaseGUI implements \ILIAS\UI\
 
         $href = $this->getNodeHref($record);
         if ($href !== '' && '#' !== $href && $this->isNodeClickable($record)) {
-            $node = $node->withLink(new \ILIAS\Data\URI(ILIAS_HTTP_PATH . '/' . $href));
+            $node = $node->withLink(new \ILIAS\Refinery\Data\URI(ILIAS_HTTP_PATH . '/' . $href));
         }
 
         if ($this->isNodeOpen((int) $this->getNodeId($record))) {

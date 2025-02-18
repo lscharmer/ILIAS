@@ -23,9 +23,9 @@ namespace ILIAS\UI\Implementation\Component\Chart\Bar;
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Implementation\Component\ComponentHelper;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
-use ILIAS\Data\Chart\Dataset;
-use ILIAS\Data\Dimension\CardinalDimension;
-use ILIAS\Data\Dimension\RangeDimension;
+use ILIAS\Refinery\Data\Chart\Dataset;
+use ILIAS\Refinery\Data\Dimension\CardinalDimension;
+use ILIAS\Refinery\Data\Dimension\RangeDimension;
 
 class Bar implements C\Chart\Bar\Bar
 {

@@ -18,8 +18,8 @@
 
 namespace ILIAS\Test\Logging;
 
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  *

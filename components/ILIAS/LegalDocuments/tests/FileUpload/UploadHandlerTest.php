@@ -24,8 +24,8 @@ use ILIAS\LegalDocuments\test\ContainerMock;
 use ILIAS\UI\Component\Input\Field\UploadHandler as UploadHandlerInterface;
 use PHPUnit\Framework\TestCase;
 use ILIAS\LegalDocuments\FileUpload\UploadHandler;
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
 use ILIAS\LegalDocuments\Value\DocumentContent;
 
 require_once __DIR__ . '/../ContainerMock.php';

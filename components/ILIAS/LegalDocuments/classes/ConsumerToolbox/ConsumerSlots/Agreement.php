@@ -25,7 +25,7 @@ use ILIAS\LegalDocuments\Value\Document;
 use ILIAS\UI\Component\Component;
 use ILIAS\LegalDocuments\PageFragment;
 use ILIAS\LegalDocuments\PageFragment\PageContent;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ilLegacyFormElementsUtil;
 use ilSystemSupportContacts;
 use ILIAS\LegalDocuments\ConsumerToolbox\User;

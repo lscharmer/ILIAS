@@ -169,7 +169,7 @@ class Renderer extends AbstractComponentRenderer
     }
 
     /**
-     * @return \ILIAS\Data\Range[]
+     * @return \ILIAS\Refinery\Data\Range[]
      */
     protected function buildRanges(
         int $total_count,
@@ -186,7 +186,7 @@ class Renderer extends AbstractComponentRenderer
     }
 
     /**
-     * @param \ILIAS\Data\Range[] $ranges
+     * @param \ILIAS\Refinery\Data\Range[] $ranges
      */
     protected function findCurrentPage(array $ranges, int $offset): int
     {
@@ -199,8 +199,8 @@ class Renderer extends AbstractComponentRenderer
     }
 
     /**
-     * @param \ILIAS\Data\Range[] $ranges
-     * @return \ILIAS\Data\Range[]
+     * @param \ILIAS\Refinery\Data\Range[] $ranges
+     * @return \ILIAS\Refinery\Data\Range[]
      */
     protected function sliceRangesToVisibleEntries(array $ranges, int $current, int $number_of_visible_entries): array
     {

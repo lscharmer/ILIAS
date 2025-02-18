@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Component\Button;
 
-use ILIAS\Data\Color;
+use ILIAS\Refinery\Data\Color;
 
 /**
  * This describes a tag(-button).

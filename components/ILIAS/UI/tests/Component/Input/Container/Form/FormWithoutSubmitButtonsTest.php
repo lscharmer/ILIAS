@@ -70,7 +70,7 @@ class FormWithoutSubmitButtonsTest extends \ILIAS_UI_TestBase
         $this->namesource = new InputNameSource();
         $this->language = $this->getLanguage();
         $this->refinery = new Refinery(
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->language
         );
 
@@ -191,7 +191,7 @@ EOT;
 
     protected function buildInputFactory(): InputFactory
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
         return new \ILIAS\UI\Implementation\Component\Input\Field\Factory(
             $this->createMock(\ILIAS\UI\Implementation\Component\Input\UploadLimitResolver::class),
             $this->signal_generator,

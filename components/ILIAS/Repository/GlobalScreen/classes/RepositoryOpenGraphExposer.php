@@ -26,7 +26,7 @@ use ILIAS\GlobalScreen\ScreenContext\Stack\ContextCollection;
 use ILIAS\GlobalScreen\ScreenContext\Stack\CalledContexts;
 use ILIAS\GlobalScreen\ScreenContext\ContextRepository;
 use ILIAS\GlobalScreen\ScreenContext\ScreenContext;
-use ILIAS\Data\Meta\Html\OpenGraph\Image as OGImage;
+use ILIAS\Refinery\Data\Meta\Html\OpenGraph\Image as OGImage;
 use ILIAS\MetaData\Services\ServicesInterface as LOMServices;
 use ILIAS\MetaData\Services\Reader\ReaderInterface as LOMReader;
 

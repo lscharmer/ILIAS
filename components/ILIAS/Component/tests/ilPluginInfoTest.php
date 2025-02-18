@@ -16,7 +16,7 @@
  *
  *********************************************************************/
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use PHPUnit\Framework\TestCase;
 
 class ilPluginInfoTest extends TestCase

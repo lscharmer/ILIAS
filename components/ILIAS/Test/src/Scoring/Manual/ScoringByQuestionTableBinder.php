@@ -22,8 +22,8 @@ namespace ILIAS\Test\Scoring\Manual;
 
 use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\Component\Table\DataRowBuilder;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\Language\Language;
 
 class ScoringByQuestionTableBinder implements DataRetrieval

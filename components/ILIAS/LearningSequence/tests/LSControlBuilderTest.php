@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
 use ILIAS\KioskMode\ControlBuilder;
 use ILIAS\KioskMode\TOCBuilder;
 use ILIAS\KioskMode\LocatorBuilder;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Component\Button as Button;
 use ILIAS\UI\Component\ViewControl;
 

@@ -23,7 +23,7 @@ use ILIAS\Filesystem\Exception\FileNotFoundException;
 use ILIAS\Filesystem\Exception\IOException;
 use ILIAS\Filesystem\Util\LegacyPathHelper;
 use ILIAS\FileUpload\DTO\UploadResult;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  * Class ilFileUtils

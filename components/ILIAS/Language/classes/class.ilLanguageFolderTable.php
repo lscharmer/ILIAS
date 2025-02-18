@@ -20,11 +20,11 @@ declare(strict_types=1);
 
 use ILIAS\UI\Component\Table as DataTableInterface;
 use ILIAS\UI\Implementation\Component\Table as DataTable;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * Table class for

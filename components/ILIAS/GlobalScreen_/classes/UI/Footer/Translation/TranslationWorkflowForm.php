@@ -23,7 +23,7 @@ use ILIAS\MetaData\Services\ServicesInterface;
 use ILIAS\UI\Component\Prompt\State\State;
 use ILIAS\DI\UIServices;
 use ILIAS\UI\Component\Input\Container\Form\Standard;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\Component\Modal\RoundTrip;
 use ILIAS\GlobalScreen\UI\Footer\Groups\GroupDTO;

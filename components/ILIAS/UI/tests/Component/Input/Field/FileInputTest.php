@@ -23,7 +23,7 @@ require_once(__DIR__ . "/../../../Base.php");
 require_once(__DIR__ . "/InputTest.php");
 require_once(__DIR__ . "/CommonFieldRendering.php");
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Component\Input\Field;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;

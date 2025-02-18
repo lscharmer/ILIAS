@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\Authentication\Logout;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 interface LogoutTarget
 {

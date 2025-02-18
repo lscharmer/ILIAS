@@ -44,7 +44,7 @@ class ilXlsFoParserTest extends ilCertificateBaseTestCase
         $util_helper->method('stripSlashes')
                     ->willReturnArgument(0);
 
-        $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+        $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
         $xslt_process = new ilCertificateXlstProcess();
 
         $language = $this->getMockBuilder(ilLanguage::class)
@@ -112,7 +112,7 @@ class ilXlsFoParserTest extends ilCertificateBaseTestCase
                         ],
                     ]);
 
-        $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+        $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
 
         $utilHelper = $this->getMockBuilder(ilCertificateUtilHelper::class)
                            ->disableOriginalConstructor()
@@ -207,7 +207,7 @@ class ilXlsFoParserTest extends ilCertificateBaseTestCase
                         ],
                     ]);
 
-        $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+        $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
 
         $utilHelper = $this->getMockBuilder(ilCertificateUtilHelper::class)
                            ->disableOriginalConstructor()
@@ -279,7 +279,7 @@ class ilXlsFoParserTest extends ilCertificateBaseTestCase
                         ],
                     ]);
 
-        $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+        $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
 
         $utilHelper = $this->getMockBuilder(ilCertificateUtilHelper::class)
                            ->disableOriginalConstructor()
@@ -374,7 +374,7 @@ class ilXlsFoParserTest extends ilCertificateBaseTestCase
                         ],
                     ]);
 
-        $xmlChecker = new ilXMLChecker(new ILIAS\Data\Factory());
+        $xmlChecker = new ilXMLChecker(new ILIAS\Refinery\Data\Factory());
 
         $utilHelper = $this->getMockBuilder(ilCertificateUtilHelper::class)
                            ->disableOriginalConstructor()

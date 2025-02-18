@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\GlobalScreen\ScreenContext;
 
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\GlobalScreen\ScreenContext\AdditionalData\Collection;
 
 /**

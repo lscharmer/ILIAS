@@ -29,7 +29,7 @@ use ILIAS\Setup\Environment;
 use ILIAS\Setup\Migration;
 use JsonException;
 use ReflectionClass;
-use ILIAS\Data\UUID\Factory;
+use ILIAS\Refinery\Data\UUID\Factory;
 use PDOException;
 
 class CertificateIdMigration implements Migration

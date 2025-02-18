@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\Export\Test\ExportHandler\PublicAccess\Link;
 
 use Exception;
-use ILIAS\Data\ReferenceId;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\ReferenceId;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Export\ExportHandler\I\PublicAccess\Link\Wrapper\StaticURL\HandlerInterface as ilExportHandlerPublicAccessLinkStaticURLWrapperInterface;
 use ILIAS\Export\ExportHandler\PublicAccess\Link\Handler as ilExportHandlerPublicAccessLink;
 use PHPUnit\Framework\TestCase;

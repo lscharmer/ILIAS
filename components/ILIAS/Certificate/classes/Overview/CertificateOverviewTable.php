@@ -27,8 +27,8 @@ use ilAccessHandler;
 use ilCalendarSettings;
 use ilCtrl;
 use ilCtrlInterface;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\UI\Component\Table\Data;
 use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\Component\Table\DataRowBuilder;
@@ -56,7 +56,7 @@ class CertificateOverviewTable implements DataRetrieval
     private readonly Factory $ui_factory;
     private readonly ilLanguage $lng;
     private readonly ServerRequestInterface $request;
-    private readonly \ILIAS\Data\Factory $data_factory;
+    private readonly \ILIAS\Refinery\Data\Factory $data_factory;
     private readonly ilCtrl|ilCtrlInterface $ctrl;
     private readonly \ILIAS\UI\Component\Input\Container\Filter\Standard $filter;
     private readonly Data $table;
@@ -71,7 +71,7 @@ class CertificateOverviewTable implements DataRetrieval
         ?ilUIService $ui_service = null,
         ?ilLanguage $lng = null,
         ServerRequestInterface|RequestInterface|null $request = null,
-        ?\ILIAS\Data\Factory $data_factory = null,
+        ?\ILIAS\Refinery\Data\Factory $data_factory = null,
         ?ilCtrl $ctrl = null,
         ?Renderer $ui_renderer = null,
         ?ilAccessHandler $access = null,
@@ -83,7 +83,7 @@ class CertificateOverviewTable implements DataRetrieval
         $this->ui_service = $ui_service ?: $DIC->uiService();
         $this->lng = $lng ?: $DIC->language();
         $this->request = $request ?: $DIC->http()->request();
-        $this->data_factory = $data_factory ?: new \ILIAS\Data\Factory();
+        $this->data_factory = $data_factory ?: new \ILIAS\Refinery\Data\Factory();
         $this->ctrl = $ctrl ?: $DIC->ctrl();
         $this->ui_renderer = $ui_renderer ?: $DIC->ui()->renderer();
         $this->access = $access ?: $DIC->access();

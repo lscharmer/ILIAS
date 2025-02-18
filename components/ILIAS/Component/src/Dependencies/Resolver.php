@@ -41,7 +41,7 @@ class Resolver
      *    "*" => [
      *      "ILIAS\Logger\Logger" => ILIAS\Logger\DBLogger
      *    ],
-     *    "ILIAS\Database\DB" => [
+     *    "ILIAS\Refinery\Database\DB" => [
      *      "ILIAS\Logger\Logger" => ILIAS\Logger\StdErrLogger
      *    ]
      * ]

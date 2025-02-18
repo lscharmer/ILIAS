@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\examples\Input\ViewControl\Group;
 
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Implementation\Component\Input\ViewControl\Pagination;
 
 /**

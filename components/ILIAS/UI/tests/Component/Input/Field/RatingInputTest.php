@@ -26,8 +26,8 @@ use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Component\Input\Field;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\FiveStarRatingScale;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\FiveStarRatingScale;
 
 class RatingInputTest extends ILIAS_UI_TestBase
 {

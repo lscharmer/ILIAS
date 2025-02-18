@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * Legacy Uri input

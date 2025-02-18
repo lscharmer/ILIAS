@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Test\Access;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 
 interface SimpleAccess
 {

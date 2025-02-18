@@ -20,9 +20,9 @@ use ILIAS\Language\Language;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\ResourceStorage\Services;
 use ILIAS\UI\Component\Symbol\Avatar\Avatar;
-use ILIAS\Data\DateFormat\DateFormat;
-use ILIAS\Data\DateFormat\Factory as DateFormatFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\Factory as DateFormatFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Authentication\Password\LocalUserPasswordManager;
 
 /**

@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Button;
 
 use ILIAS\UI\Component as C;
-use ILIAS\Data as D;
-use ILIAS\Data\Color;
+use ILIAS\Refinery\Data as D;
+use ILIAS\Refinery\Data\Color;
 
 class Tag extends Button implements C\Button\Tag
 {

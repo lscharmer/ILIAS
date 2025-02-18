@@ -37,7 +37,7 @@ readonly class ServerTable implements \ILIAS\UI\Component\Table\DataRetrieval
         private \ilLanguage $lng,
         private \ilCtrlInterface $ctrl,
         private \Psr\Http\Message\ServerRequestInterface $http_request,
-        private \ILIAS\Data\Factory $df,
+        private \ILIAS\Refinery\Data\Factory $df,
         private string $parent_cmd,
         private bool $has_write_access
     ) {
@@ -60,7 +60,7 @@ readonly class ServerTable implements \ILIAS\UI\Component\Table\DataRetrieval
     /**
      * @return list<array<string, string|int|float|null>>
      */
-    private function getRecords(\ILIAS\Data\Range $range, \ILIAS\Data\Order $order): array
+    private function getRecords(\ILIAS\Refinery\Data\Range $range, \ILIAS\Refinery\Data\Order $order): array
     {
         $servers = $this->servers;
 
@@ -94,8 +94,8 @@ readonly class ServerTable implements \ILIAS\UI\Component\Table\DataRetrieval
     public function getRows(
         \ILIAS\UI\Component\Table\DataRowBuilder $row_builder,
         array $visible_column_ids,
-        \ILIAS\Data\Range $range,
-        \ILIAS\Data\Order $order,
+        \ILIAS\Refinery\Data\Range $range,
+        \ILIAS\Refinery\Data\Order $order,
         ?array $filter_data,
         ?array $additional_parameters
     ): \Generator {
@@ -219,7 +219,7 @@ readonly class ServerTable implements \ILIAS\UI\Component\Table\DataRetrieval
                 $this
             )
             ->withId(self::class)
-            ->withOrder(new \ILIAS\Data\Order('title', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('title', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($this->getActions())
             ->withRequest($this->http_request);
     }

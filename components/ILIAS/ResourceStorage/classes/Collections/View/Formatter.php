@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\ResourceStorage\Collections\View;
 
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

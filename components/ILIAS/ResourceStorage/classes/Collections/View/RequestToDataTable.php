@@ -23,10 +23,10 @@ namespace ILIAS\components\ResourceStorage\Collections\View;
 use ILIAS\UI\Component\Table\Data;
 use ILIAS\UI\Factory;
 use ILIAS\components\ResourceStorage\Collections\DataProvider\TableDataProvider;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\HTTP\Services;
 use ILIAS\components\ResourceStorage\BinToHexSerializer;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Component\Table\DataRetrieval;
 
@@ -45,7 +45,7 @@ class RequestToDataTable implements RequestToComponents, DataRetrieval
     public const F_CREATION_DATE = 'create_date';
     public const FIELD_TITLE = 'title';
     public const F_FILENAME = 'filename';
-    private \ILIAS\Data\Factory $data_factory;
+    private \ILIAS\Refinery\Data\Factory $data_factory;
     private \ILIAS\ResourceStorage\Services $irss;
 
     public function __construct(
@@ -60,7 +60,7 @@ class RequestToDataTable implements RequestToComponents, DataRetrieval
     ) {
         global $DIC;
         $this->irss = $DIC->resourceStorage();
-        $this->data_factory = new \ILIAS\Data\Factory();
+        $this->data_factory = new \ILIAS\Refinery\Data\Factory();
     }
 
     public function getComponents(): \Generator

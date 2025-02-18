@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ilStudyProgrammeUserTable provides a flattened list of progresses at a programme-node.
@@ -360,7 +360,7 @@ class ilStudyProgrammeUserTable
         return 'object id ' . $obj_id;
     }
 
-    protected function postOrder(array $list, \ILIAS\Data\Order $order): array
+    protected function postOrder(array $list, \ILIAS\Refinery\Data\Order $order): array
     {
         [$aspect, $direction] = $order->join('', function ($i, $k, $v) {
             return [$k, $v];

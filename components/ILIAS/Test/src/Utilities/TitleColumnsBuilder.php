@@ -22,7 +22,7 @@ namespace ILIAS\Test\Utilities;
 
 use ILIAS\TestQuestionPool\Questions\GeneralQuestionPropertiesRepository;
 use ILIAS\StaticURL\Services as StaticURLServices;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Component\Link\Standard as StandardLink;
 

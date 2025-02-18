@@ -22,8 +22,8 @@ namespace ILIAS\Badge;
 
 use ILIAS\UI\Factory;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\Order;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\Range;
 use ilLanguage;
 use ilGlobalTemplateInterface;
 use ILIAS\UI\Renderer;
@@ -36,7 +36,7 @@ use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\URLBuilderToken;
 use ilBadge;
 use ilBadgeHandler;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Implementation\Component\Link\Standard;
 use ilObject;
 use ilLink;
@@ -336,7 +336,7 @@ class ilObjectBadgeTableGUI implements DataRetrieval
 
     public function renderTable(): void
     {
-        $df = new \ILIAS\Data\Factory();
+        $df = new \ILIAS\Refinery\Data\Factory();
 
         $table_uri = $df->uri($this->request->getUri()->__toString());
         $url_builder = new URLBuilder($table_uri);

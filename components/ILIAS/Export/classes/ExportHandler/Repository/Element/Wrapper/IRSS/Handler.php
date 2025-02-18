@@ -31,7 +31,7 @@ use ILIAS\ResourceStorage\Resource\StorableContainerResource;
 use ILIAS\Filesystem\Stream\ZIPStream;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\ResourceStorage\Resource\StorableResource;
-use ILIAS\Dataset\IRSSContainerExportConfig;
+use ILIAS\Refinery\Dataset\IRSSContainerExportConfig;
 
 class Handler implements ilExportHandlerRepositoryElementIRSSWrapperInterface
 {

@@ -31,7 +31,7 @@ use ILIAS\UI\Implementation\Component\Symbol\Factory as SymbolFactory;
 use ILIAS\UI\Implementation\Component\Symbol\Glyph\Glyph;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Implementation\Render\JavaScriptBinding;
 
 require_once(__DIR__ . "/../../../../../../../vendor/composer/vendor/autoload.php");

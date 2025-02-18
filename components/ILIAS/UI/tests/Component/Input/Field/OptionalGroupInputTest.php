@@ -26,7 +26,7 @@ use ILIAS\UI\Implementation\Component\Input\Field\OptionalGroup;
 use ILIAS\UI\Implementation\Component\Input\Field\FormInput;
 use ILIAS\UI\Implementation\Component\Input\NameSource;
 use ILIAS\UI\Component\Input\InputData;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 use PHPUnit\Framework\MockObject\MockObject;
 

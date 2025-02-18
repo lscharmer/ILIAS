@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\UI\Implementation\Component\Chart\Bar;
 
-use ILIAS\Data\Chart\Dataset;
+use ILIAS\Refinery\Data\Chart\Dataset;
 
 class Factory implements \ILIAS\UI\Component\Chart\Bar\Factory
 {

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\Wrapper;
 
-use ILIAS\Data\Factory as ilDataFactory;
+use ILIAS\Refinery\Data\Factory as ilDataFactory;
 use ILIAS\Export\ExportHandler\I\Wrapper\DataFactory\FactoryInterface as ilExportHandlerDataFactoryWrapperFactoryInterface;
 use ILIAS\Export\ExportHandler\I\Wrapper\FactoryInterface as ilExportHandlerWrapperFactoryInterface;
 use ILIAS\Export\ExportHandler\Wrapper\DataFactory\Factory as ilExportHandlerDataFactoryWrapperFactory;

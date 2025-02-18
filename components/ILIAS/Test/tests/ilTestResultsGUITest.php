@@ -54,7 +54,7 @@ class ilTestResultsGUITest extends ilTestBaseTestCase
             $this->createMock(\ILIAS\Test\Results\Toplist\TestTopListRepository::class),
             $this->createMock(ILIAS\Test\RequestDataCollector::class),
             $DIC['http'],
-            $this->createMock(ILIAS\Data\Factory::class),
+            $this->createMock(ILIAS\Refinery\Data\Factory::class),
             $this->createMock(ilTestSession::class),
             $this->createMock(ilTestObjectiveOrientedContainer::class)
         );

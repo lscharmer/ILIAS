@@ -744,7 +744,7 @@ class ilLDAPSettingsGUI
             $this->lng,
             $this->ctrl,
             $this->http->request(),
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             'handleServerTableActions',
             $this->rbacSystem->checkAccess('write', $this->ref_id)
         );

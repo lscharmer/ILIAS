@@ -23,8 +23,8 @@ namespace ILIAS\UI\examples\Table\Action\Standard;
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Implementation\Component\Table\Action\Action;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\URLBuilder;
 
 /**
@@ -38,7 +38,7 @@ function base()
     global $DIC;
     $f = $DIC['ui.factory'];
     $r = $DIC['ui.renderer'];
-    $df = new \ILIAS\Data\Factory();
+    $df = new \ILIAS\Refinery\Data\Factory();
     $refinery = $DIC['refinery'];
 
     //this is the endpoint for actions, in this case the same page.

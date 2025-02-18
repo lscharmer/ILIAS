@@ -19,17 +19,17 @@
 declare(strict_types=1);
 
 use ILIAS\Setup;
-use ILIAS\Data\Password;
+use ILIAS\Refinery\Data\Password;
 
 class ilSetupConfig implements Setup\Config
 {
-    protected \ILIAS\Data\ClientId $client_id;
+    protected \ILIAS\Refinery\Data\ClientId $client_id;
     protected \DateTimeZone $server_timezone;
     protected bool $register_nic;
     protected ?string $export_hooks_path;
 
     public function __construct(
-        \ILIAS\Data\ClientId $client_id,
+        \ILIAS\Refinery\Data\ClientId $client_id,
         \DateTimeZone $server_timezone,
         bool $register_nic,
         ?string $export_hooks_path
@@ -40,7 +40,7 @@ class ilSetupConfig implements Setup\Config
         $this->export_hooks_path = $export_hooks_path;
     }
 
-    public function getClientId(): \ILIAS\Data\ClientId
+    public function getClientId(): \ILIAS\Refinery\Data\ClientId
     {
         return $this->client_id;
     }

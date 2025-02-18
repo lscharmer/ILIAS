@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Input\Field;
 
 use ILIAS\UI\Component as C;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Refinery\Factory;
 use ILIAS\Refinery\Constraint;
 use Closure;
@@ -69,7 +69,7 @@ class Url extends FormInput implements C\Input\Field\Url
 
     protected function addTransformation(): void
     {
-        $trafo = $this->refinery->custom()->transformation(function ($v): ?\ILIAS\Data\URI {
+        $trafo = $this->refinery->custom()->transformation(function ($v): ?\ILIAS\Refinery\Data\URI {
             if (is_string($v) && trim($v) === '') {
                 return null;
             }

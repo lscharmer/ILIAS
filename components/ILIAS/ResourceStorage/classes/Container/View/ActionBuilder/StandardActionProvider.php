@@ -24,7 +24,7 @@ use ILIAS\UI\Component\Modal\RoundTrip;
 use ILIAS\UI\Factory;
 use ILIAS\components\ResourceStorage\Container\View\ActionBuilder\ActionProvider;
 use ILIAS\components\ResourceStorage\Container\View\ActionBuilder\TopAction;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\components\ResourceStorage\Container\View\ActionBuilder\SingleAction;
 
 /**

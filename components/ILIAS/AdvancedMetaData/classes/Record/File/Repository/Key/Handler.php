@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\AdvancedMetaData\Record\File\Repository\Key;
 
 use ILIAS\AdvancedMetaData\Record\File\I\Repository\Key\HandlerInterface as FileRepositoryKeyInterface;
-use ILIAS\Data\ObjectId;
+use ILIAS\Refinery\Data\ObjectId;
 
 class Handler implements FileRepositoryKeyInterface
 {

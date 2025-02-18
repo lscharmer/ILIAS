@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use Pimple\Container;
 use ILIAS\ResourceStorage\Stakeholder\ResourceStakeholder;
 

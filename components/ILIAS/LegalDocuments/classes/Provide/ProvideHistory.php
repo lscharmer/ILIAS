@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\LegalDocuments\Provide;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\DI\Container;
 use ILIAS\LegalDocuments\Legacy\Table;
 use ILIAS\LegalDocuments\Table as TableInterface;

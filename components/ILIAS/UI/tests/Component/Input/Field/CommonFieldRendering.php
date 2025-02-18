@@ -22,7 +22,7 @@ use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
 use ILIAS\UI\Implementation\Component\Input\UploadLimitResolver;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Component\Input\Container\Form\FormInput;
 use ILIAS\UI\Implementation\Render\JavaScriptBinding;
 

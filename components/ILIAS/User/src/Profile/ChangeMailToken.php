@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\User\Profile;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\StaticURL\Builder\URIBuilder;
 use ILIAS\User\StaticURLHandler;
 

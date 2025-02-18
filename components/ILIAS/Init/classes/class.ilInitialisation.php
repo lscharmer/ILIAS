@@ -27,9 +27,9 @@ use ILIAS\GlobalScreen\Services;
 use ILIAS\HTTP\Wrapper\SuperGlobalDropInReplacement;
 use ILIAS\FileUpload\Processor\InsecureFilenameSanitizerPreProcessor;
 use ILIAS\FileUpload\Processor\SVGBlacklistPreProcessor;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
 use ILIAS\Refinery\Transformation;
 use ILIAS\FileDelivery\Init;
 use ILIAS\LegalDocuments\Conductor;
@@ -408,7 +408,7 @@ class ilInitialisation
         $ilias_http_path = preg_replace('/goto.php$/', '', $ilias_http_path);
         $ilias_http_path = preg_replace('/go\/.*$/', '', $ilias_http_path);
 
-        $f = $GLOBALS["DIC"][\ILIAS\Data\Factory::class];
+        $f = $GLOBALS["DIC"][\ILIAS\Refinery\Data\Factory::class];
         $uri = $f->uri(ilFileUtils::removeTrailingPathSeparators($ilias_http_path));
 
         $base_URI = $uri->getBaseURI();
@@ -426,7 +426,7 @@ class ilInitialisation
             return;
         }
         global $DIC;
-        $df = $DIC[\ILIAS\Data\Factory::class];
+        $df = $DIC[\ILIAS\Refinery\Data\Factory::class];
 
         // check whether ini file object exists
         if (!$DIC->isDependencyAvailable('iliasIni')) {
@@ -776,7 +776,7 @@ class ilInitialisation
                 $c->database(),
                 $c->settings(),
                 $c->logger()->cron(),
-                $c[\ILIAS\Data\Factory::class]->clock(),
+                $c[\ILIAS\Refinery\Data\Factory::class]->clock(),
             );
         };
     }
@@ -1274,7 +1274,7 @@ class ilInitialisation
         // breaks CAS: must be included after CAS context isset in AuthUtils
 
         self::requireCommonIncludes();
-        $GLOBALS["DIC"]["ilias.version"] = $GLOBALS["DIC"][\ILIAS\Data\Factory::class]->version(ILIAS_VERSION_NUMERIC);
+        $GLOBALS["DIC"]["ilias.version"] = $GLOBALS["DIC"][\ILIAS\Refinery\Data\Factory::class]->version(ILIAS_VERSION_NUMERIC);
 
         // error handler
         self::initGlobal(

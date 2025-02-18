@@ -24,7 +24,7 @@ use ILIAS\HTTP\Services;
 use ILIAS\StaticURL\Handler\LegacyGotoHandler;
 use ILIAS\Refinery\Factory;
 use ILIAS\StaticURL\Builder\StandardURIBuilder;
-use ILIAS\Data\ReferenceId;
+use ILIAS\Refinery\Data\ReferenceId;
 
 /**
  * @author Fabian Schmid <fabian@sr.solutions>

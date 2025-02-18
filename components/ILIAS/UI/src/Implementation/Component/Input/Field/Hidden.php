@@ -23,7 +23,7 @@ namespace ILIAS\UI\Implementation\Component\Input\Field;
 use ILIAS\Refinery\Constraint;
 use Closure;
 use ILIAS\Refinery\Factory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 /**
  * @author Thibeau Fuhrer <thf@studer-raimann.ch>

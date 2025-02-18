@@ -20,7 +20,7 @@ use ILIAS\ResourceStorage\Services;
 use ILIAS\DI\UIServices;
 use ILIAS\DI\Container;
 use ILIAS\UI\Component\Modal\Modal;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 use ILIAS\ResourceStorage\Revision\RevisionStatus;
 
 /**

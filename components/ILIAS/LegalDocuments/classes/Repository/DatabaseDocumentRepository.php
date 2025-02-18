@@ -21,9 +21,9 @@ declare(strict_types=1);
 namespace ILIAS\LegalDocuments\Repository;
 
 use DateTimeImmutable;
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Error;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\LegalDocuments\DocumentId;
 use ILIAS\LegalDocuments\DocumentId\HashId;
 use ILIAS\LegalDocuments\DocumentId\NumberId;

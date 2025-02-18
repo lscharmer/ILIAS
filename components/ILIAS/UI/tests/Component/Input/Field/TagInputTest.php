@@ -25,7 +25,7 @@ require_once(__DIR__ . "/CommonFieldRendering.php");
 
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 
 /**
@@ -126,7 +126,7 @@ class TagInputTest extends ILIAS_UI_TestBase
             $result->value();
             $this->fail();
         } catch (Exception $e) {
-            $this->assertInstanceOf('ILIAS\Data\NotOKException', $e);
+            $this->assertInstanceOf('ILIAS\Refinery\Data\NotOKException', $e);
         }
     }
 

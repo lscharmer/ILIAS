@@ -20,11 +20,11 @@ declare(strict_types=1);
 namespace ILIAS\Conditions\Configuration;
 
 use ILIAS\UI\Component\Table\DataRetrieval;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\Component\Table\DataRowBuilder;
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 use ILIAS\UI\Component\Table\Data as Data;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\URLBuilder;
 use Generator;
 use ilLanguage;

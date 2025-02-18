@@ -52,7 +52,7 @@ class ilObjStudyProgrammeSettingsGUI
     protected ILIAS\UI\Renderer $renderer;
     protected Psr\Http\Message\ServerRequestInterface $request;
     protected ILIAS\Refinery\Factory $refinery_factory;
-    protected ILIAS\Data\Factory $data_factory;
+    protected ILIAS\Refinery\Data\Factory $data_factory;
     protected ilStudyProgrammeTypeRepository $type_repository;
     protected ilStudyProgrammeCommonSettingsGUI $common_settings_gui;
     protected ilTabsGUI $tabs;
@@ -71,7 +71,7 @@ class ilObjStudyProgrammeSettingsGUI
         Renderer $renderer,
         Psr\Http\Message\ServerRequestInterface $request,
         ILIAS\Refinery\Factory $refinery_factory,
-        ILIAS\Data\Factory $data_factory,
+        ILIAS\Refinery\Data\Factory $data_factory,
         ilStudyProgrammeTypeRepository $type_repository,
         ilStudyProgrammeCommonSettingsGUI $common_settings_gui,
         ilTabsGUI $tabs,

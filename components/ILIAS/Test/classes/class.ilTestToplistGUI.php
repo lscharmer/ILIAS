@@ -22,7 +22,7 @@ use ILIAS\Test\Results\Toplist\TestTopListRepository;
 use ILIAS\Test\Results\Toplist\DataRetrieval;
 use ILIAS\Test\Results\Toplist\TopListOrder;
 use ILIAS\Test\Results\Toplist\TopListType;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\UI\Component\Panel\Panel;
 use ILIAS\UI\Component\Table\Data;
 use ILIAS\UI\Factory as UIFactory;

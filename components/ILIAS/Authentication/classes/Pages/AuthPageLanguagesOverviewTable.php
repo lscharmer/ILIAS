@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\Authentication\Pages;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI;
 use ilArrayUtil;
 use Psr\Http\Message\ServerRequestInterface;
@@ -62,7 +62,7 @@ class AuthPageLanguagesOverviewTable implements UI\Component\Table\DataRetrieval
             ->table()
             ->data($this->lng->txt($this->context->pageLanguageIdentifier(true)), $columns, $this)
             ->withId(self::class . '_' . $this->context->value)
-            ->withOrder(new \ILIAS\Data\Order('language', \ILIAS\Data\Order::ASC))
+            ->withOrder(new \ILIAS\Refinery\Data\Order('language', \ILIAS\Refinery\Data\Order::ASC))
             ->withActions($actions)
             ->withRequest($this->request);
     }

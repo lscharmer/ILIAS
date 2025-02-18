@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\HTTP;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\HTTP\Wrapper\SuperGlobalDropInReplacement;
 use ILIAS\Refinery\Factory as Refinery;
 use ilLanguage;

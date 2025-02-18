@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\Skill\Node;
 use ILIAS\UI;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\HTTP\Wrapper\ArrayBasedRequestWrapper;
 use ILIAS\UI\Component\Input\Container\Form\Form;
@@ -91,7 +91,7 @@ class ilBasicSkillGUI extends ilSkillTreeNodeGUI
         $this->help = $DIC["ilHelp"];
         $this->toolbar = $DIC->toolbar();
         $this->lng = $DIC->language();
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
         $this->request = $DIC->http()->request();
         $this->query = $DIC->http()->wrapper()->query();
         $ilCtrl = $DIC->ctrl();

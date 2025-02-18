@@ -27,7 +27,7 @@ use ILIAS\UI\Implementation\Component\SignalGeneratorInterface;
 use ILIAS\UI\Implementation\Component\Triggerer;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
 
-use ILIAS\Data\Range;
+use ILIAS\Refinery\Data\Range;
 
 class Pagination implements PaginationInterface
 {
@@ -250,7 +250,7 @@ class Pagination implements PaginationInterface
         if ($this->getPageLength() < 1) {
             return null;
         }
-        $f = new \ILIAS\Data\Factory();
+        $f = new \ILIAS\Refinery\Data\Factory();
         return $f->range($this->getOffset(), $this->getPageLength());
     }
 }

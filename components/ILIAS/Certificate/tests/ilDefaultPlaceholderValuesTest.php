@@ -148,7 +148,7 @@ class ilDefaultPlaceholderValuesTest extends ilCertificateBaseTestCase
         $userDefinePlaceholderMock->method('getPlaceholderValuesForPreview')
             ->willReturn([]);
 
-        $uuid_factory_mock = $this->getMockBuilder(ILIAS\Data\UUID\Factory::class)
+        $uuid_factory_mock = $this->getMockBuilder(ILIAS\Refinery\Data\UUID\Factory::class)
             ->getMock();
         $uuid_factory_mock->method('uuid4AsString')->willReturn('randomUniqueString');
 
@@ -232,7 +232,7 @@ class ilDefaultPlaceholderValuesTest extends ilCertificateBaseTestCase
         $userDefinePlaceholderMock->method('getPlaceholderValuesForPreview')
             ->willReturn([]);
 
-        $uuid_factory_mock = $this->getMockBuilder(ILIAS\Data\UUID\Factory::class)
+        $uuid_factory_mock = $this->getMockBuilder(ILIAS\Refinery\Data\UUID\Factory::class)
             ->getMock();
         $uuid_factory_mock->method('uuid4AsString')->willReturn('randomUniqueString');
 

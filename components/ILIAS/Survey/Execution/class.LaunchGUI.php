@@ -28,7 +28,7 @@ use ILIAS\Survey\Participants\StatusManager;
 use ILIAS\Survey\Mode\FeatureConfig;
 use ILIAS\UI\Component\MessageBox\MessageBox;
 use ILIAS\UI\Component\Launcher\Inline;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\UI\Component\Panel\Standard;
 
 class LaunchGUI
@@ -241,7 +241,7 @@ class LaunchGUI
         $f = $this->gui->ui()->factory();
 
         if ($this->launch_target !== "") {
-            $data_factory = new \ILIAS\Data\Factory();
+            $data_factory = new \ILIAS\Refinery\Data\Factory();
             $uri = $data_factory->uri(ILIAS_HTTP_PATH . '/' . $this->launch_target);
             $link = $data_factory->link($this->launch_title, $uri);
 

@@ -22,7 +22,7 @@ require_once(__DIR__ . "/../../../../../../../../vendor/composer/vendor/autoload
 require_once(__DIR__ . "/../../../../Base.php");
 require_once(__DIR__ . "/FilterTest.php");
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Implementation\Component as I;
 
 class WithNoUIFactories extends NoUIFactory

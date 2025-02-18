@@ -30,7 +30,7 @@ use ILIAS\UI\Component\MessageBox;
 use ILIAS\UI\Component\Button;
 use ILIAS\UI\Component\Link;
 use ILIAS\UI\Renderer;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery;
 use ILIAS\ResourceStorage\Services as IRSS;
 

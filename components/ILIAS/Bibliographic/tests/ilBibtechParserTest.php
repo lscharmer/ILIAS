@@ -36,7 +36,7 @@ class ilBibtechParserTest extends TestCase
         $DIC['resource_storage'] = $this->createMock(Services::class);
         $DIC['ilDB'] = $this->createMock(ilDBInterface::class);
         $DIC['refinery'] = new Factory(
-            new ILIAS\Data\Factory(),
+            new ILIAS\Refinery\Data\Factory(),
             $this->getMockBuilder(ilLanguage::class)->disableOriginalConstructor()->getMock()
         );
     }

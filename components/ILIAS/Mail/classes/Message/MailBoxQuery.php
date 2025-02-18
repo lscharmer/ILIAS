@@ -24,7 +24,7 @@ use ilDBInterface;
 use ilDBConstants;
 use DateTimeImmutable;
 use DateTimeZone;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Order;
 use ilUserSearchOptions;
 
 /**

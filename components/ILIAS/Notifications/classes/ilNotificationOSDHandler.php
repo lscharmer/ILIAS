@@ -23,7 +23,7 @@ namespace ILIAS\Notifications;
 use ILIAS\Notifications\Model\ilNotificationObject;
 use ILIAS\Notifications\Model\OSD\ilOSDNotificationObject;
 use ILIAS\Notifications\Repository\ilNotificationOSDRepository;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 
 /**
  * @author Jan Posselt <jposselt@databay.de>
@@ -41,7 +41,7 @@ class ilNotificationOSDHandler extends ilNotificationHandler
         $this->repo = $repo;
 
         if ($clock === null) {
-            $clock = (new \ILIAS\Data\Factory())->clock()->utc();
+            $clock = (new \ILIAS\Refinery\Data\Factory())->clock()->utc();
         }
         $this->clock = $clock;
     }

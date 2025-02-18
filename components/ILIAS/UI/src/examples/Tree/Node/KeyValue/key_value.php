@@ -43,10 +43,10 @@ function key_value()
 
     $node1 = $f->tree()->node()->keyValue('label', 'value');
     $node2 = $f->tree()->node()->keyValue('label', $long_value)
-                               ->withLink(new \ILIAS\Data\URI('https://docu.ilias.de'));
+                               ->withLink(new \ILIAS\Refinery\Data\URI('https://docu.ilias.de'));
     $node3 = $f->tree()->node()->keyValue('label', 'value', $icon);
     $node4 = $f->tree()->node()->keyValue('label', 'value', $icon)
-                               ->withLink(new \ILIAS\Data\URI('https://docu.ilias.de'));
+                               ->withLink(new \ILIAS\Refinery\Data\URI('https://docu.ilias.de'));
     $data = [['node' => $node1, 'children' => [
             ['node' => $node2]]],
          ['node' => $node3, 'children' => [

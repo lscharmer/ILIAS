@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\Dashboard\DataRetrieval\Language;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\DI\Container;
 use ILIAS\UI\URLBuilder;
 

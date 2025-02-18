@@ -28,7 +28,7 @@ use ILIAS\GlobalScreen\UI\Footer\Translation\TranslatableItem;
 use ILIAS\GlobalScreen\UI\Footer\Translation\TranslationWorkflowForm;
 use ILIAS\GlobalScreen\UI\Footer\Translation\TranslationsRepository;
 use ILIAS\GlobalScreen\UI\Footer\Translation\TranslationsRepositoryDB;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author            Fabian Schmid <fabian@sr.solutions>

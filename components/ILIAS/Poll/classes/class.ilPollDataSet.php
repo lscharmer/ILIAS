@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\Poll\Image\I\FactoryInterface as PollImageFactoryInterface;
 use ILIAS\Poll\Image\Factory as PollImageFactory;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Notes\Service as NotesService;
 
 /**

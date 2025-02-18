@@ -26,7 +26,7 @@ require_once(__DIR__ . "/../../../Base.php");
 use ILIAS\FileUpload\Handler\FileInfoResult;
 use ILIAS\UI\Implementation as I;
 use ILIAS\UI\Component as C;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 
 /**
  * @author  Thibeau Fuhrer <thibeau@sr.solutions>

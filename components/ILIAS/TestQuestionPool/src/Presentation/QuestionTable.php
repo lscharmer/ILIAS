@@ -22,9 +22,9 @@ namespace ILIAS\TestQuestionPool\Presentation;
 
 use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer as UIRenderer;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Component\Table;
 use ILIAS\UI\Component\Input\Container\Filter\Standard as Filter;
@@ -364,7 +364,7 @@ class QuestionTable extends \ilAssQuestionList implements Table\DataRetrieval
         return [$act => $action];
     }
 
-    protected function postOrder(array $list, \ILIAS\Data\Order $order): array
+    protected function postOrder(array $list, \ILIAS\Refinery\Data\Order $order): array
     {
         [$aspect, $direction] = $order->join('', function ($i, $k, $v) {
             return [$k, $v];

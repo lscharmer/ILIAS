@@ -24,9 +24,9 @@ use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Renderer;
 use ILIAS\UI\URLBuilder;
 use Psr\Http\Message\ServerRequestInterface;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\ResourceStorage\Services as IRSS;
 
 class ilStudyProgrammeTypeDBRepository implements ilStudyProgrammeTypeRepository, DataTableInterface\DataRetrieval

@@ -56,7 +56,7 @@ function drilldown()
     $button = $f->button()->bulky($ico->withAbbreviation('>'), 'Modal', '')
         ->withOnClick($modal->getShowSignal());
 
-    $uri = new \ILIAS\Data\URI('https://ilias.de');
+    $uri = new \ILIAS\Refinery\Data\URI('https://ilias.de');
     $link = $f->link()->bulky($ico->withAbbreviation('>'), 'Link', $uri);
     $divider = $f->divider()->horizontal();
 

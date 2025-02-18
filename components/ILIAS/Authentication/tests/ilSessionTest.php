@@ -332,7 +332,7 @@ SQL;
 
         $pwa_repository = new \ILIAS\Init\PasswordAssitance\Repository\PasswordAssistanceDbRepository(
             $db,
-            (new \ILIAS\Data\Factory())->clock()->system()
+            (new \ILIAS\Refinery\Data\Factory())->clock()->system()
         );
 
         $hash = new \ILIAS\Init\PasswordAssitance\ValueObject\PasswordAssistanceHash(
@@ -340,7 +340,7 @@ SQL;
         );
         $session = $pwa_repository->createSession(
             $hash,
-            (new \ILIAS\Data\Factory())->objId($usr_id)
+            (new \ILIAS\Refinery\Data\Factory())->objId($usr_id)
         );
 
         $result = $pwa_repository->getSessionByUsrId($session->usrId());

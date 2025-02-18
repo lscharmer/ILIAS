@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Export\ImportHandler\File\Factory as FileFactory;
 use ILIAS\Export\ImportHandler\I\FactoryInterface as ImportHandlerFactoryInterface;
 use ILIAS\Export\ImportHandler\I\File\FactoryInterface as FileFactoryInterface;

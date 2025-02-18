@@ -67,7 +67,7 @@ class ilTaxonomyClassificationExplorerGUI extends ilTaxonomyExplorerGUI
         }
 
         $node = $factory->simple($this->getNodeContent($record), $icon)
-                       ->withLink(new \ILIAS\Data\URI(ILIAS_HTTP_PATH . "/#tax_node_" . $record["child"]));
+                       ->withLink(new \ILIAS\Refinery\Data\URI(ILIAS_HTTP_PATH . "/#tax_node_" . $record["child"]));
         if (in_array($this->getNodeId($record), $this->selected_nodes)) {
             $node = $node->withHighlighted(true);
         }

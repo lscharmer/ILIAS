@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\components\File\Settings\General;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  * @author Lukas Zehnder <lukas@sr.solutions>

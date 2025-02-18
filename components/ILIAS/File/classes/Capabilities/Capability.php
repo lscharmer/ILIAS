@@ -21,7 +21,7 @@
  */
 namespace ILIAS\File\Capabilities;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Capability
 {

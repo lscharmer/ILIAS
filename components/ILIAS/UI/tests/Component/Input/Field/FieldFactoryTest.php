@@ -23,7 +23,7 @@ require_once 'components/ILIAS/UI/tests/AbstractFactoryTestCase.php';
 use ILIAS\UI\Component\Input\Field;
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\UI\Implementation\Component\SignalGenerator;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 
 class FieldFactoryTest extends AbstractFactoryTestCase

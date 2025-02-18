@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\MetaData\OERHarvester\Export;
 
 use ILIAS\Export\ExportHandler\Factory as ExportService;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class Handler implements HandlerInterface
 {

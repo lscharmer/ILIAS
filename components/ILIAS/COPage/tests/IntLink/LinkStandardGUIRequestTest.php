@@ -35,7 +35,7 @@ class LinkStandardGUIRequestTest extends TestCase
     {
         $http_mock = $this->createMock(ILIAS\HTTP\Services::class);
         $lng_mock = $this->createMock(ilLanguage::class);
-        $data = new \ILIAS\Data\Factory();
+        $data = new \ILIAS\Refinery\Data\Factory();
         $refinery = new \ILIAS\Refinery\Factory($data, $lng_mock);
         return new \ILIAS\COPage\IntLink\StandardGUIRequest(
             $http_mock,

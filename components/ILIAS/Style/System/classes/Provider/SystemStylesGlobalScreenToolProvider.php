@@ -22,7 +22,7 @@ use ILIAS\GlobalScreen\Scope\Tool\Provider\AbstractDynamicToolProvider;
 use ILIAS\GlobalScreen\Scope\Tool\Factory\Tool;
 use ILIAS\UI\Component\Tree\Tree;
 use ILIAS\UI\Implementation\Crawler\Entry\ComponentEntries as Entries;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * Provider for the Tree in the Main Bar Slate showing the UI Components

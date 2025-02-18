@@ -23,7 +23,7 @@ use ILIAS\UI\Renderer;
 use ILIAS\HTTP\GlobalHttpState;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\URLBuilder;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Mail\Folder\MailFilterUI;
 use ILIAS\Mail\Folder\MailFolderSearch;
 use ILIAS\Mail\Folder\MailFolderTableUI;
@@ -94,7 +94,7 @@ class ilMailFolderGUI
         $this->ui_factory = $DIC->ui()->factory();
         $this->ui_renderer = $DIC->ui()->renderer();
         $this->ui_service = $DIC->uiService();
-        $this->data_factory = new ILIAS\Data\Factory();
+        $this->data_factory = new ILIAS\Refinery\Data\Factory();
     }
 
     /**

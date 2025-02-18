@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\GlobalScreen\Scope\MainMenu\Collector\Renderer;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\GlobalScreen\Collector\Renderer\DecoratorApplierTrait;
 use ILIAS\GlobalScreen\Collector\Renderer\isSupportedTrait;
 use ILIAS\GlobalScreen\Scope\MainMenu\Factory\hasSymbol;

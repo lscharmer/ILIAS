@@ -22,7 +22,7 @@ namespace ILIAS\MetaData\Copyright;
 
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\MetaData\Elements\Data\Data;
 use ILIAS\MetaData\Copyright\Database\NullWrapper;
 use ILIAS\MetaData\Copyright\Database\WrapperInterface;

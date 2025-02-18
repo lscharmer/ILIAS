@@ -34,7 +34,7 @@ class AllModernComponents implements \ILIAS\Component\EntryPoint
 {
     public function __construct(
         protected \ILIAS\Refinery\Factory $refinery_factory,
-        protected \ILIAS\Data\Factory $data_factory,
+        protected \ILIAS\Refinery\Data\Factory $data_factory,
         protected \ILIAS\UI\Factory $ui_factory,
         protected \ILIAS\UI\Renderer $ui_renderer,
         protected \ILIAS\UI\Implementation\Component\Counter\Factory $ui_factory_counter,
@@ -106,7 +106,7 @@ class AllModernComponents implements \ILIAS\Component\EntryPoint
      */
     protected function populateComponentsInLegacyEnvironment(\Pimple\Container $DIC): void
     {
-        $DIC[\ILIAS\Data\Factory::class] = fn() => $this->data_factory;
+        $DIC[\ILIAS\Refinery\Data\Factory::class] = fn() => $this->data_factory;
 
         $DIC['refinery'] = fn() => $this->refinery_factory;
         $DIC['ui.factory.counter'] = fn() => $this->ui_factory_counter;

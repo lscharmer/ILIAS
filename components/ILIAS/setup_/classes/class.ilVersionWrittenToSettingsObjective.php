@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\Setup;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class ilVersionWrittenToSettingsObjective implements Setup\Objective
 {

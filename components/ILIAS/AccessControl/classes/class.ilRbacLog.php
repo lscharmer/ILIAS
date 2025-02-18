@@ -18,8 +18,8 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * class ilRbacLog

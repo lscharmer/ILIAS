@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\File\XML;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Export\ImportHandler\File\XML\Collection as XMLFileCollection;
 use ILIAS\Export\ImportHandler\File\XML\Export\Factory as XMLExportFileFactory;
 use ILIAS\Export\ImportHandler\File\XML\Handler as XMLFile;

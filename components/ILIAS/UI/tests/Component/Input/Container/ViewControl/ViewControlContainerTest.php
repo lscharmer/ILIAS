@@ -26,7 +26,7 @@ use ILIAS\UI\Implementation\Component\Input\ViewControl as Control;
 use ILIAS\UI\Implementation\Component\Input\ArrayInputData;
 use ILIAS\UI\Implementation\Component\Input\Container\ViewControl as VC;
 use ILIAS\UI\Implementation\Component\Input\FormInputNameSource;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Factory as Refinery;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\UI\Implementation\Component\Input\UploadLimitResolver;

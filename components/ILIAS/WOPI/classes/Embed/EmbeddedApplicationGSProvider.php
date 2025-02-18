@@ -32,7 +32,7 @@ use ILIAS\GlobalScreen\Scope\Layout\Factory\PageBuilderModification;
 use ILIAS\GlobalScreen\Scope\Layout\Provider\PagePart\PagePartProvider;
 use ILIAS\UI\Component\Layout\Page\Page;
 use ILIAS\GlobalScreen\Scope\Layout\Builder\StandardPageBuilder;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Component\Layout\Page\Standard;
 
 /**

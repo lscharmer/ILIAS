@@ -22,7 +22,7 @@ use ILIAS\UI\Component\Input\Field\MarkdownRenderer;
 use ILIAS\Filesystem\Stream\Streams;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\HTTP\Services as HTTPServices;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 /**
  * @author       Thibeau Fuhrer <thibeau@sr.solutions>

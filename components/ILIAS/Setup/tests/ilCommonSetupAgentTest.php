@@ -25,7 +25,7 @@ use ILIAS\Setup\ObjectiveCollection;
 use ILIAS\Setup\Objective;
 use ilCommonSetupAgent;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ilLanguage;
 
 /**

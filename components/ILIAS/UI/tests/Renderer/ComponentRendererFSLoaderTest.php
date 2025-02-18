@@ -47,7 +47,7 @@ class ComponentRendererFSLoaderTest extends TestCase
         $js_binding = $this->getMockBuilder(I\Render\JavaScriptBinding::class)->getMock();
         $image_path_resolver = $this->getMockBuilder(ILIAS\UI\Implementation\Render\ImagePathResolver::class)
                 ->getMock();
-        $data_factory = $this->getMockBuilder(ILIAS\Data\Factory::class)->getMock();
+        $data_factory = $this->getMockBuilder(ILIAS\Refinery\Data\Factory::class)->getMock();
         $help_text_retriever = $this->createMock(ILIAS\UI\HelpTextRetriever::class);
         $upload_limit_resolver = $this->createMock(ILIAS\UI\Implementation\Component\Input\UploadLimitResolver::class);
 

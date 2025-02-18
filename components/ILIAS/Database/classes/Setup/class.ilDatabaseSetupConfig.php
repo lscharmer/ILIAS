@@ -19,7 +19,7 @@
 declare(strict_types=1);
 
 use ILIAS\Setup\Config;
-use ILIAS\Data\Password;
+use ILIAS\Refinery\Data\Password;
 
 class ilDatabaseSetupConfig implements Config
 {

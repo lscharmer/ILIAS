@@ -22,7 +22,7 @@ namespace ILIAS\UI\Component\Chart\Bar;
 
 use ILIAS\UI\Component\Component;
 use ILIAS\UI\Component\JavaScriptBindable;
-use ILIAS\Data\Chart\Dataset;
+use ILIAS\Refinery\Data\Chart\Dataset;
 use ILIAS\UI\Component\Chart\Bar\BarConfig;
 
 interface Bar extends Component, JavaScriptBindable

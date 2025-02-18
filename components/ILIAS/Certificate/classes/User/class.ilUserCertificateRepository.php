@@ -19,8 +19,8 @@
 declare(strict_types=1);
 
 use ILIAS\Certificate\ValueObject\CertificateId;
-use ILIAS\Data\Range;
-use ILIAS\Data\UUID\Factory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\UUID\Factory;
 
 /**
  * @author  Niels Theen <ntheen@databay.de>
@@ -60,7 +60,7 @@ class ilUserCertificateRepository
         $this->defaultTitle = $defaultTitle;
 
         if (!$uuid_factory) {
-            $uuid_factory = new ILIAS\Data\UUID\Factory();
+            $uuid_factory = new ILIAS\Refinery\Data\UUID\Factory();
         }
         $this->uuid_factory = $uuid_factory;
 

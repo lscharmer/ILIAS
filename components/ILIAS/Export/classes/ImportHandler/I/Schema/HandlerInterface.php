@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ImportHandler\I\Schema;
 
-use ILIAS\Data\Version;
+use ILIAS\Refinery\Data\Version;
 use ILIAS\Export\ImportHandler\I\File\XSD\HandlerInterface as XSDFileHandlerInterface;
 use ILIAS\Export\ImportHandler\I\Parser\NodeInfo\HandlerInterface as XMLFileNodeInfoInterface;
 use ILIAS\Export\ImportHandler\I\Schema\HandlerInterface as SchemaInterface;

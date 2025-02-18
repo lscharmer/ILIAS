@@ -16,7 +16,7 @@
  *
  *********************************************************************/
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 
 /**
  * Class ilAccessibilityCriterionFormGUI

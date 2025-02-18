@@ -24,7 +24,7 @@ use ILIAS\LegalDocuments\Value\Document;
 use ILIAS\LegalDocuments\Value\DocumentContent;
 use ILIAS\LegalDocuments\Value\CriterionContent;
 use ILIAS\LegalDocuments\DocumentId;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use Exception;
 
 class ReadOnlyDocumentRepository implements DocumentRepository, DocumentRepositoryMeta

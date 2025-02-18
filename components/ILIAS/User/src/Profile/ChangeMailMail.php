@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\User\Profile;
 
 use ILIAS\Language\Language;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class ChangeMailMail extends \ilMimeMailNotification
 {

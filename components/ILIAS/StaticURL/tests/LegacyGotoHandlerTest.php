@@ -26,7 +26,7 @@ use ILIAS\StaticURL\Request\LegacyRequestBuilder;
 use Psr\Http\Message\ServerRequestInterface;
 use ILIAS\HTTP\Wrapper\WrapperFactory;
 use ILIAS\Refinery\Factory;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\StaticURL\Request\Request;
 use ILIAS\DI\Container;
 
@@ -59,7 +59,7 @@ class LegacyGotoHandlerTest extends Base
         $this->component_factory_mock = $this->createMock(\ilComponentFactory::class);
 
         $this->refinery = new Factory(
-            new \ILIAS\Data\Factory(),
+            new \ILIAS\Refinery\Data\Factory(),
             $this->createMock(\ilLanguage::class),
         );
 

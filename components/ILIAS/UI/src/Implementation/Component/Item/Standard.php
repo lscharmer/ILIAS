@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\UI\Implementation\Component\Item;
 
 use ILIAS\UI\Component as C;
-use ILIAS\Data\Color;
+use ILIAS\Refinery\Data\Color;
 use ILIAS\UI\Component\Image\Image;
 use ILIAS\UI\Component\Player\Audio;
 use ILIAS\UI\Component\Symbol\Icon\Icon;

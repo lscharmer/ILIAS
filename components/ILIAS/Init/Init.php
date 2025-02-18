@@ -62,7 +62,7 @@ class Init implements Component\Component
         $contribute[Component\EntryPoint::class] = static fn() =>
             new Init\AllModernComponents(
                 $pull[\ILIAS\Refinery\Factory::class],
-                $pull[\ILIAS\Data\Factory::class],
+                $pull[\ILIAS\Refinery\Data\Factory::class],
                 $use[\ILIAS\UI\Factory::class],
                 $use[\ILIAS\UI\Renderer::class],
                 $pull[\ILIAS\UI\Implementation\Component\Counter\Factory::class],

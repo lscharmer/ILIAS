@@ -25,7 +25,7 @@ use ILIAS\FileUpload\Handler\FileInfoResult;
 use ILIAS\FileUpload\Handler\HandlerResult;
 use ILIAS\FileUpload\DTO\UploadResult;
 use ILIAS\Filesystem\Filesystem;
-use ILIAS\Data\DataSize;
+use ILIAS\Refinery\Data\DataSize;
 
 /**
  *

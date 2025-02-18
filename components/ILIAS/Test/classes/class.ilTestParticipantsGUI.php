@@ -34,7 +34,7 @@ use ILIAS\Test\Participants\ParticipantTableExtraTimeAction;
 use ILIAS\Test\Participants\ParticipantTableFinishTestAction;
 use ILIAS\Test\Participants\ParticipantTableDeleteResultsAction;
 use ILIAS\Test\Participants\ParticipantTableShowResultsAction;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Test\Results\Data\Repository as TestResultRepository;
 use ILIAS\UI\Factory as UIFactory;

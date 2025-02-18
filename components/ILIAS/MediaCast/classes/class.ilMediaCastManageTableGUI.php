@@ -21,8 +21,8 @@ declare(strict_types=1);
 use ILIAS\MediaCast\StandardGUIRequest;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\Component\Table;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 use ILIAS\UI\URLBuilderToken;
 
 class ilMediaCastManageTableGUI implements Table\DataRetrieval
@@ -31,7 +31,7 @@ class ilMediaCastManageTableGUI implements Table\DataRetrieval
     protected ilTemplate $tpl;
     protected URLBuilder $url_builder;
     protected \ILIAS\HTTP\Services $http;
-    protected \ILIAS\Data\Factory $df;
+    protected \ILIAS\Refinery\Data\Factory $df;
     protected string $parent_cmd;
     protected ilLanguage $lng;
     protected ilCtrlInterface $ctrl;
@@ -74,7 +74,7 @@ class ilMediaCastManageTableGUI implements Table\DataRetrieval
         $this->parent_gui = $parent_gui;
         $this->parent_cmd = $parent_cmd;
         $this->media_type = $DIC->mediaObjects()->internal()->domain()->mediaType();
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
         $this->http = $DIC->http();
 
         $this->playtime = ($this->mediacast->getViewMode() !== ilObjMediaCast::VIEW_IMG_GALLERY);

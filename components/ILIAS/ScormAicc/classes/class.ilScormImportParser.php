@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataTypeFactory;
+use ILIAS\Refinery\Data\Factory as DataTypeFactory;
 
 class ilScormImportParser
 {
@@ -90,7 +90,7 @@ class ilScormImportParser
         return $errors;
     }
 
-    public function parse(string $xmlString): \ILIAS\Data\Result
+    public function parse(string $xmlString): \ILIAS\Refinery\Data\Result
     {
         try {
             $this->beginLogging();

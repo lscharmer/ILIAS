@@ -22,7 +22,7 @@ namespace ILIAS\UI\Implementation\Component\Link;
 
 use ILIAS\UI\Component as C;
 use ILIAS\UI\Implementation\Component\JavaScriptBindable;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 
 class Bulky extends Link implements C\Link\Bulky
 {

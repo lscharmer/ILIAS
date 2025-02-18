@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Export\ExportHandler\I\PublicAccess\Link;
 
-use ILIAS\Data\ReferenceId;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\ReferenceId;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Export\ExportHandler\I\PublicAccess\Link\HandlerInterface as ilExportHandlerPublicAccessLinkHandlerInterface;
 use ILIAS\Export\ExportHandler\I\PublicAccess\Link\Wrapper\StaticURL\HandlerInterface as ilExportHandlerPublicAccessLinkStaticURLWrapperInterface;
 

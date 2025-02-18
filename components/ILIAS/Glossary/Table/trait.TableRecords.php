@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\components\ILIAS\Glossary\Table;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\UI\Component\Link\Link;
 
 /**

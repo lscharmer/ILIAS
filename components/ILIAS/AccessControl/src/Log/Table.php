@@ -25,10 +25,10 @@ use ILIAS\UI\Component\Table\Data as DataTable;
 use ILIAS\UI\Component\Table\DataRetrieval;
 use ILIAS\UI\Component\Table\DataRowBuilder;
 use ILIAS\UI\Component\Input\Container\Filter\Filter;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
-use ILIAS\Data\DateFormat\DateFormat;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use Psr\Http\Message\RequestInterface;
 
 class Table implements DataRetrieval

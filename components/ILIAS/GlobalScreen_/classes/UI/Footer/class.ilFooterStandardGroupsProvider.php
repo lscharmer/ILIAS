@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\GlobalScreen\Scope\MetaBar\Provider\AbstractStaticFooterProvider;
 use ILIAS\GlobalScreen\Identification\IdentificationInterface;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\GlobalScreen\Scope\Footer\Factory\Permanent;
 use ILIAS\UICore\PageContentProvider;
 use ILIAS\DI\Container;

@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\GlobalScreen\Scope\Layout;
 
-use ILIAS\Data\Meta\Html\Tag;
-use ILIAS\Data\Meta\Html\UserDefined;
+use ILIAS\Refinery\Data\Meta\Html\Tag;
+use ILIAS\Refinery\Data\Meta\Html\UserDefined;
 use PHPUnit\Framework\TestCase;
 use ILIAS\GlobalScreen\Scope\Layout\MetaContent\MetaContent;
 

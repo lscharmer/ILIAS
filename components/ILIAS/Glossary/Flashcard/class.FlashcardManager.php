@@ -21,8 +21,8 @@ declare(strict_types=1);
 namespace ILIAS\Glossary\Flashcard;
 
 use ILIAS\Glossary;
-use ILIAS\Data\Factory as DataFactory;
-use ILIAS\Data\Clock\ClockInterface;
+use ILIAS\Refinery\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Clock\ClockInterface;
 use DateTime;
 
 /**

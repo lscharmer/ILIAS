@@ -31,7 +31,7 @@ use ILIAS\Filesystem\Filesystem as WebFiles;
 use ILIAS\UI\Factory;
 use ILIAS\ResourceStorage\Services as IRSS;
 use PHPUnit\Framework\MockObject\MockObject;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\UI\Component\Link\Relationship;
 
 class RendererTest extends TestCase

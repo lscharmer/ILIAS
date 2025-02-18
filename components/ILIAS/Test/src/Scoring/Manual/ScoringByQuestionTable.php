@@ -24,7 +24,7 @@ use ILIAS\UI\Factory as UIFactory;
 use ILIAS\UI\Component\Input\Container\Filter\Standard as Filter;
 use ILIAS\UI\URLBuilder;
 use ILIAS\UI\URLBuilderToken;
-use ILIAS\Data\DateFormat\DateFormat;
+use ILIAS\Refinery\Data\DateFormat\DateFormat;
 use ILIAS\Language\Language;
 use Psr\Http\Message\ServerRequestInterface;
 

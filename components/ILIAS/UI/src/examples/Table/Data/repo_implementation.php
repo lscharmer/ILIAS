@@ -22,8 +22,8 @@ namespace ILIAS\UI\examples\Table\Data;
 
 use ILIAS\UI\Implementation\Component\Table as T;
 use ILIAS\UI\Component\Table as I;
-use ILIAS\Data\Range;
-use ILIAS\Data\Order;
+use ILIAS\Refinery\Data\Range;
+use ILIAS\Refinery\Data\Order;
 
 /**
  * ---
@@ -59,13 +59,13 @@ function repo_implementation()
 class DataTableDemoRepo implements I\DataRetrieval
 {
     protected \ILIAS\UI\Factory $ui_factory;
-    protected \ILIAS\Data\Factory $df;
+    protected \ILIAS\Refinery\Data\Factory $df;
 
     public function __construct()
     {
         global $DIC;
         $this->ui_factory = $DIC['ui.factory'];
-        $this->df = new \ILIAS\Data\Factory();
+        $this->df = new \ILIAS\Refinery\Data\Factory();
     }
 
     //the repo is capable of building its table-view (similar to forms from a repo)

@@ -25,7 +25,7 @@ use PHPUnit\Framework\TestCase;
 
 use ILIAS\UI\Implementation\Crawler\Entry\ComponentEntry as Entry;
 use ILIAS\UI\Implementation\Crawler\Entry\ComponentEntries as Entries;
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\DI\Container;
 use ILIAS\GlobalScreen\Identification\IdentificationFactory;
 use ILIAS\GlobalScreen\Provider\ProviderFactory;

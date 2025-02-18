@@ -43,7 +43,7 @@ class ilPluginSlotInfoTest extends TestCase
             $plugins
         );
 
-        $v = $this->createMock(\ILIAS\Data\Version::class);
+        $v = $this->createMock(\ILIAS\Refinery\Data\Version::class);
         $this->plugin1 = new class ($v, $this->pluginslot, "plg1", "Plugin1", true, $v, 0, $v, $v, $v, "", "", false, false, false) extends ilPluginInfo {
             public function isActive(): bool
             {

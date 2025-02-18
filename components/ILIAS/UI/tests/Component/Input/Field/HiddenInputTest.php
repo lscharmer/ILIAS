@@ -25,7 +25,7 @@ require_once(__DIR__ . "/CommonFieldRendering.php");
 
 use ILIAS\UI\Implementation\Component as I;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class HiddenInputTest extends ILIAS_UI_TestBase
 {
