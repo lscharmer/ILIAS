@@ -34,8 +34,11 @@ class Refinery implements Component\Component
     ): void {
         $provide[\ILIAS\Refinery\Factory::class] = static fn() =>
             new \ILIAS\Refinery\Factory(
-                $pull[\ILIAS\Data\Factory::class],
+                $pull[\ILIAS\Refinery\Data\Factory::class],
                 $use[\ILIAS\Language\Language::class]
             );
+
+        $provide[\ILIAS\Refinery\Data\Factory::class] = static fn() =>
+            new \ILIAS\Refinery\Data\Factory();
     }
 }

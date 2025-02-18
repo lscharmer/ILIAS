@@ -31,7 +31,7 @@ use ILIAS\Refinery\KindlyTo\Transformation\TupleTransformation;
 use ILIAS\Refinery\KindlyTo\Transformation\DictionaryTransformation;
 use ILIAS\Refinery\KindlyTo\Transformation\NullTransformation;
 use ILIAS\Refinery\Transformation;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 
 /**
  * Transformations in this group transform data to primitive types to establish

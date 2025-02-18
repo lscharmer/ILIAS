@@ -21,7 +21,7 @@ declare(strict_types=1);
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\ConstraintViolationException;
 use ILIAS\Tests\Refinery\TestCase;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 require_once("./components/ILIAS/Refinery/tests/TestCase.php");
 

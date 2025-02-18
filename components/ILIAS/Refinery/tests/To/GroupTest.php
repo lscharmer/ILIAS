@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\To;
 
-use ILIAS\Data\Alphanumeric;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Alphanumeric;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\To\Group as ToGroup;
 use ILIAS\Refinery\To\Transformation\BooleanTransformation;
 use ILIAS\Refinery\To\Transformation\DictionaryTransformation;

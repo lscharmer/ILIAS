@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Integer\Constraints;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Constraint;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;

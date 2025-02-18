@@ -46,7 +46,7 @@ class PasswordContraintsTest extends TestCase
             {
             }
         };
-        $d = new \ILIAS\Data\Factory();
+        $d = new \ILIAS\Refinery\Data\Factory();
         $refinery = new \ILIAS\Refinery\Factory($d, $lng);
         $v = $refinery->password();
 
@@ -84,8 +84,8 @@ class PasswordContraintsTest extends TestCase
     /**
      * @dataProvider constraintsProvider
      * @param Constraint $constraint
-     * @param ILIAS\Data\Password[] $ok_values
-     * @param ILIAS\Data\Password[] $error_values
+     * @param ILIAS\Refinery\Data\Password[] $ok_values
+     * @param ILIAS\Refinery\Data\Password[] $error_values
      */
     public function testAccept(Constraint $constraint, array $ok_values, array $error_values): void
     {

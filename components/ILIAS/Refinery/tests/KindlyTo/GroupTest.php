@@ -37,7 +37,7 @@ class GroupTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->basicGroup = new KindlyToGroup(new \ILIAS\Data\Factory());
+        $this->basicGroup = new KindlyToGroup(new \ILIAS\Refinery\Data\Factory());
     }
 
     public function testIsStringTransformationInstance(): void

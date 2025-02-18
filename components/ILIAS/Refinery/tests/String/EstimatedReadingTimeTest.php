@@ -23,7 +23,7 @@ namespace ILIAS\Tests\Refinery\String;
 require_once 'vendor/composer/vendor/autoload.php';
 
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Language\Language;
 use PHPUnit\Framework\TestCase;
 use stdClass;

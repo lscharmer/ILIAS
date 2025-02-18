@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\Integer;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\In\Group as In;
 use ILIAS\Language\Language;

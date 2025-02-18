@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\Integer;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Custom\Constraint;
 
 class GreaterThanOrEqual extends Constraint

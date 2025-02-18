@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Integer;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Refinery\Integer\Group as IntegerGroup;
 use ILIAS\Refinery\Integer\GreaterThan;
 use ILIAS\Refinery\Integer\LessThan;

@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Custom;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Custom\Group as CustomGroup;
 use ILIAS\Refinery\Custom\Transformation as CustomTransformation;
 use ILIAS\Refinery\Custom\Constraint as CustomConstraint;

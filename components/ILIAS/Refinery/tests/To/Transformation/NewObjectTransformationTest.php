@@ -22,7 +22,7 @@ namespace ILIAS\Tests\Refinery\To\Transformation;
 
 use Error;
 use Exception;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\Refinery\To\Transformation\NewObjectTransformation;
 use PHPUnit\Framework\TestCase;
 use TypeError;

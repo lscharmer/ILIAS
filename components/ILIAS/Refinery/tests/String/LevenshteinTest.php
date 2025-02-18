@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\src\Refinery\String;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Refinery\String\Group;
 use PHPUnit\Framework\TestCase;
 use InvalidArgumentException;

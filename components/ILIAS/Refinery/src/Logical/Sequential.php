@@ -22,7 +22,7 @@ namespace ILIAS\Refinery\Logical;
 
 use ILIAS\Refinery\Custom\Constraint as CustomConstraint;
 use ILIAS\Refinery\Constraint;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class Sequential extends CustomConstraint
 {

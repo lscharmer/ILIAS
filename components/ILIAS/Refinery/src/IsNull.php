@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Refinery;
 
 use ILIAS\Refinery\Custom\Constraint;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 
 class IsNull extends Constraint
 {

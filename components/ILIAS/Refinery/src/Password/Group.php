@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\Password;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Refinery\Constraint;
 
 class Group

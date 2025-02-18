@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Container;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Container\Group as ContainerGroup;
 use ILIAS\Refinery\Container\AddLabels;
 use PHPUnit\Framework\TestCase;

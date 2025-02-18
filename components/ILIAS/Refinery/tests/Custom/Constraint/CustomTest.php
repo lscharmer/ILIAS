@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 use ILIAS\Refinery\Custom\Constraint as CustomConstraint;
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class CustomTest extends TestCase
 {

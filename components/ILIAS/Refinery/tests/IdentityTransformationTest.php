@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery;
 
-use ILIAS\Data\Result\Ok;
-use ILIAS\Data\Result\Error;
+use ILIAS\Refinery\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Error;
 use ILIAS\Refinery\IdentityTransformation;
 use PHPUnit\Framework\TestCase;
 

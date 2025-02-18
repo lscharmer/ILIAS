@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Parser\ABNF;
 
-use ILIAS\Data\Result;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\Refinery\Parser\ABNF\Intermediate;
 use ILIAS\Refinery\Parser\ABNF\Character;
 use PHPUnit\Framework\TestCase;

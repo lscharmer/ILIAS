@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\URI;
 
-use ILIAS\Data\URI;
+use ILIAS\Refinery\Data\URI;
 use ILIAS\Refinery\ConstraintViolationException;
 use ILIAS\Refinery\DeriveApplyToFromTransform;
 use ILIAS\Refinery\Transformation;

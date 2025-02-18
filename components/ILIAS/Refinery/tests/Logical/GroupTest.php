@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Logical;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Constraint;
 use ILIAS\Refinery\Integer\GreaterThan;
 use ILIAS\Refinery\Integer\LessThan;

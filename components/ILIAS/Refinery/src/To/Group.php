@@ -33,7 +33,7 @@ use ILIAS\Refinery\To\Transformation\TupleTransformation;
 use ILIAS\Refinery\To\Transformation\DateTimeTransformation;
 use ILIAS\Refinery\To\DefaultToNull\Group as DefaultToNull;
 use ILIAS\Refinery\Transformation;
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use InvalidArgumentException;
 use ILIAS\Language\Language;
 
@@ -168,7 +168,7 @@ class Group
 
     /**
      * @param string $dataType - Name of the data type, this value MUST much
-     *                           with the methods provided by the `\ILIAS\Data\Factory`
+     *                           with the methods provided by the `\ILIAS\Refinery\Data\Factory`
      * @return Transformation
      */
     public function data(string $dataType): Transformation

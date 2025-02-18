@@ -21,7 +21,7 @@ declare(strict_types=1);
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\Transformation;
 use PHPUnit\Framework\TestCase;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class AddLabelTest extends TestCase
 {

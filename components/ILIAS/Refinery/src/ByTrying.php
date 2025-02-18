@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Refinery;
 
 use Exception;
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Language;
 
 class ByTrying implements Transformation

@@ -27,7 +27,7 @@ namespace ILIAS\Refinery;
  */
 class FactoryFactory
 {
-    public function build(\ILIAS\Data\Factory $dataFactory, \ILIAS\Language\Language $language): \ILIAS\Refinery\Factory
+    public function build(\ILIAS\Refinery\Data\Factory $dataFactory, \ILIAS\Language\Language $language): \ILIAS\Refinery\Factory
     {
         return new \ILIAS\Refinery\Factory($dataFactory, $language);
     }

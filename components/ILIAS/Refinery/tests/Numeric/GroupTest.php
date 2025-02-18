@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Numeric;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Numeric\IsNumeric;
 use ILIAS\Refinery\Numeric\Group as NumericGroup;
 use PHPUnit\Framework\TestCase;

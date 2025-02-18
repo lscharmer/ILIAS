@@ -20,8 +20,8 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\String;
 
-use ILIAS\Data\Factory;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Factory;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Refinery\Transformation;
 use ILIAS\Refinery\DeriveInvokeFromTransform;
 use InvalidArgumentException;

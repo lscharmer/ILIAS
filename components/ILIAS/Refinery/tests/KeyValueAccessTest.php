@@ -24,7 +24,7 @@ use ILIAS\Refinery\KeyValueAccess;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Language\Language;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 
 class KeyValueAccessTest extends PHPUnitTestCase
 {

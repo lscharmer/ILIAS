@@ -18,7 +18,7 @@
 
 declare(strict_types=1);
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\Refinery\Logical\LogicalOr;
 use PHPUnit\Framework\TestCase;

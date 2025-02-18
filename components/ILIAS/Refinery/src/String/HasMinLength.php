@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\String;
 
-use ILIAS\Data;
+use ILIAS\Refinery\Data;
 use ILIAS\Refinery\Custom\Constraint;
 
 class HasMinLength extends Constraint

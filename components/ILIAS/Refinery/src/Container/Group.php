@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery\Container;
 
-use ILIAS\Data\Factory;
+use ILIAS\Refinery\Data\Factory;
 use ILIAS\Refinery\Transformation;
 
 class Group

@@ -23,8 +23,8 @@ namespace ILIAS\Refinery\Custom;
 use ILIAS\Refinery\Constraint as ConstraintInterface;
 use ILIAS\Refinery\DeriveTransformFromApplyTo;
 use ILIAS\Refinery\DeriveInvokeFromTransform;
-use ILIAS\Data;
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Refinery\ProblemBuilder;
 
 class Constraint implements ConstraintInterface

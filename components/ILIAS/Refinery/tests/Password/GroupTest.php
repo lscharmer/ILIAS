@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\Password;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\Password\HasLowerChars;
 use ILIAS\Refinery\Password\HasMinLength;
 use ILIAS\Refinery\Password\HasNumbers;

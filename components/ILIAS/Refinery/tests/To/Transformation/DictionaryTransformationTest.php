@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\To\Transformation;
 
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\Refinery\To\Transformation\DictionaryTransformation;
 use ILIAS\Refinery\To\Transformation\StringTransformation;
 use PHPUnit\Framework\TestCase;

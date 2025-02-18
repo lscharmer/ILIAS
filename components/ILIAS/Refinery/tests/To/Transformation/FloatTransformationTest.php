@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\To\Transformation;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use ILIAS\Refinery\To\Transformation\FloatTransformation;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;

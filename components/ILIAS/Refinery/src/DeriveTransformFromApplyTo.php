@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Refinery;
 
-use ILIAS\Data\Result;
+use ILIAS\Refinery\Data\Result;
 use Exception;
 
 trait DeriveTransformFromApplyTo

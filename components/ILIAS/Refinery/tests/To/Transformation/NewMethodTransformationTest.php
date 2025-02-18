@@ -21,7 +21,7 @@ declare(strict_types=1);
 namespace ILIAS\Tests\Refinery\To\Transformation;
 
 use Error;
-use ILIAS\Data\Result\Ok;
+use ILIAS\Refinery\Data\Result\Ok;
 use ILIAS\DI\Exceptions\Exception;
 use ILIAS\Refinery\To\Transformation\NewMethodTransformation;
 use PHPUnit\Framework\TestCase;

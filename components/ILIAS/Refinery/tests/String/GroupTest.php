@@ -20,7 +20,7 @@ declare(strict_types=1);
 
 namespace ILIAS\Tests\Refinery\String;
 
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\String\Group as StringGroup;
 use ILIAS\Refinery\String\HasMinLength;
 use ILIAS\Refinery\String\HasMaxLength;

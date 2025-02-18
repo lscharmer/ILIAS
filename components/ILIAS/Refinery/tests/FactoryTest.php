@@ -25,7 +25,7 @@ use ILIAS\Refinery\Container\Group as ContainerGroup;
 use ILIAS\Refinery\Custom\Group as CustomGroup;
 use ILIAS\Refinery\DateTime\Group as DateTimeGroup;
 use ILIAS\Refinery\Factory as Refinery;
-use ILIAS\Data\Factory as DataFactory;
+use ILIAS\Refinery\Data\Factory as DataFactory;
 use ILIAS\Refinery\IdentityTransformation;
 use ILIAS\Refinery\IsExecutableTransformation;
 use ILIAS\Refinery\In\Group as InGroup;
