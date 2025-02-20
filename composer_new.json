@@ -51,6 +51,7 @@
 		"ext-imagick": "*",
 	},
 	"require-dev": {
+	  "captainhook/hook-installer": "^1.0"
 	},
 	"autoload": {
 		"psr-4" : {
