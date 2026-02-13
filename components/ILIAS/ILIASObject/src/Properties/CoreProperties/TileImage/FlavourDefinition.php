@@ -59,11 +59,7 @@ class FlavourDefinition implements FlavourDefinitionInterface
 
     public function getVariantName(): ?string
     {
-        return json_encode([
-            'width' => $this->widths,
-            'ratio' => $this->ratio,
-            'quality' => $this->quality
-        ]);
+        return null;
     }
 
     public function persist(): bool

@@ -189,6 +189,6 @@ abstract class ilDBPdoMySQL extends ilDBPdo
         //			$supported = ($data->default_character_set_name === 'utf8mb4');
         //		}
 
-        return false;
+        return true;
     }
 }

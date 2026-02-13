@@ -57,10 +57,7 @@ class ilUserProfilePictureDefinition implements FlavourDefinition
 
     public function getVariantName(): ?string
     {
-        return json_encode([
-            'quality' => $this->quality,
-            'sizes' => $this->sizes
-        ]);
+        return null;
     }
 
     public function persist(): bool

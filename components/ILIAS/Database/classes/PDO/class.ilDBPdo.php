@@ -34,7 +34,7 @@ abstract class ilDBPdo implements ilDBInterface, ilDBPdoInterface
     public const FEATURE_SLAVE = 'slave';
     protected string $host = '';
     protected string $dbname = '';
-    protected string $charset = 'utf8';
+    protected string $charset = 'utf8mb4';
     protected string $username = '';
     protected string $password = '';
     protected int $port = 3306;
