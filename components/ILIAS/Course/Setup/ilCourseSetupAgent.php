@@ -24,6 +24,7 @@ use ILIAS\Setup\Metrics;
 use ILIAS\Setup\Config;
 use ILIAS\Setup;
 use ILIAS\Refinery\Transformation;
+use ILIAS\Course\Setup\UpdateStepsV12;
 
 class ilCourseSetupAgent extends NullAgent
 {
@@ -31,7 +32,12 @@ class ilCourseSetupAgent extends NullAgent
 
     public function getUpdateObjective(?ILIAS\Setup\Config $config = null): Objective
     {
-        return new ilDatabaseUpdateStepsExecutedObjective(new ilCourseDBUpdateSteps());
+        return new Setup\ObjectiveCollection(
+            '',
+            false,
+            new ilDatabaseUpdateStepsExecutedObjective(new ilCourseDBUpdateSteps()),
+            new ilDatabaseUpdateStepsExecutedObjective(new UpdateStepsV12())
+        );
     }
 
     public function getStatusObjective(Metrics\Storage $storage): Objective

@@ -18,15 +18,26 @@
 
 declare(strict_types=1);
 
-namespace ILIAS\Database\PDO;
+namespace ILIAS\Course\Setup;
 
+use ilDatabaseUpdateSteps;
 use ilDBInterface;
-use ilDBPdoInterface;
-use ILIAS\Database\FieldDefinition;
+use ilDBConstants;
 
-interface Internal extends ilDBInterface, ilDBPdoInterface
+class UpdateStepsV12 implements ilDatabaseUpdateSteps
 {
-    public function getFieldDefinition(): ?FieldDefinition;
-    public function getIndexName(string $index_name_base): string;
-    public function getDbName(): string;
+    private ilDBInterface $db;
+
+    public function prepare(ilDBInterface $db): void
+    {
+        $this->db = $db;
+    }
+
+    public function step_1(): void
+    {
+        $this->db->modifyTableColumn('crs_settings', 'target_group', [
+            'type' => ilDBConstants::T_CLOB,
+            'length' => 4000,
+        ]);
+    }
 }
