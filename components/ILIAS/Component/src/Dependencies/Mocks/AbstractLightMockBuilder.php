@@ -219,6 +219,7 @@ PHP;
     private function buildMethod(ReflectionMethod $method, array &$return_map): string
     {
         $visibility = $method->isPublic() ? 'public' : 'protected';
+        $visibility .= $method->isStatic() ? ' static' : '';
         $name = $method->getName();
         $params = $this->buildParameterList($method);
         $return_type = $this->renderType($method->getReturnType());
